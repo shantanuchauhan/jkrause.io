@@ -1,5 +1,7 @@
-# WEBSECTOR.DE
+# Still in progress...
 
-Source of my new personal portfolio and blog www.websector.de, which will be released 2013. 
+## WEBSECTOR.DE
 
-The new website is built with [Grunt](http://gruntjs.com/), [Jekyll](http://jekyllrb.com/) and [Foundation](http://foundation.zurb.com/). All code will be open sourced here at GitHub. 
+Source of the new personal portfolio and blog, which will be released end of January 2013.
+
+The new website is built with [Grunt](http://gruntjs.com/), [Jekyll](http://jekyllrb.com/), [Compass](compass-style.org) and [Susy](susy.oddbird.net).
