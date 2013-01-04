@@ -1,0 +1,10 @@
+{% include head.html %}
+<div id="wrapper">
+  {% include header.html %}
+  {% if page.group == 'home' %}<div id="welcome"><h1><span id="hi">Hi</span>, I’m an <span>Independent Web Developer</span> based in Hamburg and Eutin (Germany) and I love to build <span>HTML5 Web Applications</span>.</h1></div>{% endif %}
+  {% include nav.html %}
+  <div class="content {{ page.group }}-content">
+    {{ content }}
+  </div>
+  {% include footer.html %}
+</div>

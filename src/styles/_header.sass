@@ -1,0 +1,66 @@
+header
+  h2
+    @include padding-leader(1.2)
+    @include padding-trailer(.1)
+    @include adjust-font-size-to(55px)
+    a
+      text-decoration: none
+      color: $font-color-light
+      text-transform: uppercase
+      &:hover
+        @include animation(link-hover $link-hover-duration)
+        color: $font-color-highlighted
+
+    span
+      @include adjust-font-size-to($to-size: 21px, $from-size:55px)
+    
+  @include respond-to('small-and-default-screen')
+    h2
+      @include adjust-font-size-to(50px, 2)
+
+      span
+        @include adjust-font-size-to($to-size: 19px, $from-size:50px)
+      
+
+  @include respond-to('small-screen')
+    h2
+      @include padding-leader(0.3)
+      @include padding-trailer(.2)
+      text-align: center
+      span
+        display: block
+      
+#welcome
+  background-image: $img-dots
+
+  h1
+    @include prefix(.3)
+    @include suffix(.3)
+    @include padding-leader(.7)
+    @include padding-trailer(.6)
+    @include adjust-font-size-to(55px)
+    span
+      color: $font-color-highlighted
+
+    #hi
+      @include adjust-font-size-to(88px, 1, 55px)
+    
+  @include respond-to('default-screen')
+    h1
+      @include adjust-font-size-to(50px)
+
+    #hi
+      @include adjust-font-size-to(80px, 1, 50px)
+    
+  
+
+  @include respond-to('small-screen')
+    h1
+      @include prefix(.5)
+      @include suffix(.5)
+      @include padding-leader(.5)
+      @include padding-trailer(.4)
+      @include adjust-font-size-to(33px)
+
+    #hi
+      @include adjust-font-size-to(55px, 1, 33px)

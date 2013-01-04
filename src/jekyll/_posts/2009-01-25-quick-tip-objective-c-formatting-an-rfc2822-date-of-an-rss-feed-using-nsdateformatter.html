@@ -1,0 +1,44 @@
+--- 
+layout: post
+title: "Quick tip (Objective-C): Formatting an RFC2822 date of an RSS feed using NSDateFormatter"
+tags: 
+- iPhone
+- Objective-C
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+Parsing an <a href="http://www.faqs.org/rfcs/rfc2822.html">RFC2822</a> date of an RSS feed and formatting it using <a href="http://developer.apple.com/DOCUMENTATION/Cocoa/Reference/Foundation/Classes/NSDateFormatter_Class/index.html">NSDateFormatter</a> (e.g. "<code>Tue, 16 Dec 2008 11:45:13 +0000</code>" to "<code>16. December 2008</code>") is not easy as it seems. Fortunately there are already some helpfull tips and articles out there, such as fiam's solution described at  "<a href="http://fi.am/entry/parsing-rfc2822-dates-with-nsdate/">Parsing RFC2822 dates with NSDate</a>", Anatoliy Kolesnick's article called "<a href="http://blog.t-l-k.com/i-phone/2008/parse-date-from-rss">Parse Date from RSS to NSDate</a>" or the helpful article "<a href="http://cocoacast.com/?q=node/87">Advanced Strings In Cocoa</a>" posted at <a href="http://cocoacast.com/">CocoaCast</a>.
+
+All these solutions work great for me using the iPhone Simulator. But if you test your code on a real device (iPhone or iPod touch), you may run in an issue. 
+
+<!--more-->
+
+In my situation, all dates were not formatted well on my device, there are <code>nil</code>. It took me about 5 hours (I'm not kidding ;) ) to figure out, that the NSDateFormatter uses the current locale of a device for formatting dates. 
+
+On my device the locale is "German (Germany)" no matter if I change the settings to English or to any other language (Settings -> General -> International). As a result a month declared as "Dec" will be failed by NSDateFormatter on an iPhone using a German locale. It should be "Dez", the shortcut for "Dezember". 
+
+<h2>Solution</h2>
+
+To format an RFC2822 date well on any foreign device you have to force the locale to "en_US". ( Note: That's not necessary for any English or American user ;) )
+<?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2009/01/25/NSDateFormatterExample.txt';
+		$headline = 'NSDateFormatterExample';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+?>
+BTW: For checking the locale on your device use the following snippet:
+<?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2009/01/25/CheckLocaleSnippet.txt';
+		$headline = 'CheckLocaleSnippet';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+?>
+
+-Jens

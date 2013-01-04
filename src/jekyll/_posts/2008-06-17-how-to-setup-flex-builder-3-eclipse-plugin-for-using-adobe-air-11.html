@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: How to setup Flex Builder 3 Eclipse plugin for using Adobe AIR 1.1
+tags: 
+- AIR
+status: publish
+type: post
+published: true
+meta: {}
+
+---
+<p><a href="http://www.adobe.com/products/air/">Adobe AIR 1.1</a> is out of the door right now. But it seems that there is no integrated update mechanism for Flex Builder 3 Eclipse Plug-In using the new version of Adobe AIR. Anyway, its pretty easy to setup it manually. </p>
+
+<p>Here a step by step tutorial on OS X:</p>
+
+
+
+<!--more-->
+
+
+<ol><li><p>Install the <a href="http://get.adobe.com/air/">latest Adobe AIR runtime</a> and download the latest <a href="http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+3">Flex 3 SDK version 3.0.2</a>.</p></li><li><p>Create a new subfolder for the new SDK within your Flex Builder Plugin installation called "3.0.2"</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/finder.png" width="498" height="370"  /></p></li><li><p>Unzip the downloaded SDK and copy all its content to the subfolder mentioned above.</p></li><li><p>Open Eclipse and add the new SDK to the list of all installed Flex SDKs: <br />Preferences -> Flex -> Installed Flex SDK -> Add </p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/add.png" width="500" height="401" /></p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/default.png" width="498" height="237" /></p></li><li><p>Create a new AIR project as usual: File -> New -> Flex project</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/project.png" width="469" height="512" /></p></li><li><p>The following step is very important: Modify within the application descriptor file called <code>[yourAppName]-app.xml</code> the root node named <code>application</code> the version <code>1.0</code> to <code>1.1</code></p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/description.png" width="497" height="341" /></p></li><li><p>Don't forget to set the the new SDK for the Flex Compiler settings as well: Project -> Properties -> Flex Compiler -> Flex SDK version -> Flex 3.0.2</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/compiler.png" width="500" height="452" /></p></li><li><p>Run the application: Run -> Run as -> Adobe AIR application</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/17/window.png" width="381" height="193" /></p></li></ol><p>That's all ;-)</p><p><strong>P.S.:</strong> For all the Flex Builder Pro user out there, who uses automated testing etc.: As Matt Chotin mentioned you have to copy a few needed SWC's form the 3.0 SDK to the new 3.0.2 SDK folder as well. For more information check his article at ADC: <a href="http://www.adobe.com/devnet/flex/articles/flex_air1.1.html">"Developing Flex applications for AIR 1.1"</a></p><h2>Acknowledge</h2><ul><li>Matt Chotin: <a href="http://www.adobe.com/devnet/flex/articles/flex_air1.1.html">"Developing Flex applications for AIR 1.1"</a></li><li>Flex 3 Builder documentation: <a href="http://livedocs.adobe.com/flex/3/html/build_6.html">"Advanced build options"</a></li><li>Adobe: <a href="http://www.adobe.com/go/air1-1faq">AIR 1.1 FAQ</a></li></ul>

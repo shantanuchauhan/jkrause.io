@@ -1,0 +1,52 @@
+--- 
+layout: post
+title: "Using TextMate for building Apollo applications: Setting up"
+tags: 
+- Apollo
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p>In my previous entry I described <a href="http://www.websector.de/blog/2007/03/23/5-reasons-for-building-apollo-applications-as-a-flash-developer/">"5 reasons for building Apollo applications as a Flash Developer"</a>. Today I'll give you an introduction for building an Apollo application without Flex Builder 2 using <a href="http://www.adobe.com/go/getapollo">Apollo SDK</a> (Alpha) and <a href="http://macromates.com/">TextMate</a>.</p>
+
+
+<!--more-->
+
+
+<h2>Instruction</h2><p><ol><li>Download <a href="http://www.adobe.com/devnet/flex/?tab:downloads=1">Flex 2.0.1 SDK</a> and the <a href="http://www.adobe.com/go/getapollo">Apollo SDK</a>.</li><li>Open Terminal and create a new folder typing <code>mkdir /Applications/flex_sdk2</code>.</li><li>Unzip both downloaded files. Type in your opened Terminal window <code>unzip /{downloadFolder}/flex_sdk_2.zip -d /Applications/flex_sdk2</code> and <code>unzip /{downloadFolder}/apollo_sdk_alpha1_031907.zip -d /Applications/flex_sdk2</code>. Accept the replacing of <em>"Version.as"</em> and <em>"mxmlc.jar"</em> twice. Note: Don't unzip the files using Stuffit Expander.</li><li>For installing the Apollo runtime open the <em>/Applications/flex_sdk2/runtime</em> in Finder and double-click the <em>Adobe Apollo.dmg</em> file. Drag the <em>Adobe Apollo.frameworkfolder</em> contained in the *.dmg file to the <em>/Applications/flex_sdk2/runtime</em> directory.</li><li>Configure the <a href="http://developer.apple.com/documentation/MacOSX/Conceptual/OSX_Technology_Overview/CommandLine/chapter_8_section_4.html">environment variable</a><em>$PATH</em> in your <em>.bash_profile</em> with <em>pico</em>. Type in Terminal <code>pico .profile</code> and add the following line <code>export PATH=$PATH:/Applications/flex_sdk2/bin/</code>. Save and close pico. Refresh <em>.bash_profile</em> typing (Note the double points with space) <code>. .bash_profile</code> and check it with <code>echo $PATH</code>.</li><li>Open TextMate and create a new project (âŒƒâŒ˜N) named <em>"textMateMeetsApollo.tmproj"</em>.</li><li>Place a root content for Apollo creating a new file <em>"HelloWorld.mxml"</em> including following code:
+	<phpcode><?php 
+
+
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/31/HelloWorld.mxml';
+		$headline = 'HelloWorld.mxml';
+		$hasDownloadLink = false;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+	?></phpcode>
+	In this case it's a simple Flex file including a Label component.</li><li>Then add a XML file called <em>"HelloWorldApp.xml"</em> which defines the properties for your Apollo application:
+		<phpcode><?php 
+
+
+			$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/31/HelloWorldApp.xml';
+			$headline = 'HelloWorldApp.xml';
+			$hasDownloadLink = false;
+
+			$codeExample = new CodeViewer();
+			$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+		?></phpcode></li><li><p>For easier handling define a TextMate command to compile your Apollo application. Open the project information panel (âŒ˜I) and add two shell variables named <em>APOLLO_APP</em> and <em>APOLLO_DESCRIPTOR</em>.</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/tm_projectInfo.png" /></p></li><li><p>Finally create a command opening the command panel (âŒƒâŒ¥âŒ˜C). Add a new bundle named <em>"Apollo"</em> and a new command called <em>"build"</em> as well. For running the compiler I've chosen <em>STRG+ENTER</em>.
+			</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/tm_bundleEditor.png" /></p><p>Source of TextMates build command:</p><phpcode><?php 
+
+
+				$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/31/tm_buildApolloApp.command';
+				$headline = 'tm_buildApolloApp.command';
+				$hasDownloadLink = false;
+
+				$codeExample = new CodeViewer();
+				$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+			?></phpcode></li></ol></p><h2>Screen shots</h2><p>TextMates output window:</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/tm_outputWindow.png" /></p><p>Apollo window:</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/apollo_window.png" /></p><h2>Download</h2><p>Source: <a href="[download(textMateMeetsApolloExample)]">textMateApolloExample.zip</a><br /><em>(Downloads: [downloadcounter(textMateMeetsApolloExample)])</em></p><h2>Links</h2><p><ul><li>Open book: <a href="http://labs.adobe.com/wiki/index.php/Apollo:Books:Apollo_for_Adobe_Flex_Developers_Pocket_Guide">"Apollo for Flex Developer"</a></li><li>Adobe Labs: <a href="http://labs.adobe.com/wiki/index.php/Apollo:Documentation:Set_up_instructions_for_Flex_SDK_users#Installing_and_configuring_the_Apollo_SDK"> Installing and configuring the Apollo SDK</a> and <a href="http://labs.adobe.com/wiki/index.php/Apollo:Documentation:Creating_an_Apollo_application_using_the_command_line_tools">Creating an Apollo application using the command line tools</a></li><li>Adobe Apollo Forum: <a href="http://www.adobe.com/cfusion/webforums/forum/messageview.cfm?forumid=72&catid=641&threadid=1252936&highlight_key=y&keyword1=sdk">Can not unzip the SDK on a Mac</a></li></ul></p><h2>Feedback and suggestions</h2><p>Feedback and suggestions for improvement are welcome, especially smarter commands for TextMate ;-) . <del>And is there anyone out there to create an Apollo bundle script for TextMate feel free to drop a comment, too.</del><strong>[EDIT: 04/04/07]</strong> I've just found that <a href="http://www.sitening.com/blog/">Tyler Hall</a> has already build an Apollo bundle for TextMate. <a href="http://www.sitening.com/blog/2007/03/23/adobe-apollo-bundle-for-textmate/">Check it out</a>! <strong>[EDIT]</strong></p>

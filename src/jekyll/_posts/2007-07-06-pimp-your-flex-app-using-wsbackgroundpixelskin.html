@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: Pimp your Flex app using WSBackgroundPixelSkin
+tags: 
+- Flex
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  related_id: "31,33"
+  dsq_thread_id: "987383228"
+---
+<p style="background-color:#F6F6F6;"><strong>UPDATE 07/10/07:</strong> The <a href="http://www.websector.de/blog/wp-content/uploads/2007/07/06/srcview/index.html">source code</a> has been updated. Check out the "<a href="http://www.websector.de/blog/2007/07/10/wspatternstylegenerator-for-using-wsbackgroundpixelskin/">WSPatternStyleGenerator</a>" to simplify the creation of its CSS patterns, too.</p>
+<p><code>WSBackgroundPixelSkin</code> is a free Flex component for creating patterns within Flex containers such as <code>Application</code>, <code>Canvas</code>, <code>HBox</code>, <code>VBox</code>, <code>Form</code> etc. It based on pure CSS and ActionScript without any images. It creates pretty patterns using the powerful <code>BitmapData</code> classes of Flex.</p>
+
+
+
+
+<!--more-->
+
+
+<p>For determining complex patterns I've written a small Flex app, which loads images reading colors based on its pixels and prints this pattern as CSS code. Let me know if there anyone out there who is interested in this app. Then I'll publish it including source, too.</p><p>Note: Programmatic skins used to extends <code>mx.skins.Border</code> or <code>mx.skins.ProgrammaticSkin</code> classes, but in this case <code>WSBackgroundPixelSkin</code> needs the <code>addChild()</code> method for adding instances of <code>DisplayObjects</code> and therefore it extends the <code>UIComponent</code>.</p><h2>Screen shot</h2><a href="http://www.websector.de/blog/wp-content/uploads/2007/07/06/WSBackgroundPixelSkinExample.html" class="noborder"><img src="http://www.websector.de/blog/wp-content/uploads/2007/07/06/screenShotWSGPixelSkin.png"/></a><h2>Instructions</h2><phpcode><?php 
+
+			$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/07/06/snippet1.txt';
+			$headline = 'Code snippets for using WSBackgroundPixelSkin';
+			$hasDownloadLink = false;
+
+			$codeExample = new CodeViewer();
+			$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+?></phpcode><h2>Example (incl. source code)</h2><p>Have a look on <a href="http://www.websector.de/blog/wp-content/uploads/2007/07/06/WSBackgroundPixelSkinExample.html">these examples</a> including <a href="http://www.websector.de/blog/wp-content/uploads/2007/07/06/srcview/index.html">the source code</a>. Feel free to use it, <code>WSBackgroundPixelSkin</code> is open source licensed under the <a href="http://www.mozilla.org/MPL/MPL-1.1.html" rel="nofollow">Mozilla Public License 1.1.</a></p><p>Have fun! ;-)</p>

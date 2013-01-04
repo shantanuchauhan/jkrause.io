@@ -1,0 +1,943 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+html {
+  line-height: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+q, blockquote {
+  quotes: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+a img {
+  border: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "icomoon-font-custom";
+  src: url("/fonts/icomoon-font-custom.eot");
+  src: url("/fonts/icomoon-font-custom.eot?#iefix") format("embedded-opentype");
+  src: url("/fonts/icomoon-font-custom.svg#icomoon-font-custom") format("svg");
+  src: url("/fonts/icomoon-font-custom.woff") format("woff");
+  src: url("/fonts/icomoon-font-custom.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_global\.sass}line{font-family:\0000317}}
+[data-icon]:before {
+  font-family: "icomoon-font-custom";
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+@-moz-keyframes nav-hover {
+  /* line 102, ../../styles/_global.sass */
+  0% {
+    background-color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 105, ../../styles/_global.sass */
+  100% {
+    background-color: #a5a600;
+    text-shadow: 0px 1px 1px #333333;
+  }
+}
+
+@-webkit-keyframes nav-hover {
+  /* line 102, ../../styles/_global.sass */
+  0% {
+    background-color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 105, ../../styles/_global.sass */
+  100% {
+    background-color: #a5a600;
+    text-shadow: 0px 1px 1px #333333;
+  }
+}
+
+@-o-keyframes nav-hover {
+  /* line 102, ../../styles/_global.sass */
+  0% {
+    background-color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 105, ../../styles/_global.sass */
+  100% {
+    background-color: #a5a600;
+    text-shadow: 0px 1px 1px #333333;
+  }
+}
+
+@-ms-keyframes nav-hover {
+  /* line 102, ../../styles/_global.sass */
+  0% {
+    background-color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 105, ../../styles/_global.sass */
+  100% {
+    background-color: #a5a600;
+    text-shadow: 0px 1px 1px #333333;
+  }
+}
+
+@keyframes nav-hover {
+  /* line 102, ../../styles/_global.sass */
+  0% {
+    background-color: #666666;
+    text-shadow: none;
+  }
+
+  /* line 105, ../../styles/_global.sass */
+  100% {
+    background-color: #a5a600;
+    text-shadow: 0px 1px 1px #333333;
+  }
+}
+
+@-moz-keyframes link-hover {
+  /* line 111, ../../styles/_global.sass */
+  0% {
+    color: #666666;
+  }
+
+  /* line 113, ../../styles/_global.sass */
+  100% {
+    color: #a5a600;
+  }
+}
+
+@-webkit-keyframes link-hover {
+  /* line 111, ../../styles/_global.sass */
+  0% {
+    color: #666666;
+  }
+
+  /* line 113, ../../styles/_global.sass */
+  100% {
+    color: #a5a600;
+  }
+}
+
+@-o-keyframes link-hover {
+  /* line 111, ../../styles/_global.sass */
+  0% {
+    color: #666666;
+  }
+
+  /* line 113, ../../styles/_global.sass */
+  100% {
+    color: #a5a600;
+  }
+}
+
+@-ms-keyframes link-hover {
+  /* line 111, ../../styles/_global.sass */
+  0% {
+    color: #666666;
+  }
+
+  /* line 113, ../../styles/_global.sass */
+  100% {
+    color: #a5a600;
+  }
+}
+
+@keyframes link-hover {
+  /* line 111, ../../styles/_global.sass */
+  0% {
+    color: #666666;
+  }
+
+  /* line 113, ../../styles/_global.sass */
+  100% {
+    color: #a5a600;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000361}}
+html * html {
+  font-size: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/_vertical_rhythm\.scss}line{font-family:\0000364}}
+html html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\000035}}
+body {
+  background-color: white;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Source Sans Pro", Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/susy-1\.0\.5\/sass\/susy\/_grid\.scss}line{font-family:\0000314}}
+* * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000315}}
+strong {
+  font-weight: 600;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000318}}
+p {
+  font-size: 1.1875em;
+  line-height: 1.26316em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000321}}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000326}}
+article {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 4.5em;
+  margin-bottom: 4.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000331}}
+#wrapper {
+  *zoom: 1;
+  max-width: 58.75em;
+  _width: 58.75em;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+#wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000331}}
+  #wrapper {
+    padding-left: 1.91489%;
+    padding-right: 1.91489%;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000339}}
+.content {
+  overflow: hidden;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000342}}
+.content h2, .content h3 {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  margin-bottom: 1.125em;
+  font-size: 1.875em;
+  line-height: 1.6em;
+}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000342}}
+  .content h2, .content h3 {
+    font-size: 1.875em;
+    line-height: 1.2em;
+    padding-top: 0.16667em;
+    padding-bottom: 0.16667em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000353}}
+.content h2 {
+  background-image: url("/assets/images/bg.svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000357}}
+.content h3 a {
+  color: #333333;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000360}}
+.content h3 a:hover {
+  color: #a5a600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000363}}
+.content p {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  margin-bottom: 0.75em;
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000370}}
+.content a {
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000372}}
+.content a:hover {
+  color: #a5a600;
+  -webkit-animation: link-hover 0.5s;
+  -moz-animation: link-hover 0.5s;
+  -ms-animation: link-hover 0.5s;
+  -o-animation: link-hover 0.5s;
+  animation: link-hover 0.5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000376}}
+.content li {
+  color: #666666;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000379}}
+.read-more {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (min-width: 50.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000384}}
+  .left-content {
+    padding-left: 1.91489%;
+    width: 48.93617%;
+    float: left;
+    margin-right: 2.12766%;
+    display: inline;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000391}}
+.right-content {
+  margin-top: 1.5em;
+}
+@media (min-width: 50.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_main\.sass}line{font-family:\0000391}}
+  .right-content {
+    padding-right: 1.91489%;
+    width: 48.93617%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1.25em;
+    display: inline;
+    margin-top: 0em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\000032}}
+header h2 {
+  padding-top: 1.8em;
+  padding-bottom: 0.15em;
+  font-size: 3.4375em;
+  line-height: 1.30909em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\000036}}
+header h2 a {
+  text-decoration: none;
+  color: #666666;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000310}}
+header h2 a:hover {
+  -webkit-animation: link-hover 0.5s;
+  -moz-animation: link-hover 0.5s;
+  -ms-animation: link-hover 0.5s;
+  -o-animation: link-hover 0.5s;
+  animation: link-hover 0.5s;
+  color: #a5a600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000314}}
+header h2 span {
+  font-size: 0.38182em;
+  line-height: 2.28571em;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000318}}
+  header h2 {
+    font-size: 3.125em;
+    line-height: 0.96em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000321}}
+  header h2 span {
+    font-size: 0.38em;
+    line-height: 1.26316em;
+  }
+}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000326}}
+  header h2 {
+    padding-top: 0.45em;
+    padding-bottom: 0.3em;
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000330}}
+  header h2 span {
+    display: block;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000333}}
+#welcome {
+  background-image: url("/assets/images/bg.svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000336}}
+#welcome h1 {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  padding-top: 1.05em;
+  padding-bottom: 0.9em;
+  font-size: 3.4375em;
+  line-height: 1.30909em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000342}}
+#welcome h1 span {
+  color: #a5a600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000345}}
+#welcome h1 #hi {
+  font-size: 1.6em;
+  line-height: 0.27273em;
+}
+@media (min-width: 50em) and (max-width: 80em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000349}}
+  #welcome h1 {
+    font-size: 3.125em;
+    line-height: 1.44em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000352}}
+  #welcome #hi {
+    font-size: 1.6em;
+    line-height: 0.3em;
+  }
+}
+@media (max-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000358}}
+  #welcome h1 {
+    padding-left: 3.19149%;
+    padding-right: 3.19149%;
+    padding-top: 0.75em;
+    padding-bottom: 0.6em;
+    font-size: 2.0625em;
+    line-height: 1.45455em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_header\.sass}line{font-family:\0000365}}
+  #welcome #hi {
+    font-size: 1.66667em;
+    line-height: 0.43636em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\000031}}
+#main-nav-container {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\000035}}
+#main-nav-container ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000314}}
+#main-nav-list li a {
+  font-size: 1.3125em;
+  line-height: 2.28571em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000318}}
+#main-nav-list li a.active,
+#main-nav-list li a.active:hover {
+  background-color: #a5a600;
+  text-shadow: 0px 1px 1px #333333;
+  -webkit-animation: nav-hover 0s;
+  -moz-animation: nav-hover 0s;
+  -ms-animation: nav-hover 0s;
+  -o-animation: nav-hover 0s;
+  animation: nav-hover 0s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000326}}
+#main-nav-list li a:hover {
+  background-color: #a5a600;
+  -webkit-animation: nav-hover 0.5s;
+  -moz-animation: nav-hover 0.5s;
+  -ms-animation: nav-hover 0.5s;
+  -o-animation: nav-hover 0.5s;
+  animation: nav-hover 0.5s;
+  text-shadow: 0px 1px 1px #333333;
+}
+@media (min-width: 50.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000311}}
+  #main-nav-list {
+    width: 57.44681%;
+    float: left;
+    margin-right: 2.12766%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000338}}
+  #main-nav-list li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
+  #main-nav-list li:first-child, #main-nav-list li.first {
+    padding-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
+  #main-nav-list li:last-child {
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
+  #main-nav-list li.last {
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000341}}
+  #main-nav-list li a {
+    padding: 0 1.25em;
+  }
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000345}}
+  #main-nav-list li {
+    border-bottom: 1px solid white;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000347}}
+  #main-nav-list li a {
+    text-align: center;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000351}}
+#social-nav-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000356}}
+#social-nav-list a {
+  font-size: 1.5625em;
+  line-height: 1.92em;
+  padding: 0 0.375em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000359}}
+#social-nav-list a span {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000362}}
+#social-nav-list a:hover {
+  background-color: #a5a600;
+  -webkit-animation: nav-hover 0.5s;
+  -moz-animation: nav-hover 0.5s;
+  -ms-animation: nav-hover 0.5s;
+  -o-animation: nav-hover 0.5s;
+  animation: nav-hover 0.5s;
+  text-shadow: 0px 1px 1px #333333;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000369}}
+  #social-nav-list li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    width: 20%;
+    text-align: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
+  #social-nav-list li:first-child, #social-nav-list li.first {
+    padding-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
+  #social-nav-list li:last-child {
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
+  #social-nav-list li.last {
+    padding-right: 0;
+  }
+}
+@media (min-width: 50.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000351}}
+  #social-nav-list {
+    width: 31.91489%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1.25em;
+    display: inline;
+    text-align: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000380}}
+  #social-nav-list li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: right;
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
+  #social-nav-list li:first-child, #social-nav-list li.first {
+    padding-right: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
+  #social-nav-list li:last-child {
+    padding-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
+  #social-nav-list li.last {
+    padding-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_nav\.sass}line{font-family:\0000382}}
+  #social-nav-list li:first-child {
+    padding-right: 1.25em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\000031}}
+.post-nav {
+  top: 50%;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\000035}}
+.post-nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\000039}}
+.post-nav li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000348}}
+.post-nav li:first-child, .post-nav li.first {
+  padding-left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000349}}
+.post-nav li:last-child {
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jenskrause\/\.rvm\/gems\/ruby-1\.9\.2-p320\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/typography\/lists\/_horizontal-list\.scss}line{font-family:\0000350}}
+.post-nav li.last {
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000314}}
+.post-nav li:last-child {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000317}}
+.post-nav a {
+  text-decoration: none;
+  color: #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000321}}
+.post-nav a:hover {
+  -webkit-animation: link-hover 0.5s;
+  -moz-animation: link-hover 0.5s;
+  -ms-animation: link-hover 0.5s;
+  -o-animation: link-hover 0.5s;
+  animation: link-hover 0.5s;
+  color: #a5a600;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000325}}
+.post-nav a span {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000329}}
+body > nav.post-nav {
+  display: none;
+  visibility: hidden;
+}
+@media (min-width: 80.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000329}}
+  body > nav.post-nav {
+    position: fixed;
+    display: block;
+    visibility: visible;
+    height: 9em;
+    margin-top: -4.5em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000339}}
+  body > nav.post-nav a {
+    font-size: 9em;
+    line-height: 1.16667em;
+    line-height: 0;
+    width: 9em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000346}}
+.post-content > div {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000349}}
+.post-content > article {
+  position: absolute;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000352}}
+.blog-content h2,
+.post-content h1 {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  margin-bottom: 1.125em;
+  font-size: 1.875em;
+  line-height: 1.6em;
+  background-image: url("/assets/images/bg.svg");
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000352}}
+  .blog-content h2,
+  .post-content h1 {
+    font-size: 1.875em;
+    line-height: 1.2em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000363}}
+#post-headline-container {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000366}}
+#post-headline-container h1 {
+  padding: 0 1.83333em;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000366}}
+  #post-headline-container h1 {
+    padding: 0.16667em 1.5em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000374}}
+#post-headline-container nav.post-nav {
+  position: absolute;
+  height: 1.875em;
+  margin-top: -1.0625em;
+}
+@media (min-width: 80.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000374}}
+  #post-headline-container nav.post-nav {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000383}}
+#post-headline-container nav.post-nav a {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  padding: 0 0.33333em;
+  line-height: 0;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000390}}
+  #post-headline-container nav.post-nav a {
+    padding: 0 0.16667em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000393}}
+.blog-content h3,
+.post-content h2 {
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  background-image: none;
+}
+@media (max-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\0000393}}
+  .blog-content h3,
+  .post-content h2 {
+    font-size: 1.875em;
+    line-height: 1.2em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003103}}
+.post-content h4 {
+  font-size: 1.3125em;
+  line-height: 2.28571em;
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003110}}
+.post-content ul,
+.blog-content ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003114}}
+.post-content ol,
+.blog-content ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003118}}
+.post-content li,
+.blog-content li {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  font-size: 1.1875em;
+  line-height: 1.26316em;
+  padding-bottom: 1.125em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003124}}
+.post-content .posted-on,
+.blog-content .posted-on {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_blog\.sass}line{font-family:\00003128}}
+.blog-latest-post .posted-on {
+  font-style: italic;
+}
+
+@media (min-width: 80.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_contact\.sass}line{font-family:\000033}}
+  #contact .left-content {
+    padding-left: 0%;
+    width: 42.87234%;
+    float: left;
+    margin-right: 2.12766%;
+    display: inline;
+  }
+}
+@media (min-width: 80.0625em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_contact\.sass}line{font-family:\000038}}
+  #contact .right-content {
+    padding-right: 0%;
+    width: 42.87234%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1.25em;
+    display: inline;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_contact\.sass}line{font-family:\0000313}}
+#contact iframe {
+  width: 100%;
+  height: 21.875em;
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_footer\.sass}line{font-family:\000031}}
+footer {
+  overflow: hidden;
+  *zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_footer\.sass}line{font-family:\000034}}
+footer div {
+  height: 1px;
+  width: 100%;
+  background-image: url("/assets/images/bg.svg");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_footer\.sass}line{font-family:\000039}}
+footer p {
+  padding-left: 1.91489%;
+  padding-right: 1.91489%;
+  padding-bottom: 4.5em;
+  font-size: 0.8125em;
+  line-height: 1.84615em;
+  color: #666666;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/ws\/git\/ws\/websector\.de\/src\/styles\/_footer\.sass}line{font-family:\0000318}}
+footer a {
+  color: #666666;
+}

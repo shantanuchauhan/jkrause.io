@@ -1,0 +1,56 @@
+--- 
+layout: post
+title: "Best practices: Custom class mapping using OpenAMF and AS3 (Flash CS3 - not Flex)"
+tags: 
+- Flash
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p><a href="http://www.openamf.com">OpenAMF</a> is a free open-source alternative to Adobe's (formely Macromedia's) Java <a href="http://www.adobe.com/products/flashremoting/">Flash Remoting</a>. It's difficult to find any <a href="http://www.flash-db.com/Tutorials/helloAS3/">tutorials</a> or <a href="http://flexiness.blogspot.com/2006/10/sending-custom-class-object-thru.html">posts</a> about OpenAMF using AS3, because it seems that the OpenAMF project has stopped since 2006.</p>
+<p>Anyway, at my current project we are using OpenAMF with AS3 (Flash CS3) and it works like a charm. But there are some important differences between AS2 and AS3 Flash Remoting using Flash CS3. To avoid running into any issues - particulary mapping custom classes - follow the following tips. But first of all thanks to <a href="http://www.esnake.de/">Marc Schachtel</a> for his great support on server-side ;-) .</p>
+
+
+
+<!--more-->
+
+
+<h2>Best practices</h2><ol><li><p>Create on the server- and Flash-side identical simple objects using the <a href="http://home.earthlink.net/~huston2/j2ee/corepatterns.html#valueobject">Value Object pattern</a> to send and receive custom objects over the wire. Assuming a <code>UserVO</code> would be created on server-side as follows:</p><phpcode><?php 
+			$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/09/23/UserVO.java';
+			$headline = 'UserVO.java';
+			$hasDownloadLink = true;
+
+			$codeExample = new CodeViewer();
+			$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+			?></phpcode></li><li><p>On the Flash-side you have to point the VO to its server-side "antagonist"<strike>using <code>[RemoteClass(alias="de.websector.blog.openamf.mapping.vo.UserVO")]</code> and </strike> - that's important for class mapping on Flash-side - <code>registerClassAlias("UserVO", UserVO);</code> to register the VO within Flash. Here an example:</p><phpcode><?php 
+			$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/09/23/UserVO.as';
+			$headline = 'UserVO.as';
+			$hasDownloadLink = true;
+
+			$codeExample = new CodeViewer();
+			$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+			?></phpcode></li><li><p>Within the OpenAMF config file named <em>openamf-config.xml</em> you have to configure the behavior of outgoing AMF messages setting the <code>forceLowerCaseKeys</code>-tag to <code>false</code> to avoid converting all keys to lower case.</p><phpcode><?php 
+				$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/09/23/snippet1.xml';
+				$headline = 'snippet1.xml';
+				$hasDownloadLink = false;
+
+				$codeExample = new CodeViewer();
+				$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+				?></phpcode></li><li><p>Map within the same <em>openamf-config.xml</em> file all Value Objects located on the server- and Flash-side as follows:</p><phpcode><?php 
+					$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/09/23/snippet2.xml';
+					$headline = 'snippet2.xml';
+					$hasDownloadLink = false;
+
+					$codeExample = new CodeViewer();
+					$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+					?></phpcode></li><li><p>To connect the OpenAMF gateway within Flash you have to create an instance of <code>flash.net.NetConnection;</code> calling <code>myNetConnectionInst.connect("http://mysite/openamf/gateway");</code>. To listen to results or faults create a <code>flash.net.Responder;</code> instance and use it for calling server-side services using <code>myNetConnectionInst.call("com.yoursite.YourService.serviceMethod", youResponder, parameters);</code>. </p><p>OpenAMF use the AMF0 protocol so you have to point it using <code>myNetConnectionInst.objectEncoding = ObjectEncoding.AMF0;</code>. </p><p>Don't forget to register the VO with its static <code>register()</code> method.</p><p>Here is an example:</p><phpcode><?php 
+					$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/09/23/OpenAMFMapping.as';
+					$headline = 'OpenAMFMapping.as';
+					$hasDownloadLink = true;
+
+					$codeExample = new CodeViewer();
+					$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+					?></phpcode></li><li>Tip: For better remoting calls check out Danny Pattersons "<a href="http://osflash.org/as3lrf">AS3 Lightweight Remoting Framework</a>"<strong>[UPDATE 10/17/07]</strong> or Aaron Smith's <a href="http://osflash.org/projects/ssr">SSR: Super Simple Remoting</a><strong>[/UPDATE]</strong> as well.</li></ol><h2>Screen shot</h2><p>Mapped results within Flash CS3 debugger calling server-side service <code>getUserByName(String userName)</code>:</p><img src="http://www.websector.de/blog/wp-content/uploads/2007/09/23/screenflashDebugger.png" width="500" height="220" /><h2>Download example files</h2><p><a href="[download(OpenAMFMappingExampleFiles.zip)]">OpenAMFMappingExampleFiles.zip</a><br />(Downloads: [downloadcounter(OpenAMFMappingExampleFiles.zip)])</p><h2>Helpful links</h2><ul><li>[AS3]<br />Jorge Solis: <a href="http://www.flash-db.com/Tutorials/helloOpenamf/index.php">Hello World with Openamf</a><br />Vishwajit: <a href="http://flexiness.blogspot.com/2006/10/sending-custom-class-object-thru.html">Sending custom class object thru remoting using OpenAmf</a></li><li>[AS2]<br />Ginormous Blog: <a href="http://theresidentalien.typepad.com/ginormous/2005/08/custom_class_ma.html">Custom class mapping with openAMF</a><br />Darron Schall: <a href="http://www.darronschall.com/weblog/archives/000186.cfm">Some notes about using OpenAMF</a></li><li>[OS X]<br />Apple Developer Connection: <a href="http://developer.apple.com/internet/java/tomcat1.html">Java and Tomcat on Mac OS X, Part I</a></li></ul>

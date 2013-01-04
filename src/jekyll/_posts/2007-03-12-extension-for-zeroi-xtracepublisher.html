@@ -1,0 +1,60 @@
+--- 
+layout: post
+title: "Extension for Zeroi: XTracePublisher"
+tags: 
+- Debugging
+- Flash
+- MTASC
+- Open Source
+- OS X
+status: publish
+type: post
+published: true
+meta: 
+  related_id: "16"
+  _edit_last: "2"
+---
+<p><a href="http://developer.mabwebdesign.com/xtrace.html">Xtrace</a> is a popular debugger console on OS X for logging your <code>trace()</code> data outside the Flash IDE. For easier handling I decided to write an extension for <a href="http://osflash.org/Zeroi">Zeroi</a> that keeps your standard <code>trace()</code> methods in your code.</p>
+
+
+<!--more-->
+
+<p>Here is a screen of a XTrace window receiving Zerois debug messages:</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/xtrace-window.png" alt="XTrace Window" /></p><h2>Instructions</h2><ol><li>Grab the latest source of Zeroi from its <a href="http://code.google.com/p/zeroi/source">Subversion Repository</a>. You will find there the new extension for XTrace, too.</li><li>Download and install <a href="http://developer.mabwebdesign.com/xtrace.html">XTrace</a>. For enjoying the latest features (e.g. text highlighting) it's recommended to use the <a href="http://svn.mabwebdesign.com/xtrace">XTrace SVN Repository</a>.</li><li>Download the <a href="http://www.websector.de/blog/download-manager.php?id=1">Zeroi example</a> and follow the steps 4 up to 7 described in my previous post called <a href="http://www.websector.de/blog/2007/03/04/debugging-with-mtasc-ant-and-zeroi/">"Debugging with MTASC, Ant and Zeroi"</a>.</li><li>Add <em>XTracePublisher</em> as Zerois publisher to MTASC <code>-trace</code> flag. For this purpose you have to change only one line in the Ant script located in my example:
+	<phpcode>
+	<?php 
+
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/12/snippet1.txt';
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl);	
+
+	?>
+	</phpcode>
+	</li><li>If you familiar with Terminal you can also create a small shell script to run MTASC instead using Ant. Open Terminal, change directory 
+<code>cd {path/to/downloaded/zeroiExample}</code> 
+and create a new file named <em>build</em><code>pico ./build</code>
+
+Type then the following line for running MTASC:
+<phpcode>
+<?php 
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/12/snippet2.txt';
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl);	
+
+?>
+</phpcode>
+For opening the *.swf with the FlashPlayer type additionally:
+<phpcode>
+<?php 
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/12/snippet3.txt';
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl);	
+
+?>
+</phpcode>
+
+Save the file, close pico and run the script typing <code>./build</code></li></ol><h2>Wish list</h2><ul><li>Adding more log levels, such as "INFO" and "FATAL". I've got in contact with <a href="http://developer.mabwebdesign.com/about.html">Michael Bianco</a> ;-) .</li></ul>

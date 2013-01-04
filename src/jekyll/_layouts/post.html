@@ -1,0 +1,18 @@
+{% include head.html %}
+{% include nav_post.html %}
+<div id="wrapper">
+  {% include header.html %}
+  {% include nav.html %}
+  <div class="content post-content">
+    <div>
+      <article>
+        <div id="post-headline-container">
+          <h1>{{page.title}}</h1>{% include nav_post.html %}
+        </div>
+        <p class="posted-on">Posted on {{ page.date | date: "%B %e, %Y" }}</p>
+        {{ content }}
+      </article>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>

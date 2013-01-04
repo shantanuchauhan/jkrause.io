@@ -1,0 +1,74 @@
+--- 
+layout: post
+title: 10 tips for working with PureMVC
+tags: 
+- AIR
+- Flash
+- Flex
+- PureMVC
+status: publish
+type: post
+published: true
+meta: {}
+
+---
+
+<p style="background-color: #f6f6f6"><strong>This post is translated into <a href="http://www.flexughh.de/2007/12/27/10-tips-fur-das-arbeiten-mit-puremvc/">German</a>,    <a href="http://injun.ru/?p=425">Russian</a>, <a href="http://www.duzengqiang.com/blog/article.asp?id=674">Chinese</a> and <a href="http://www.polemedia.com/puremvc/10trucs.htm">French</a>.</strong> Thanks a lot to <a href="http://injun.ru/?author=1">Aleksey</a>, <a href="http://www.duzengqiang.com">duzengqiang</a> and <a href="http://www.videotron.com/">Eric</a> for the translations!</p>
+<a href="http://www.jessewarden.com/">Jesse Wardens</a> great article called <a href="http://www.jessewarden.com/2007/08/10-tips-for-working-with-cairngorm.html">"10 Tips For Working With Cairngorm"</a> has given me the idea to share 10 tips using <a href="http://www.puremvc.org">PureMVC</a> as well. I've been using PureMVC intensively for about six months now and - that's not a secret - I'm loving it. Anyway, all my following opinions are based on my personal experiences only. ;-)
+
+<!--more-->
+<ol>
+	<li>
+<h2>Think in (Pure)MVC</h2>
+How do I start using PureMVC? Short answer: Just think in (Pure)MVC! As its named says, PureMVC based on the classic <a href="http://en.wikipedia.org/wiki/Model-view-controller">Model-View-Controller</a> design meta-pattern. Using the <a href="http://en.wikipedia.org/wiki/Fa%C3%A7ade_pattern">Facade-pattern</a> you don't instantiate the core actors directly, but every member of PureMVC has its own and clear defined role:
+- Proxies = Model
+
+- Mediator and its ViewComponents = View
+- Commands = Controller</li>
+	<li>
+<h2>Create an API for View Components</h2>
+A View Component might be a standard UI component (e.g. <code>DataGrid</code>) or a custom component (e.g. a world within a game) or whatever. Don't use its public methods directly. In order to change its state or behavior create an API.
+
+One of the advantage of PureMVC is to be neutral to the technologies being used. An example: I've built a "pure" Flash application based on PureMVC without using the Flex Framework. The same app will be ported to an AIR application for using AIR's great File system API. The View Components have to be changed using the Flex Framework, but not the Mediators or any other actors of PureMVC.</li>
+	<li>
+<h2>Use one Mediator for multiple View Components</h2>
+To coordinate more than one View Component closely, use one Mediator only. In other words: Not all Views need a Mediator. For example: Assume a <code>ApplicationControlBar</code>  containing a <code>TextInput </code>, and a <code>Button</code> or something else. Then create just one Mediator for the <code>ApplicationControlBar</code> called <code>ApplicationControlBarMediator</code> and refer to the missing components casted as a second, third, etc. View Component.</li>
+	<li>
+<h2>Let's Events bubble up</h2>
+What happens if you don't want to use multiple View Components within a Mediator? In order to handle user interactions with multiple View Components let's bubble Events from the nested children of a View Component up.
+
+For example: Clicking any Button within a View Component will fired up a custom Event which the Mediator is listen to. So the Mediator don't have to know about the existing Button or about any other child of its View Component, just about the custom Event bubbled up.</li>
+	<li>
+<h2>Communicate using Notifications as often as possible</h2>
+Notifications are the “Events” of PureMVC. For communicating between the three tiers Model, View and Controller use Notifications for the following scenarios as often as possible:
+
+(communication from -&gt; to)
+- Mediator -&gt; Proxy (via mapped Commands)
+- Proxy -&gt; Mediator
+- Proxy -&gt; Command
+- Commands -&gt; Mediator
+
+Even if it's possible to retrieve a Proxy from a Mediator, don't change the Proxy from a Mediator directly rather than sending a Notification using a mapped Command. It's a bad practice to change a Proxy (Model) from a Mediator (View) directly without using a Command (Controller).</li>
+	<li>
+<h2>Use Commands / MacroCommands as often as possible</h2>
+Commands are doing the job at the Controller side: Retrieving and interacting Proxies, communicating with Mediators or executing other Commands. Even if a Command used only once or it has only two lines of code, use it as often as possible. To execute a Command once again anywhere or anytime within your application, you have to send just a Notification. In the future it's easy to enlarge the Command with more complex actions. And - that's very important - you always know, who the actor for changing the Proxy (Model) is.
+
+Question: Have you had to execute more than one Command in a particular order? Use MacroCommands to execute multiple SubCommands (which means "simple" Commands) sequentially.</li>
+	<li>
+<h2>Use Remote Proxy to send and receive server-side data</h2>
+To send and receive data between the application tier use Proxies called <code>Remote Proxies</code>. That's not a special kind of a PureMVC <code>Proxy</code>, just a location based on a <code>Proxy</code> to organize the server calls such as <code>HTTPServices</code>, <code>RemoteObjects</code> or whatever.
+
+For example: To call a server-side <code>RemoteObject</code> to login a user create Proxy called <code>LoginProxy</code>. The <code>LoginProxy</code> does all the job to communicate with the server-side, which means sending and receiving data. Whenever you'll change the server-side implementation for the LoginProcess, you'll have to change one location within your application only - the <code>LoginProxy</code>.</li>
+	<li>
+<h2>Remove unused Mediators</h2>
+In some cases you don't use a Mediator and its View Components anymore. Then remove the Mediator using <code>facade.removeMediator(MyMediator.NAME);</code> in conjunction with a self created <code>destroy()</code> method to remove the ViewComponent including all listeners, timer, references, etc. for a successful <a href="http://www.adobe.com/devnet/flashplayer/articles/garbage_collection.html">garbage collection</a>.</li>
+	<li>
+<h2>The Power of VO's (Value Objects)</h2>
+The place to store data within the Model are the Proxies - that's right. The View Components have no need to know the Facade and the rest of the PureMVC application - that's right, too. This means that the View Component has no access to the Model data directly.
+
+To avoid this issue store within the View Component a reference to the data using <a href="http://home.earthlink.net/~huston2/j2ee/corepatterns.html#valueobject">Value Objects</a> (VO's). The VO's are not a core actor of PureMVC and in conjunction with the Data Binding feature of Flex are a powerful way to react changes in the Model data without breaking rules.</li>
+	<li>
+<h2>Courseware available</h2>
+</li>
+<a href="http://content.futurescale.com/">Cliff Hall</a> has done an awesome job: You'll find not only excellent documentations about the "<a href="http://puremvc.org/component/option,com_wrapper/Itemid,35/">Framework Overview</a>", "<a href="http://puremvc.org/component/option,com_wrapper/Itemid,30/">Best Practices</a>" and a "<a href="http://puremvc.org/component/option,com_wrapper/Itemid,34/">Conceptual Diagram</a>", <strike>also a very, very, very helpful <a href="http://puremvc.org/component/option,com_wrapper/Itemid,139/">Courseware</a></strike>. Check it out!</ol>
+Enjoy PureMVC and Happy Holidays ;-) !

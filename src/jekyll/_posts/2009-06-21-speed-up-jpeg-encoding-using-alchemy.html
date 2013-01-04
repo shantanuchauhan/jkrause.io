@@ -1,0 +1,50 @@
+--- 
+layout: post
+title: Speed up JPEG encoding using Alchemy
+tags: 
+- Alchemy
+- Flash
+- Flex
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+Few weeks ago <a href="http://www.bytearray.org/">Thibault Imbert</a> published an <a href="http://www.bytearray.org/?p=775">optimized version</a> of <a href="http://code.google.com/p/as3corelib/">Adobes JPGEncoder</a>. And it rocks! However, if you may have very big-size bitmaps it takes too much time to encode images. For example: A bitmap with a size of 2000px x 1500px takes 22 sec. (BTW: Adobes version 30 sec.!!) 
+
+Today I came across to a <a href="http://manfred.dschini.org/2008/11/21/alchemy-jpeg-encoder/">post by Manfred Weber</a>, which points to a discussion at <a href="http://forums.adobe.com/community/labs/alchemy">Adobes Alchemy forum</a>. There you will find <a href="http://forums.adobe.com/message/987186">a great solution</a> published by <a href="http://metal.hurlant.com/blog/">metalbot</a> for encoding JPEGs using <a href="http://labs.adobe.com/technologies/alchemy/">Alchemy</a>. It's based on a <a href="http://www.ijg.org/files/">C library</a> for JPEG image compression by <a href="http://www.ijg.org/">IJG</a> and it's pretty fast (2,7 sec. for 2000 px x 1500px ) !!! Check out the example:
+
+<!--more-->
+
+<h2>Example</h2>
+
+Click the image to see the live example. Feel free to post a comment about your your results!
+
+<a href="http://www.websector.de/blog/wp-content/uploads/2009/06/21/AlchemyJPEGEncoder.html"><img src="http://www.websector.de/blog/wp-content/uploads/2009/06/21/screen_testAlchemyJPEGEncoder.jpg" alt="Screen shot" /></a>
+
+
+
+<h2>Download Full Source</h2>
+I have changed  the <a href="http://hurlant.com/as3_encoder_jpeg.tgz ">original C code</a> a little bit for manipulating the quality of an encoded image as well. It's just one line added to "as3_jpeg_wrapper.gg" (line 78) <code>jpeg_set_quality(&cinfo, quality, TRUE /* limit to baseline-JPEG values */);</code> Therefore the "as3_jpeg_wrapper.swc" located within the *.zip is recompiled for using this feature in your Flex project via  <code>as3_jpeg_wrapper.write_jpeg_file(baSource, WIDTH, HEIGHT, 3, 2, quality);</code> 
+
+Full source of the Flex based example above: <a href="[download(AlchemyJPEGEncoderFlexExample)]">AlchemyJPEGEncoderFlexExample.zip</a> (Downloads: [downloadcounter(AlchemyJPEGEncoderFlexExample)])
+
+BTW: You will find the original source of all C based classes published by metalbot <a href="http://forums.adobe.com/message/987186#987186">here</a>.  
+
+
+
+<h2>Tips</h2>
+I struggled around to set up Alchemy and to recompile the IJG library and the "as3_jpeg_wrapper.swc". To avoid this, here are some tips:
+<ul>
+	<li><a href="http://www.zeropointnine.com/wiki/index.php?n=FlashPlatform.Alchemy">Instruction for set up Alchemy</a> by <a href="http://www.zeropointnine.com/blog/">Lee Felarca</a>   (zeropointnine). Best instruction I've found so far for set up Alchemy.</li>
+
+	<li>Recompiling the SWC of metalbot's source following its "README.txt" and using its "Makefile" failed: To avoid this issue, after compiling the C library of jpegsrc you have to move the following files to $ALCHEMY_HOME/jpeg/ as well: "jconfig.h", "jmorecfg.h" and "jpeglib.h". Check out <a href="http://forums.adobe.com/message/1059134#1059134">the comment by notnick here</a></li>
+</ul>
+
+<strong>[UPDATE 06/22/09]</strong> There is another great test for encoding images using Alchemy by <a href="http://segfaultlabs.com/">Mateusz Malczak</a>, which includes an asynchrounous example as well: <a href="http://segfaultlabs.com/blog/post/asynchronous-jpeg-encoding">Alchemy - asynchronous jpeg encoding</a> Thanks to <a href="http://twitter.com/xoestudio">xoestudio</a> for pointing to this via twitter! <strong>[UPDATE] </strong>
+
+Have fun ;)
+
+-Jens

@@ -1,0 +1,23 @@
+---
+group: 'blog'
+layout: default
+---
+<article class="blog-latest-post">
+  <h2>Latest post</h2>
+  {% include latest_post_excerpt.html %}
+</article>
+
+<article id="blog-archiv">
+  <h2>Archiv</h2>
+  <ul>
+    {% for post in site.posts %}
+      {% if post != site.posts.first %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    <!--<span>{{ post.date | date: "%B %e, %Y" }}</span>-->
+    <!--<p>{{ post.date | date: "%B %e, %Y" }}</p>-->
+      <!--<p>{{ post.content | more: "excerpt" }}</p>-->
+      <!--<p><a href="{{ post.url }}">Read more...</a></p>-->
+    {% endfor %}
+  </ul>
+</article>

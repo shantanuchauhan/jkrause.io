@@ -1,0 +1,100 @@
+--- 
+layout: post
+title: Debugging with MTASC, Ant and Zeroi
+tags: 
+- Debugging
+- Flash
+- MTASC
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p>In my previous posts <a href="http://www.websector.de/blog/2007/02/21/are-you-looking-for-afterthought-on-os-x/">"trace() outside the Flash IDE with tail"</a> and <a href="http://www.websector.de/blog/2007/02/21/are-you-looking-for-afterthought-on-os-x/">"Are you looking for AFTERTHOUGHT on OS X?"</a> I described two similar ways for debugging Flash movies outside the Flash IDE. In fact, it's relatively simple to use the Flash Debug Player in connection with the logging file called <em>flashlog.txt</em> but it has only got one big disadvantage: Instead of outputting structured data in predetermined levels you'll get tons of unstructured lines.</p>
+
+
+<!--more-->
+
+<h2>Introduction</h2>
+<p>A couple of weeks ago, I did <a href="http://www.bmw.com/com/en/index_highend.html?prm_content=../../com/en/newvehicles/x5/x5/2006/experience/phase_3/_highend/xml/experience.xml">this project</a> on a team with <a href="http://soenkerohde.com/">Sönke Rohde</a>. He showed me a better way for debugging Flash movies using <a href="http://osflash.org/zeroi">Zeroi</a> developed by himself and <a href="http://www.helpqlodhelp.com/blog/">Ralf Bokelberg</a>. Zeroi is a package of classes that supports MTASC's option for <a href="http://www.mtasc.org/#trace">customizing trace() functions</a> and the implementation of different log levels without changing code of your Flash application. You can use it with different debugging tools such as <a href="http://sos.powerflasher.de/">SOS</a>, <a href="http://osflash.org/xray">X-Ray</a> or <a href="http://www.luminicbox.com/blog/default.aspx?page=post&id=2">LuminicBox.Log</a>. One of the most important feature is its ability to broadcast debug messages including additional information about class name, method name, line number and a error level with a standard <code>trace()</code> method.</p>
+
+<p>For example: <code>trace("i This is my message");</code> will be displayed as <code>MyClass::myMethod Line>> This is my message</code>. Additionally, you can add a character for an error level <code>d = debug, i = info, w = warn, e = error, f = fatal</code>.
+
+<h2>Example</h2>
+
+</p><p>Click the buttons below to view the different debug messages.</p>
+<div id="zeroiExample" width="500" height="45">
+	<p>The movie requires the latest <a href="http://www.macromedia.com/go/getflashplayer">Flash Player</a>.</p>
+</div>	
+<script type="text/javascript">
+   var so2 = new SWFObject("http://www.websector.de/blog/wp-content/uploads/2007/03/zeroiExample.swf", "zeroiExample", "500", "45", "7", "#FFF");
+   so2.addParam("quality", "best");
+   so2.write("zeroiExample");
+</script>
+
+<p>In this example the <a href="http://www.luminicbox.com/blog/default.aspx?page=post&id=2">LuminicBox.Log</a> is used as a debugger console. Open the LuminicBox.Log only once.
+<div id="flashinspector" width="500" height="300">
+	<p>The movie requires the latest <a href="http://www.macromedia.com/go/getflashplayer">Flash Player</a>.</p>
+</div>	
+<script type="text/javascript">
+   var so = new SWFObject("http://www.websector.de/blog/wp-content/uploads/2007/03/FlashInspector.swf", "flashinspector", "500", "300", "7", "#06324D");
+   so.addParam("quality", "best");
+   so.write("flashinspector");
+</script>
+
+</p><p>Have a look inside the main class named <em>ZeroiExample.as</em>. It includes only standard <code>trace()</code> methods.</p>
+
+<phpcode>
+<?php 
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/04/ZeroiExample.as';
+	$headline = 'ZeroiExample.as';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+?>
+</phpcode>
+<p>For creating the example above I've used the following Ant script. In the next chapter I'll give you detailed instructions to use Zeroi with Ant.</p>
+<phpcode>
+<?php 
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/04/build.xml';
+	$headline = 'build.xml';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+?>
+</phpcode>
+
+<h2>Instructions</h2>
+
+<p>All you need are <a href="http://www.mtasc.org/">MTASC</a>, a debugger tool described above, <a href="http://ant.apache.org/">Ant</a> and the <a href="http://osflash.org/zeroi#download">Zeroi package</a>. It's recommend to use <a href="http://www.eclipse.org">Eclipse</a> and <a href="http://fdt.powerflasher.com">FDT</a> as well.</p>
+<ol>
+	<li><a href="[download(zeroiExample)]">Download the Zeroi example</a> and unzip the file.</li>
+	<li>Grab the latest <a href="http://osflash.org/zeroi#download">Zeroi package</a> and unzip the file.</li>
+	<li>For this example you'll need the LuminicBox.Log, too. <a href="http://www.luminicbox.com/blog/default.aspx?page=post&id=2">Download</a> and open it.<br /><strong>Note:</strong> Open the LuminicBox.Log only once.</li>
+	<li>Make sure, that you have installed MTASC successfully as described on <a href="http://www.mtasc.org/#install">mtasc.org</a>. If you're on a Mac (PPC or Intel), you'll find the latest binaries (v.1.13) on <a href="http://lists.motion-twin.com/pipermail/mtasc/2007-February/030170.html">MTASC's mailing list</a>.</li>
+	<li>Open Eclipse, create a new Flash Project <em>File -> New -> New Flash Project</em> and link it to the folder "Zeroi example": First you have to uncheck <em>"use default location"</em>. Secondly, browse to the folder where the downloaded example is located.</li>
+	<li>Customize the property values in <em>build.jk.properties</em> and add this file to Ant's Preferences on Eclipse: <em>Preferences -> Type "Runtime" in the search field -> Properties -> Add Files</em><br /><strong>Note:</strong> Windows users have to change the target called "run" located in the <em>build.xml</em> as well. At present, it only runs on OS X. If there's anyone out there who's familiar with Ant on windows, feel free to post a comment for this issue.</li>
+	<li>On Eclipse open the Ant view <em>Window -> Show view -> Ant</em>, drag the <em>build.xml</em> located in the Flash Explorer to its Ant view and press the green button to run the script.
+	<p><img src="http://www.websector.de/blog/wp-content/uploads/2007/03/eclipse-ant-view.png" alt="Eclipse Ant View" height="408" width="359"/></p>
+	</li>
+	<li>If you use other debugger tools, you'll only have to change one line located in <em>build.xml</em>
+		<phpcode>
+		<?php 
+
+			$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/03/04/snippet1.txt';
+
+			$codeExample = new CodeViewer();
+			$codeExample->showCode($sourceUrl);	
+
+		?>
+		</phpcode></li>
+</ol>
+
+<p>Happy debugging ;-)</p>

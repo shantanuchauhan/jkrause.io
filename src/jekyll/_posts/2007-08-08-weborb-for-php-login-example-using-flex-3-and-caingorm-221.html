@@ -1,0 +1,95 @@
+--- 
+layout: post
+title: WebORB for PHP Login Example using Flex 3 and Cairngorm 2.2.1
+tags: 
+- Flex
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  related_id: "35"
+  _edit_last: "2"
+---
+<p style="background-color:#F6F6F6;"><strong>UPDATE 23/12/07:</strong> The tutorial and <a href="#download">source code</a> have been updated using Flex Builder 3 Beta 3.</p>
+
+<p>I've been playing around with <a href="http://www.themidnightcoders.com/weborb/php/">WebORB for PHP</a> for developing Flex remoting services and it's just awesome. WebORB gives you well documented product information including a service browser, tons of examples, code generator etc.</p>
+
+<p>However, one thing I've missed is a WebORB for PHP example using Flex and Cairngorm... So I decided to write it down on my blog. It based on <a href="http://www.alex-uhlmann.de/">Alex Uhlmann's</a> <a href="http://www.alex-uhlmann.de/flash/adobe/blog/cairngormlogin/CairngormLogin.html">CairngormLogin Sample</a> <a href="http://www.nwebb.co.uk/blog/?p=63">modified</a> by <a href="http://www.nwebb.co.uk/blog">Neil Webb</a>.</p>
+
+<!--more-->
+
+<h2>Example</h2>
+<div width="500" height="450">
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/08/07/CairngormLoginWebORB.swf" width="500" height="450"  bgcolor="#000000" fversion="9.0.28" menu="false"]
+<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+[/kml_flashembed]
+<p>&nbsp;</p>
+</div>
+<h2>Instruction</h2><ol><li>You'll need the following sources:<br /><ul><li><a href="http://www.themidnightcoders.net/downloadcenter/">WebORB for PHP</a> (v2.0.2)</li><li><a href="http://labs.adobe.com/wiki/index.php/Cairngorm:Cairngorm2.2.1:Download">Cairngorm</a> (2.2.1)</li><li>Alex Uhlmann's <a href="http://www.alex-uhlmann.de/flash/adobe/blog/cairngormlogin/srcview/index.html">CairngormLogin Sample</a></li></ul></li><li>Install WebORB as described in "<a href="http://www.themidnightcoders.com/weborb/php/gettingstarted.htm">GETTING STARTED - WEBORB INSTALLATION</a>".</li><li><p>Open Flex Builder and create a new Flex Project called "CairngormLogin". As <a href="http://www.riapedia.com/2007/07/10/flex_and_php_together_with_midnight_coders_weborb">Mike Potter pointed out</a> you don't need to select Flex Data Service as server type which mentioned by the WebORB documentation, just "Other/None" using a <code>services-config.xml</code> as described in step 5. </p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/08/07/newFlexProject.png" /></p></li><li><p>Don't forget to add the <code>Cairngorm.swc</code> to your library path.</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/08/07/addSwc.png" /></p></li><li><p>Create <code>services-config.xml</code> and modify the value of the <code>endpoint uri</code> to <code>{yourWebORBInstallationFolder}/Weborb/index.php</code>. Save it into the root of your project folder. </p><p>
+[UPDATE 10/06/07] Flex Builder 3 Beta 2 needs a valid port as well. For more information about it read <a href="http://www.adobe.com/cfusion/webforums/forum/messageview.cfm?forumid=72&catid=651&threadid=1303695&enterthread=y">this thread</a> on Adobes Flex Builder 3 forum.[/UPDATE]
+</p><phpcode><?php 
+
+					$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/services-config.xml';
+					$headline = 'services-config.xml';
+					$hasDownloadLink = true;
+
+					$codeExample = new CodeViewer();
+					$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+				?></phpcode></li><li><p>Open your project properties window with a right mouse click on your project folder within Flex Builder to add the <code>services-config.xml</code> as a <code>-services</code> argument to the Flex compiler</p><p><img src="http://www.websector.de/blog/wp-content/uploads/2007/08/07/compilerProps.png" /></p></li><li>Copy all files of <a href="http://www.alex-uhlmann.de/flash/adobe/blog/cairngormlogin/srcview/index.html">Alex Uhlmann's CairngormLogin Sample</a> into your project folder.</li><li>Update the <code>LoginDelegate.as</code>, <code>LoginCommand.as</code> and <code>LoginPanel.mxml</code> to the latest Cairngorm package (v. 2.2.1 beta) as <a href="http://www.nwebb.co.uk/blog/?p=63">Neil Webb described</a>. At the end you can check your work with <a href="#download">my files</a> as well.</li><li><p>Now you have to create the remoting service called <code>getUser</code> adding a <code>Login.php</code> to <code>{yourWebORBInstallationFolder}/Services/com/adobe/cairngorm/samples/login/</code>.</p><phpcode><?php 
+
+						$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/Login.php.txt';
+						$headline = 'Login.php';
+						$hasDownloadLink = true;
+
+						$codeExample = new CodeViewer();
+						$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+					?></phpcode></li><li><p>The remoting service needs a Value Object (VO) to transfer the data between the application tier. Therefore create a VO named <code>LoginVO.php</code> and put it into <code>{yourWebORBInstallationFolder}/Services/com/adobe/cairngorm/samples/login/vo/</code></p><phpcode><?php 
+
+								$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/LoginVO.php.txt';
+								$headline = 'LoginVO.php';
+								$hasDownloadLink = true;
+
+								$codeExample = new CodeViewer();
+								$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+							?></phpcode></li><li><p>Modify the ServiceLocator named <code>Services.mxml</code> for adding the remoting service created in step 9. Note: The destination for WebORB is called <code>GenericDestination</code>.</p><phpcode><?php 
+
+								$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/Services.mxml';
+								$headline = 'Services.mxml';
+								$hasDownloadLink = true;
+
+								$codeExample = new CodeViewer();
+								$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+							?></phpcode></li><li><p>Modify the <code>LoginDelegate.as</code> to call the remoting service named <code>loginService</code>.</p><phpcode><?php 
+
+								$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/LoginDelegate.as';
+								$headline = 'LoginDelegate.as';
+								$hasDownloadLink = true;
+
+								$codeExample = new CodeViewer();
+								$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+							?></phpcode></li><li><p>Modify the <code>LoginCommand.as</code> to respond the service call.</p><phpcode><?php 
+
+								$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/LoginCommand.as';
+								$headline = 'LoginCommand.as';
+								$hasDownloadLink = true;
+
+								$codeExample = new CodeViewer();
+								$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+							?></phpcode></li><li><p>One of the big advantage using remoting services is providing well-typed objects over the application tier called "client-server-class mapping". For ensure this you have to correspond your client-side Value Object called <code>LoginVO.as</code> to its <code>RemoteClass</code> using <code>[RemoteClass(alias="com.adobe.cairngorm.samples.login.vo.LoginVO")]</code></p><phpcode><?php 
+
+								$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/07/LoginVO.as';
+								$headline = 'LoginVO.as';
+								$hasDownloadLink = true;
+
+								$codeExample = new CodeViewer();
+								$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+							?></phpcode></li></ol><p>That's all ;-)</p><h2 id="download">Download</h2><p>Note: In the following *.zip-file I've changed some more code lines for customizing the appearance of the example which I don't described above. Anyway, have fun ;-)</p><p>Source: <a href="[download(CairngormLoginExampleWebORB)]">CairngormLoginExampleWebORB.zip</a><br />
+	(Downloads: [downloadcounter(CairngormLoginExampleWebORB)])</p>
