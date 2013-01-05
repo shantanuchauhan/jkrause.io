@@ -8,20 +8,20 @@
   },
   "folders": {
     "source": {
-      "deploy": "public",
-      "styles": "src/styles",
-      "jekyll": "src/jekyll",
-      "stylescompiled": "src/jekyll/stylesheets"
+      "deploy": "../public",
+      "styles": "../src/styles",
+      "jekyll": "../src/jekyll",
+      "stylescompiled": "../src/jekyll/stylesheets"
     }
   },
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-watch": "~0.2.0a",
-    "grunt-contrib-clean": "~0.4.0a",
-    "grunt-contrib-copy": "~0.3.2",
-    "grunt-compass": "0.3.7",
     "grunt-reload": "0.2.0",
-    "grunt-exec": "git://github.com/jharding/grunt-exec.git#dev"
+    "grunt-contrib-compass": "~0.1.0",
+    "grunt-contrib-connect": "~0.1.0",
+    "grunt-rm": "0.0.4",
+    "grunt-jekyll": "https://github.com/sectore/grunt-jekyll/tarball/master"
   },
   "_commented": {
     "coffee-script": ">=1.4.0",

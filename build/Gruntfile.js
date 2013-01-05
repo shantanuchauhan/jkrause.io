@@ -5,17 +5,10 @@ module.exports = function(grunt) {
     // config
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: {
-      deploy: ['<%= pkg.folders.source.deploy %>']
+    rm: {
+      deploy: '<%= pkg.folders.source.deploy %>/**'
     },
 
-    copy: {
-      css: {
-        files: {
-          '<%= pkg.folders.source.deploy %>/assets/stylesheets/': '<%= pkg.folders.source.stylescompiled %>/*.css'
-        }
-      }
-    },
     //
     // compass
     compass: {
@@ -23,11 +16,13 @@ module.exports = function(grunt) {
       // General settings of dev + release
       // are defined in config.rb
       dev: {
+        config: 'config.rb',
         linecomments: true,
         forcecompile: true,
         debugsass: true
       },
       release: {
+        config: 'config.rb',
         outputstyle: 'compressed',
         linecomments: false,
         forcecompile: true,
@@ -35,17 +30,37 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      styles:{
-        files: [ '<%= pkg.folders.source.styles %>/*.sass'],
-        tasks: [ 'compass:dev','copy:css' ]
+    //
+    // jekyll
+    // Note:
+    // Just an empty task,
+    // because all configuration of Jekyll are defined within _config.yml
+    jekyll: {
+      dev: {
       }
     },
 
-    exec: {
-      jekyll: {
-        command: 'jekyll',
-        stdout: true
+    watch: {
+      styles:{
+        files: [ '<%= pkg.folders.source.styles %>/*.sass'],
+        tasks: [ 'compass:dev' ]
+      },
+      jekyll:{
+        files: [
+          '<%= pkg.folders.source.jekyll %>/**/*.html',
+          '<%= pkg.folders.source.jekyll %>/**/*.md',
+          '<%= pkg.folders.source.jekyll %>/assets/stylesheets/*.css'
+        ],
+        tasks: [ 'jekyll:dev' ]
+      }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 9999,
+          base: '<%= pkg.folders.source.deploy %>'
+        }
       }
     }
 
@@ -63,20 +78,15 @@ module.exports = function(grunt) {
   });
   //
   // load tasks
-//  grunt.loadNpmTasks('grunt-coffee');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-reload');
-  grunt.loadNpmTasks('grunt-compass');
-  // Note:
-  // Linking dev branch of grunt-exec
-  // git://github.com/jharding/grunt-exec.git#dev
-  // in package.json to support grunt 0.4
-  grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-rm');
+  grunt.loadNpmTasks('grunt-jekyll');
   //
   // register tasks
-  grunt.registerTask('default', ['clean:deploy','compass:dev', 'exec:jekyll', 'watch']);
+  grunt.registerTask('default', ['rm:deploy','connect:server','compass:dev', 'jekyll:dev', 'watch']);
 //  grunt.registerTask('default', ['connect:server', 'reload', 'watch']);
 
 };
