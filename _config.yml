@@ -1,12 +1,20 @@
 # Jekyll - Configuration Settings
 # see: https://github.com/mojombo/jekyll/wiki/Configuration
-sitename:
-desc: Jens Krause - Portfolio
-url: http://www.websector.de
-permalink: /blog/:year/:month/:title.html
-auto: true
-exclude: ["README.md", "Gruntfile.js", "package.json", "websector.de.iml", "wordpress.xml", "src/styles", "src/scripts", "node_modules"]
+safe: false
+auto : true
+server : true
+#baseurl: /
+server_port : 9999,
+url: http://localhost:9999
+
+source:      ./src/jekyll
+destination: ./public
+plugins:     ./_plugins
+
+future: false
+lsi: false
 pygments: true
-plugins: _plugins
-source: src/jekyll
-destination: public
+markdown: maruku
+permalink: /blog/:year/:month/:day/:title/
+
+#exclude: ["README.md", "Gruntfile.js", "package.json", "websector.de.iml", "wordpress.xml", "src/styles", "src/scripts", "node_modules"]

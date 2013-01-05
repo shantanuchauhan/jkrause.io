@@ -16,13 +16,12 @@
   },
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-connect": "~0.1.0",
     "grunt-contrib-watch": "~0.2.0a",
     "grunt-contrib-clean": "~0.4.0a",
     "grunt-contrib-copy": "~0.3.2",
     "grunt-compass": "0.3.7",
-    "grunt-jekyll": "0.2.2",
-    "grunt-reload": "0.2.0"
+    "grunt-reload": "0.2.0",
+    "grunt-exec": "git://github.com/jharding/grunt-exec.git#dev"
   },
   "_commented": {
     "coffee-script": ">=1.4.0",
