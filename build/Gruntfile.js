@@ -6,7 +6,9 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     rm: {
-      deploy: '<%= pkg.folders.source.deploy %>/**'
+      deploy: {
+        dir: '<%= pkg.folders.source.deploy %>'
+      }
     },
 
     //
@@ -82,11 +84,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-reload');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-rm');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-rm');
   //
   // register tasks
-  grunt.registerTask('default', ['rm:deploy','connect:server','compass:dev', 'jekyll:runwithconfig', 'watch']);
+  grunt.registerTask('default', ['connect:server','compass:dev', 'jekyll:runwithconfig', 'watch']);
 //  grunt.registerTask('default', ['connect:server', 'reload', 'watch']);
 
 };
