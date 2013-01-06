@@ -36,7 +36,7 @@ module.exports = function(grunt) {
     // Just an empty task,
     // because all configuration of Jekyll are defined within _config.yml
     jekyll: {
-      dev: {
+      runwithconfig: {
       }
     },
 
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   //
   // register tasks
-  grunt.registerTask('default', ['rm:deploy','connect:server','compass:dev', 'jekyll:dev', 'watch']);
+  grunt.registerTask('default', ['rm:deploy','connect:server','compass:dev', 'jekyll:runwithconfig', 'watch']);
 //  grunt.registerTask('default', ['connect:server', 'reload', 'watch']);
 
 };
