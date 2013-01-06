@@ -11,6 +11,14 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      compass: {
+        files: {
+          "<%= pkg.folders.source.deploy %>/assets/stylesheets/": "<%= pkg.folders.source.stylescompiled %>/*.css"
+        }
+      }
+    },
+
     //
     // compass
     compass: {
@@ -45,15 +53,14 @@ module.exports = function(grunt) {
     watch: {
       styles:{
         files: [ '<%= pkg.folders.source.styles %>/*.sass'],
-        tasks: [ 'compass:dev' ]
+        tasks: [ 'compass:dev','copy:compass' ]
       },
       jekyll:{
         files: [
           '<%= pkg.folders.source.jekyll %>/**/*.html',
-          '<%= pkg.folders.source.jekyll %>/**/*.md',
-          '<%= pkg.folders.source.jekyll %>/assets/stylesheets/*.css'
+          '<%= pkg.folders.source.jekyll %>/**/*.md'
         ],
-        tasks: [ 'jekyll:dev' ]
+        tasks: [ 'jekyll:runwithconfig' ]
       }
     },
 
@@ -84,11 +91,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-reload');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-rm');
   //
   // register tasks
-  grunt.registerTask('default', ['connect:server','compass:dev', 'jekyll:runwithconfig', 'watch']);
+  grunt.registerTask('default', ['connect:server','jekyll:runwithconfig','compass:dev','copy:compass', 'watch']);
 //  grunt.registerTask('default', ['connect:server', 'reload', 'watch']);
 
 };
