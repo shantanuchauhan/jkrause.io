@@ -21,7 +21,7 @@
     "grunt-contrib-compass": "~0.1.0",
     "grunt-contrib-connect": "~0.1.0",
     "grunt-rm": "0.0.4",
-    "grunt-jekyll": "https://github.com/sectore/grunt-jekyll/tarball/master"
+    "grunt-jekyll": "git://github.com/dannygarcia/grunt-jekyll.git#master"
   },
   "_commented": {
     "coffee-script": ">=1.4.0",
