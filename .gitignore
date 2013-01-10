@@ -1,5 +1,4 @@
-build/.sass-cache/
-build/node_modules
+.sass-cache/
 
 public
 src/jekyll/assets/stylesheets/ws.css
