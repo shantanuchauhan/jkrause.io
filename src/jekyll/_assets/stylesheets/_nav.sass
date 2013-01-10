@@ -1,0 +1,83 @@
+#main-nav-container
+  @include clearfix
+  background-color: #666
+  ul
+    a
+      display: block
+      color: $font-color-nav
+      text-decoration: none
+
+
+#main-nav-list
+
+  li 
+    a
+      @include adjust-font-size-to(21px)
+    
+
+    a.active,
+    a.active:hover
+      background-color: $font-color-highlighted
+      @include single-text-shadow
+      @include animation(nav-hover 0s)
+
+    
+
+    a:hover
+      background-color: $font-color-highlighted
+      @include animation(nav-hover $link-hover-duration)
+      @include single-text-shadow
+
+
+
+  @include respond-to('default-and-big-screen') 
+
+    @include span-columns(7)
+    @include horizontal-list-container
+
+    li 
+      @include horizontal-list-item($padding: 0)
+
+      a
+        padding: 0 pixel-to-em(20)
+
+  @include respond-to('small-and-default-screen') 
+    li 
+      border-bottom: 1px solid white
+      a
+        text-align: center
+
+
+#social-nav-list
+  @include horizontal-list-container
+  // override margin-right:0 used by span-columns
+  //margin-right: space(.3)
+
+  a
+    @include adjust-font-size-to(25px)
+    padding: 0 pixel-to-em(6)
+    span
+      @include squish-text()
+
+  a:hover
+    //color: $font-color-highlighted
+    background-color: $font-color-highlighted
+    @include animation(nav-hover $link-hover-duration)
+    @include single-text-shadow
+
+  @include respond-to('small-and-default-screen') 
+    li 
+      @include horizontal-list-item($padding: 0)
+      width: 20%
+      text-align: center
+
+  @include respond-to('default-and-big-screen') 
+    @include span-columns(4 omega)
+
+
+    text-align: right
+
+    li 
+      @include horizontal-list-item($padding: 0, $direction: right)
+      &:first-child
+        padding-right: pixel-to-em(20)

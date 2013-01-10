@@ -1,0 +1,96 @@
+html
+  @include establish-baseline
+
+
+body
+  background-color: #FFF
+  color: $font-color
+  font-size: 16px
+  font-family: 'Source Sans Pro', Helvetica Neue, Arial, sans-serif
+  font-weight: 400
+
+@include border-box-sizing
+
+strong
+  font-weight: 600
+
+p
+  @include adjust-font-size-to(19px)
+
+img
+  max-width: 100%
+  width: 100%
+  height: auto
+
+article
+  @include clearfix
+  @include margin-leader(3)
+  @include margin-trailer(3)
+
+#wrapper
+  @include container
+  //@include susy-grid-background
+
+  @include respond-to('small-and-default-screen')
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
+  
+.content
+  @include clearfix
+
+  h2, h3
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
+    @include margin-trailer(.75)
+    @include adjust-font-size-to(30px)
+
+    @include respond-to('small-screen')
+      @include adjust-font-size-to(30px, 1.5)
+      padding-top: pixel-to-em(5, 30)
+      padding-bottom: pixel-to-em(5, 30)
+
+  h2
+    background-image: $img-dots
+  
+  h3
+    a
+      color: $font-color
+      text-decoration: none
+      &:hover
+        color: $font-color-highlighted
+
+  p
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
+    @include margin-trailer(.5)
+    color: $font-color-light
+  
+
+  a
+    color: $font-color-light
+    &:hover
+      color: $font-color-highlighted
+      @include animation(link-hover $link-hover-duration)
+
+  li
+    color: $font-color-light
+  
+.read-more
+  font-weight: 600
+  text-decoration: none
+
+
+.left-content
+  @include respond-to('default-and-big-screen')
+    @include prefix($content-padding-left-right)
+    @include span-columns(6)
+  
+
+
+.right-content
+  @include margin-leader(1)
+
+  @include respond-to('default-and-big-screen')
+    @include suffix($content-padding-left-right)
+    @include span-columns(6 omega)
+    @include margin-leader(0)

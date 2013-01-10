@@ -1,0 +1,17 @@
+#contact
+
+  .left-content
+    @include respond-to('big-screen')
+      @include prefix(0)
+      @include span-columns(5.05)
+
+  .right-content
+    @include respond-to('big-screen')
+      @include suffix(0)
+      @include span-columns(5.05 omega)
+    
+  iframe
+    width: 100%
+    height: pixel-to-em(350)
+    @include margin-trailer(1)
+  
