@@ -1,4 +1,4 @@
-# Simple patch to handle svg files by webrick by Seth Ladd (https://github.com/sethladd)
+# patch to run svg files running webrick
 # @see: https://github.com/mojombo/jekyll/issues/406#issuecomment-10570065
 require 'webrick'
 include WEBrick
