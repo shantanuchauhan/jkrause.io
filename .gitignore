@@ -3,6 +3,8 @@
 public
 src/jekyll/assets/stylesheets/ws.css
 
+src/jekyll/assets/images/*
+
 .idea/*
 *.iml
 .DS_Store
