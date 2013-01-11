@@ -17,11 +17,6 @@ strong
 p
   @include adjust-font-size-to(19px)
 
-img
-  max-width: 100%
-  width: 100%
-  height: auto
-
 article
   @include clearfix
   @include margin-leader(3)
@@ -89,9 +84,7 @@ article
     background-color: red
 
 .right-content
-  @include margin-leader(1)
 
   @include respond-to('default-and-big-screen')
     @include suffix($content-padding-left-right)
     @include span-columns(6 omega)
-    @include margin-leader(0)

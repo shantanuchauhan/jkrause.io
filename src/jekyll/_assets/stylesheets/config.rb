@@ -1,3 +1,5 @@
+# Compass configuration
+# see: http://compass-style.org/help/tutorials/configuration-reference/
 
 require 'susy'
 require 'animation'
@@ -16,5 +18,14 @@ fonts_dir = '../../assets/fonts/'
 http_fonts_dir = http_path + 'assets/fonts/'
 
 relative_assets = false
-preferred_syntax = :scss
-disable_warnings = true
+preferred_syntax = :sass
+
+#environment = :production
+environment = :development
+
+if environment == :development
+  line_comments = true
+  sass_options = { :debug_info => true }
+elsif environment == :production
+  disable_warnings = true
+end
