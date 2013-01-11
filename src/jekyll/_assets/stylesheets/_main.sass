@@ -84,8 +84,9 @@ article
   @include respond-to('default-and-big-screen')
     @include prefix($content-padding-left-right)
     @include span-columns(6)
-  
 
+  @include respond-to('small-screen')
+    background-color: red
 
 .right-content
   @include margin-leader(1)

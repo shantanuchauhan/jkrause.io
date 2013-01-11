@@ -1,10 +1,10 @@
-// compass
+//compass
 @import "compass/css3"
 @import "compass/utilities"
 @import "compass/typography/text"
 @import "compass/typography/vertical_rhythm"
 @import "compass/css3/text-shadow"
-// http://compass-style.org/reference/compass/utilities/general/clearfix/
+// http:compass-style.org/reference/compass/utilities/general/clearfix/
 @import "compass/utilities/general/clearfix"
 @import "compass/typography/lists/"
 @import "compass/reset"
@@ -24,3 +24,31 @@
 @import "blog"
 @import "contact"
 @import "footer"
+
+$breakpoints: 'big-screen' (1281px), 'default-screen' (800px 1280px), 'default-and-big-screen' (801px), 'small-screen' (max-width 480px), 'small-and-default-screen' (max-width 800px)
+
+//$breakpoint-medium-width: 500px;
+//$breakpoint-medium-not-wide: 500px 700px;
+//$breakpoint-medium-height: 300px 700px 'height';
+//
+//.foo{
+//  @include breakpoint($breakpoint-medium-width){
+//    content: 'medium widths';
+//  }
+//}
+//
+//.baz{
+//  @include breakpoint($breakpoint-medium-not-wide){
+//    content: 'medium, but not too wide';
+//  }
+//}
+//
+//.tgif{
+//  @include breakpoint($breakpoint-medium-height){
+//    content: 'medium heights';
+//  }
+//}
+//
+//#wrapper{
+//  @include container;
+//}
