@@ -1,5 +1,6 @@
 --- 
 layout: post
+group: 'blog'
 title: "The classic puzzle game Tetris based on Flash: \"WS-Tetris\""
 tags: 
 - Flash
@@ -26,9 +27,10 @@ meta:
 *   Award: ["Site of the month"](http://amfphp.sourceforge.net/showcase.html) (AMFPHP Showcase)
 
 ## Free download
-
+<!--
 Source: [ws_tetris.zip]([download(ws_tetris_fla)])
 _(Downloads: [downloadcounter(ws_tetris_fla)])_
+-->
 
 Note: "WS-Tetris" is licensed under a [Creative Commons Attribution - Noncommercial 3.0 License](http://creativecommons.org/licenses/by-nc/3.0/). You accept the license if you download the source of this game engine.
 

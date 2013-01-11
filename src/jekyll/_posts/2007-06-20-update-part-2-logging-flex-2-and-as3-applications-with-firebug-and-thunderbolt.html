@@ -22,8 +22,8 @@ meta:
 
 <p>In <a href="http://www.websector.de/blog/2007/06/17/update-part-1-logging-flex-2-applications-with-firebug-and-thunderbolt-using-the-flex-2-logging-framework/">part 1</a> I described a way for using ThunderBolt AS3 with the Flex 2 Logging Framework using an own log target called <a href="http://flash-thunderbolt.googlecode.com/svn/trunk/as3/source/org/osflash/thunderbolt/ThunderBoltTarget.as">ThunderBoltTarget</a>. This is a handy extension, but it has a disadvantage: The Flex 2 Logging Framework doesn't support outputs of nested objects because the <a href="http://livedocs.adobe.com/flex/2/langref/mx/logging/Log.html">original Flex 2 Log instance</a> uses an instance of the <a href="http://livedocs.adobe.com/flex/2/langref/mx/logging/LogLogger.html">LogLogger</a> which dispatches only a message of the logged object typed as String.</p><p>For this issue is better to use the ThunderBolt <a href="http://flash-thunderbolt.googlecode.com/svn/trunk/as3/source/org/osflash/thunderbolt/Logger.as">Logger instance</a> directly for logging objects and its nested objects including all properties ;-) . With the latest release I have added a common way for using log levels as well. Check out the the following instructions.</p><h2>Example</h2>
 <div width="500" height="220">
-[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/06/21/ThunderBoltAS3Example.swf" width="100%" height="220"  bgcolor="#003366" fversion="9.0.28" menu="false"]
-<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/06/21/thunderboltas3example.swf" width="100%" height="220"  bgcolor="#003366" fversion="9.0.28" menu="false"]
+<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="get adobe flash player" /></a></p>
 [/kml_flashembed]
 <p>&nbsp;</p>
 </div>
