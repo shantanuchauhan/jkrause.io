@@ -1,7 +1,7 @@
 # Jekyll - Configuration Settings
 # see: https://github.com/mojombo/jekyll/wiki/Configuration
 safe: false
-auto: true
+auto: auto
 server: true
 server_port: 9999
 url: http://localhost:9999
@@ -16,6 +16,13 @@ pygments: true
 markdown: maruku
 permalink: /blog/:year/:month/:day/:title/
 
-assets:
-  compress:
+#assets:
+#  compress:
 #    css:  sass
+
+#asset_pipeline:
+#  bundle: true            # Default = true
+#  compress: false          # Default = true
+#  output_path: assets/stylesheets     # Default = assets
+#  display_path: assets/stylesheets       # Default = nil
+#  gzip: false             # Default = false

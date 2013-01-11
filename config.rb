@@ -1,7 +1,7 @@
 
 require 'susy'
 require 'animation'
-require 'respond-to'
+require 'breakpoint'
 
 http_path = '/'
 
@@ -17,4 +17,4 @@ http_fonts_dir = http_path + 'assets/fonts/'
 
 relative_assets = false
 preferred_syntax = :sass
-disable_warnings = true
+disable_warnings = false
