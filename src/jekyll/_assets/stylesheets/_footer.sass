@@ -10,10 +10,13 @@ footer
   p
     @include prefix($content-padding-left-right)
     @include suffix($content-padding-left-right)
+    @include padding-leader(.5)
     @include padding-trailer(3)
 
     @include adjust-font-size-to(13px)
     color: $font-color-light
+
+    text-align: center
 
   a
     color: $font-color-light
