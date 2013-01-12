@@ -1,15 +1,19 @@
 #contact
 
   .left-content
-    @include respond-to('big-screen')
+    @include respond-to('default-and-big-screen')
       @include prefix(0)
-      @include span-columns(5.05)
+
+    @include respond-to('small-and-default-screen')
+      p
+        @include margin-trailer(2)
+
+
 
   .right-content
-    @include respond-to('big-screen')
+    @include respond-to('default-and-big-screen')
       @include suffix(0)
-      @include span-columns(5.05 omega)
-    
+
   iframe
     width: 100%
     height: pixel-to-em(350)
