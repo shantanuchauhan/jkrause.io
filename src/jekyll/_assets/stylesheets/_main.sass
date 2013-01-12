@@ -79,9 +79,23 @@ article
   @include respond-to('default-and-big-screen')
     @include prefix($content-padding-left-right)
     @include span-columns(6)
+    @include post(0)
+
 
 .right-content
 
   @include respond-to('default-and-big-screen')
     @include suffix($content-padding-left-right)
     @include span-columns(6 omega)
+
+
+#github-ribbon
+  position: absolute
+  top: 0
+  right: 0
+  @include hidden()
+
+  @include respond-to('default-and-big-screen')
+    @include shown()
+
+
