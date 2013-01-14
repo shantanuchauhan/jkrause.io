@@ -1,0 +1,14 @@
+<nav class="page-sub-nav">
+  <ul>
+    {% if page.model.previous %}
+    <li><a href="{{page.model.previous.mdl_url}}" title="{{page.model.previous.title}}" data-icon="&#xe007;"><span>&laquo;</span></a></li>
+    {% else %}
+    <li>&nbsp;</li>
+    {% endif %}
+    {% if page.model.next %}
+    <li><a href="{{page.model.next.mdl_url}}" title="{{page.model.next.title}}" data-icon="&#xe006;"><span>&raquo;</span></a></li>
+    {% else %}
+    <li>&nbsp;</li>
+    {% endif %}
+  </ul>
+</nav>

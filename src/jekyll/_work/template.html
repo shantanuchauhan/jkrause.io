@@ -1,0 +1,26 @@
+---
+layout: work_detail
+group: work
+---
+
+<section>
+  <div id="work-headline-container">
+    <h1 class="contentHeadline">{{ page.model.title }}</h1>{% include nav_work.html %}
+  </div>
+  <article>
+    <div class="left-content">
+      <ul>
+        {% for image in page.model.images %}
+        <li><img src="{{image}}"></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="right-content">
+      <p>{{page.model.description}}</p>
+      <h3 class="contentSubHeadline">Responsibilities</h3>
+      <p>{{page.model.client}}</p>
+      <h3 class="contentSubHeadline">Client</h3>
+      <p>{{page.model.client}}</p>
+    </div>
+  </article>
+</section>

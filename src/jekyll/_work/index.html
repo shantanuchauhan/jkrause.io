@@ -1,0 +1,23 @@
+---
+layout: default
+group: work
+---
+
+<section class="work-latest">
+  <h2 class="contentHeadline">Latest work</h2>
+  {% include latest_work_excerpt.html %}
+</section>
+
+<section id="work-archiv">
+  <h2 class="contentHeadline">Archiv</h2>
+  <article>
+    <ul>
+      {% sort var: site.work by: timestamp direction: up %}
+      {% for model in site.work %}
+        {% if model != site.work.first %}
+        <li><a href="{{model.mdl_name}}">{{ model.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </article>
+</section>
