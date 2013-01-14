@@ -17,9 +17,8 @@ strong
 p
   @include adjust-font-size-to(19px)
 
-article
+section
   @include margin-leader(3)
-  @include margin-trailer(3)
 
 #wrapper
   @include container
@@ -32,33 +31,9 @@ article
 .content
   @include clearfix
 
-  h2, h3
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
-    @include margin-trailer(.75)
-    @include adjust-font-size-to(30px)
-
-    @include respond-to('small-screen')
-      @include adjust-font-size-to(30px, 1.5)
-      padding-top: pixel-to-em(5, 30)
-      padding-bottom: pixel-to-em(5, 30)
-
-  h2
-    background-image: $img-dots
-  
-  h3
-    a
-      color: $font-color
-      text-decoration: none
-      &:hover
-        color: $font-color-highlighted
-
   p
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
     @include margin-trailer(.5)
     color: $font-color-light
-  
 
   a
     color: $font-color-light
@@ -68,15 +43,43 @@ article
 
   li
     color: $font-color-light
-  
-.read-more
-  font-weight: 600
-  text-decoration: none
+
+article
+  @include prefix($content-padding-left-right)
+  @include suffix($content-padding-left-right)
+
+.contentHeadline,
+.contentSubHeadline
+  @include margin-trailer(.75)
+  @include adjust-font-size-to(30px)
+
+  @include respond-to('small-screen')
+    @include adjust-font-size-to(30px, 1.5)
+    padding-top: pixel-to-em(5, 30)
+    padding-bottom: pixel-to-em(5, 30)
+
+
+.contentHeadline
+  @include prefix($content-padding-left-right)
+  @include suffix($content-padding-left-right)
+  background-image: $img-dots
+
+.contentSubHeadline
+  @include margin-leader(1)
+  @include margin-trailer(.5)
+
+  a
+    color: $font-color
+    text-decoration: none
+    &:hover
+      color: $font-color-highlighted
+
+
+.contentSubHeadline2
 
 
 .left-content
   @include respond-to('default-and-big-screen')
-    @include prefix($content-padding-left-right)
     @include span-columns(6)
     @include post(0)
 
@@ -84,9 +87,11 @@ article
 .right-content
 
   @include respond-to('default-and-big-screen')
-    @include suffix($content-padding-left-right)
     @include span-columns(6 omega)
 
+.read-more
+  font-weight: 600
+  text-decoration: none
 
 #github-ribbon
   position: absolute
@@ -96,5 +101,3 @@ article
 
   @include respond-to('default-and-big-screen')
     @include shown()
-
-

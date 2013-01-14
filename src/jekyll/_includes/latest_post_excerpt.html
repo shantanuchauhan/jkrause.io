@@ -1,7 +1,8 @@
 {% assign latest_post = site.posts.first %}
-<h3>
-  <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>
-</h3>
-<p class="posted-on">Posted on {{ latest_post.date | date: "%B %e, %Y" }}</p>
-<p>{{ latest_post.content | more: "excerpt" }}</p>
-<p><a href="{{ latest_post.url }}" class="read-more">Read more...</a></p>
+<article>
+  <h3 class="contentSubHeadline">
+    <a href="{{ latest_post.url }}">{{ latest_post.title }}</a>
+  </h3>
+  <p>{{ latest_post.content | more: "excerpt" }}</p>
+  <p><a href="{{ latest_post.url }}" class="read-more">Read more...</a></p>
+</article>

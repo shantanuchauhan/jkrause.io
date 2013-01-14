@@ -1,2 +1,49 @@
-#project-latest
+
+//
+// make sure that the content is located on top to have clickable content
+.work-detail-content>div
+  position: relative
+
+.work-detail-content>section
+  position: absolute
+
+.work-content
+
+  article>ul
+    list-style-type: disc
+    list-style-position: inside
+
+    li
+      @include prefix($content-padding-left-right)
+      @include suffix($content-padding-left-right)
+      @include adjust-font-size-to(19px)
+      @include padding-trailer(.75)
+
+
+.work-content,
+.work-detail-content
+  img
+    @include responsive-image()
+
+
+.work-detail-content
+  h4
+    @include adjust-font-size-to(21px)
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
+
+#work-headline-container
+  position: relative
+
+  h1
+    padding: pixel-to-em(5, 30) pixel-to-em(45, 30)
+
+    @include respond-to('big-screen')
+      padding: 0 pixel-to-em(20, 30)
+
+
+.work-latest
   @include clearfix
+
+  img
+    @include responsive-image()

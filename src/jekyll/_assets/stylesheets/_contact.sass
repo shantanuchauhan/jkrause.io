@@ -8,8 +8,6 @@
       p
         @include margin-trailer(2)
 
-
-
   .right-content
     @include respond-to('default-and-big-screen')
       @include suffix(0)
@@ -18,4 +16,9 @@
     width: 100%
     height: pixel-to-em(350)
     @include margin-trailer(1)
+
+  adress
+    display: block
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
   

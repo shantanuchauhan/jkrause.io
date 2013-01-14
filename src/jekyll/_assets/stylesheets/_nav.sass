@@ -82,3 +82,70 @@
       @include horizontal-list-item($padding: 0, $direction: right)
       &:first-child
         padding-right: pixel-to-em(20)
+
+
+
+
+.page-sub-nav
+  top: 50%
+  width: 100%
+
+  ul
+    @include horizontal-list-container
+    height: 100%
+
+  li
+    @include horizontal-list-item($padding: 0)
+    width: 50%
+    height: 100%
+
+    &:last-child
+      text-align: right
+
+  a
+    text-decoration: none
+    color: #ccc
+
+    &:hover
+      @include animation(link-hover $link-hover-duration)
+      color: $font-color-highlighted
+
+    span
+      @include squish-text()
+
+
+body>nav.page-sub-nav
+
+  @include hidden()
+
+  @include respond-to('big-screen')
+    position: fixed
+    @include shown()
+    height: pixel-to-em(144)
+    margin-top: 0em-(pixel-to-em(72))
+
+    a
+      @include adjust-font-size-to(144px)
+      line-height: 0
+      width: pixel-to-em(144)
+
+
+
+#post-headline-container>nav.page-sub-nav,
+#work-headline-container>nav.page-sub-nav
+
+  @include respond-to('big-screen')
+    @include hidden()
+
+  position: absolute
+  height: pixel-to-em(30)
+  margin-top: 0em-(pixel-to-em(15))
+
+  a
+    @include adjust-font-size-to(30px)
+    padding: 0 pixel-to-em(10, 30)
+    line-height: 0
+
+  @include respond-to('small-and-default-screen')
+    a
+      padding: 0 pixel-to-em(5, 30)

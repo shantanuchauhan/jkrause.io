@@ -1,11 +1,11 @@
-<nav class="post-nav">
-  <ul id="post-nav-list">
-    {% if page.previous.url %}
+<nav class="page-sub-nav">
+  <ul>
+    {% if page.previous %}
     <li><a href="{{page.previous.url}}" title="{{page.previous.title}}" data-icon="&#xe007;"><span>&laquo;</span></a></li>
     {% else %}
     <li>&nbsp;</li>
     {% endif %}
-    {% if page.next.url %}
+    {% if page.next %}
     <li><a href="{{page.next.url}}" title="{{page.next.title}}" data-icon="&#xe006;"><span>&raquo;</span></a></li>
     {% else %}
     <li>&nbsp;</li>

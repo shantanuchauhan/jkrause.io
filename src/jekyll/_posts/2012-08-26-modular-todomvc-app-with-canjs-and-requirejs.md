@@ -1,5 +1,6 @@
 --- 
 layout: post
+group: blog
 title: Modular TodoMVC app with CanJS and RequireJS
 tags: 
 - CoffeeScript
