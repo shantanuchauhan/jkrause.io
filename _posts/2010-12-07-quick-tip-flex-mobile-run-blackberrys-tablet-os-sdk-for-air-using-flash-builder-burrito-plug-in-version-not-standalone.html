@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: "Quick tip (Flex Mobile): Run BlackBerry's Tablet OS SDK for AIR using Flash Builder Burrito plug-in version (not standalone)"
+tags: 
+- AIR
+- Flex
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+  _wp_old_slug: ""
+---
+<a href="http://renaun.com/blog/">Renaun Erickson</a> did a great job to <a href="http://renaun.com/blog/2010/12/update-to-playbook-sdk-provides-flash-builder-burrito-plugin/">describe the usage</a> of the Flash Builder Burrito plugin for BlackBerry Tablet OS SDK for Adobe AIR. However, if you have already used Burrito as a plug-in version for Eclipse (and not as a standalone version), it will not find the new installed PlayBook SDK by default. Therefore you have to do a further step "by hand".
+
+<!--more-->
+
+First of all: If you have not already installed Flash Builder Burrito as a plug-in for Eclipse (and again - not as a standalone version ;) ) follow the simple and great description by Jason here: <a href="http://blogs.adobe.com/jasonsj/2010/11/burrito-feature-plug-in-installer.html">"Burrito Feature: Plug-in Installer"</a>. To get more details of installing the PlayBook SDK and its Flash Builder 4 plug-in check the post <a href="http://docs.blackberry.com/en/developers/deliverables/21878/Installing_the_SDK_1347128_11.jsp">"Install the BlackBerry Tablet OS SDK for Adobe AIR"</a> at the BlackBarry Documentation as well.
+
+After that just copy <code>blackberry-tablet-sdk.link</code> located in folder named "dropins" of Burritos standalone version to the folder "dropins" of your eclipse installation folder. That's all ;)
+
+<img src="http://www.websector.de/blog/wp-content/uploads/2010/12/07/screenshot_dropin_folder.png" with="500" height="414" alt="Screen shot" />

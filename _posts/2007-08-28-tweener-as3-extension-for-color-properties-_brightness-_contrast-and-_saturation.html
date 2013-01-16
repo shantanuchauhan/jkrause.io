@@ -1,0 +1,53 @@
+--- 
+layout: post
+title: Tweener AS3 extension for color properties "_brightness", "_contrast" and "_saturation"
+tags: 
+- Flash
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p style="background-color:#F6F6F6;"><strong>IMPORTANT NOTE [10/07/07]:</strong> Tweeners SpecialPropertiesDefault.as has been deprecated since Tweener version 1.27.62. All listed color properties (_brightness, _contrast, _saturation) are now included in Tweener version 1.30.66 and higher. For more information check <a href="http://code.google.com/p/tweener/wiki/Changelog">Tweeners changelog</a> on Google Code. Kudos to <a href="http://labs.zeh.com.br/blog/">Zeh Fernando</a> for the latest releases.</p>
+<p>There are <a href="http://drawk.wordpress.com/2007/06/25/updated-list-of-best-animation-packages-for-as3/">a lot of AS3 Animation packages</a> out there, all with pros and cons. One of my favorite tools is <a href="http://code.google.com/p/tweener/">Tweener AS3</a>, but at its current version (v.1.0.1) it supports only few <a href="http://hosted.zeh.com.br/tweener/docs/en-us/">color properties</a> such as <code>_color</code>, <code>_color_ra</code>, <code>_color_rb</code> and so on. However, you have the option to create your own special properties using <code>Tweener.registerSpecialProperty</code>. So I decided to write an extension for missing color properties <code>_brightness</code>, <code>_contrast</code> and <code>_saturation</code> based on the awesome <a href="http://www.quasimondo.com/archives/000565.php">ColorMatrix</a> by <a href="http://www.quasimondo.com/">Mario Klingemann</a>. Check it out!</p>
+
+
+<!--more-->
+
+
+<h2>Example</h2><div width="500" height="250">
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/08/28/tweenerColorMatrixExample.swf" width="500" height="250"  bgcolor="#000000" fversion="9.0.28" menu="false"]
+<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+[/kml_flashembed]
+<p>&nbsp;</p>
+</div><h2>Instruction</h2><p><ol><li>Download the <a href="http://code.google.com/p/tweener/downloads/list">latest AS3 version of Tweener</a> on Google Code.</li><li><p>Copy the following <code>ColorMatrix.as</code> to <em>{yourTweenerFolder}/caurina/transitions</em>.</p><phpcode><?php 
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/28/ColorMatrix.as';
+	$headline = 'ColorMatrix.as';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+	?></phpcode></li><li><p>Open <code>SpecialPropertiesDefault.as</code> located in <em>{yourTweenerFolder}/caurina/transitions</em>. Copy and paste the following lines to the method called <code>init()</code>.</p><phpcode><?php 
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/28/snippet1.txt';
+	$headline = 'snippet1.txt';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+?></phpcode></li><li><p>Add the following methods to <code>SpecialPropertiesDefault.as</code> after the method <code>init()</code>mentioned above. Don't forget to import <code>flash.display.DisplayObject</code> and <code>flash.filters.ColorMatrixFilter</code> as well.</p></li><phpcode><?php 
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/28/snippet2.txt';
+	$headline = 'snippet2.txt';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+?></phpcode><li><p>That's all ;-) . And here are some examples using the special color properties:</p><phpcode><?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/28/snippet3.txt';
+		$headline = 'snippet3.txt';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+	?></phpcode></li></ol></p><h2 id="download">Download full source</h2><p><a href="[download(TweenerColorMatrixExample.zip)]">TweenerColorMatrixExample.zip</a><br />(Downloads: [downloadcounter(TweenerColorMatrixExample.zip)])</p><p>Have fun ;-) </p>

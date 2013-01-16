@@ -1,0 +1,40 @@
+--- 
+layout: post
+title: A basic PureMVC MultiCore AS3 example using Pipes Utility and Modules
+tags: 
+- Flex
+- Open Source
+- PureMVC
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p style="background-color: #f6f6f6"><strong>UPDATE [08/25/08]: </strong>Source has been updated using <a href="http://puremvc.org/content/view/90/181/">PureMVC 1.0.5 MultiCore</a>.</p>
+These days I've been playing around with the latest cool utility for <a href="http://trac.puremvc.org/PureMVC_AS3_MultiCore">PureMVC MultiCore AS3</a> called "<a href="http://trac.puremvc.org/Utility_AS3_MultiCore_Pipes">Pipes Utility</a>" developed by <a href="http://puremvc.org">Cliff Hall</a>. It's a very helpful and powerful utility to communicate among all core actors of a module based application using <a href="http://puremvc.org">PureMVC</a>.
+
+For a better understanding I created a basic example using <a href="http://livedocs.adobe.com/flex/3/langref/mx/modules/Module.html">modules</a>. It's just a simple app called "HelloPipes", which loads and unloads a module for communicating with its shell using Pipes. Module and shell are acting as a core based on PureMVC MultiCore AS3.
+
+The following example including full source may help anybody who is interested in the new Pipe Utility too ;-) .
+
+<!--more-->
+<h2>Example<!--2--><a href="http://www.websector.de/blog/wp-content/uploads/2008/06/21/HelloPipesShell.html" class="img"><img src="http://www.websector.de/blog/wp-content/uploads/2008/06/21/screenHelloPipes.png" height="258" width="489" /></a></h2>
+<h2>Full source</h2>
+<a href="[download(HelloPipes)]">HelloPipesSource.zip</a> (Downloads: [downloadcounter(HelloPipes)])
+<h2>Tips using Modules, PureMVC MultiCore AS3 and Pipe Utility</h2>
+<ul>
+	<li>Don't import any classes of a PureMVC MultiCore module within the shell (main application) to avoid any issues at runtime loading and unloading a module. To define constants for using Pipes such as output and input pipe names, which are shared between shell and module, don't use a reference to any actor. Use a simple "common" class instead, which stores only these constants for sharing by shell and module. Check the <code>PipeAwareModuleConstants.as</code> within the example above.</li>
+	<li>For communicating from shell to module and return without Pipes use well defined interfaces for the same reason mentioned before.</li>
+	<li>Clean up your module to avoid any issues loading and unloading it again. This may be helpfull for a successful garbage collection as well. Check out the code for the module within the example above, which uses an Interface called <code>IPipeAwareModule</code>. Using this interface the shell forces the cleaning up process of the module before the module will be unloaded.</li>
+	<li>Disconnect and unregister (if necessary) Pipes connecting shell and modules, when a module is unloaded.</li>
+	<li>Remove all PureMVC core actors of a module using <code>facade.removeCore</code> before a module is unloaded to avoid issues reloading it.</li>
+	<li>General issue: To reduce the file size of a module use the compiler option called <code>load-externs</code>. For detailed information check the Flex 3 Help: "<a href="http://livedocs.adobe.com/flex/3/html/modular_4.html#170594">Compiling modules - Reducing module size</a>"</li>
+</ul>
+<h2>Helpful links</h2>
+<ul>
+	<li><a href="http://www.joshuaostrom.com/2008/06/15/understanding-puremvc-pipes/">"Understanding PureMVC Pipes"</a> by Joshua Ostrom. Great tutorial!</li>
+	<li>PureMVC Forum entry: "<a href="http://forums.puremvc.org/index.php?topic=457.0">Pipes - A PureMVC AS3 MultiCore Utility</a>"</li>
+	<li>Pipe Utility example named "<a href="http://trac.puremvc.org/Demo_AS3_MultiCore_Flex_PipeWorks">PipeWorks</a>" by Cliff Hall</li>
+</ul>
+Have fun! ;-)

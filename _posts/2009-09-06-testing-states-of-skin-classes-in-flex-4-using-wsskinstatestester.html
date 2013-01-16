@@ -1,0 +1,60 @@
+--- 
+layout: post
+title: Testing states of skin classes in Flex 4 using WSSkinStatesTester
+tags: 
+- Flex
+- Open Source
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+WSSkinStatesTester is a handy tool to test visually all states of any skin classes in Flex 4 (Gumbo).
+
+<!--more-->
+
+Imagine you as a Flex developer or a designer have been created a lot of skins for your application, e.g. using Flash Catalyst. Now you want to check the behavior of these skins changing its states. Therefore you will run your application to change different states of components or you open Flash Catalyst to check all the states of a skin. Or you could use Flash Builders design view for this issue, but unfortunately it is unable to show transitions switching between states.
+
+Anyway, how about switching between skin classes and all its states (incl. transitions) using only one (test-) view? 
+
+<h2>Live example</h2>
+<p><em>(Right mouse click to view source of example)</em></p>
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2009/09/06/GumboTestSkinExample.swf" width="500" height="400" bgcolor="#FFFFFF" menu="false" /]
+<p>&nbsp;</p>
+
+
+<h2>Usage</h2>
+Two steps only: 
+<ol>
+	<li>Just create an instance of WSSkinStatesTester </li>
+	<li>And add all skins which have to be checked</li>
+</ol>
+
+<phpcode><?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2009/09/06/snippet0.txt';
+		$headline = 'Usage code example';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+		?></phpcode>
+
+<h2>Full source available</h2>
+
+<strong>Note:</strong> To run all code <a href="http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+4">Flex SDK 4.0.0.9948 or higher</a> is required.
+
+<ul>
+	<li>SWC of WSSkinStatesTester and example posted above: <a href="[download(GumboTestSkinExample)]">GumboTestSkinExample.zip</a> (Downloads: [downloadcounter(GumboTestSkinExample)])</li>
+	<li>Full source code of WSSkinStatesTester is hosted at Github: <a href="http://github.com/sectore/WSSkinStatesTester/">http://github.com/sectore/WSSkinStatesTester/</a></li></ul>
+
+<p>WSSkinStatesTester is open source licensed under <a href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License 1.1.</a>
+
+Happy skin states testing ;)
+
+-Jens
+
+
+
+
+

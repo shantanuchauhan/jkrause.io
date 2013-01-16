@@ -6,8 +6,8 @@ server: true
 server_port: 9999
 url: http://localhost:9999
 
-source: ./src/jekyll
-destination: ./public
+source: ./
+destination: ./_site
 plugins: ./_plugins
 
 future: false
@@ -20,13 +20,11 @@ permalink: /blog/:year/:month/:day/:title/
 #  compress:
 #    css:  sass
 
-#asset_pipeline:
-#  bundle: true            # Default = true
-#  compress: false          # Default = true
-#  output_path: assets/stylesheets     # Default = assets
-#  display_path: assets/stylesheets       # Default = nil
-#  gzip: false             # Default = false
-
 jekyll_models: [work]
 jekyll_models_urls: rest-like
 site_base: /
+
+exclude:
+  - README.md
+  - config.rb
+  - Rakefile

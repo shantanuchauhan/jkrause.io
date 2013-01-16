@@ -1,0 +1,55 @@
+--- 
+layout: post
+title: Logging Flex 2 and AS 3 apps with Firebug and ThunderBolt
+tags: 
+- Debugging
+- Flash
+- Flex
+- Open Source
+- ThunderBolt
+status: publish
+type: post
+published: true
+meta: 
+  related_id: "28,29"
+  _edit_last: "2"
+---
+<p>A few weeks ago <a href="http://www.ubilabs.net">Martin Kleppe</a> started a project on Google Code called <a href="http://code.google.com/p/flash-thunderbolt/">Flash-ThunderBolt</a>. The idea behind based on <a href="http://manfred.dschini.org/">Manfred Webers</a> blog entry <a href="http://manfred.dschini.org/2007/03/14/make-mtasc-talk-to-firebug/">"Make MTASC talk to Firebug"</a> which describes a way for logging Flash apps compiled with MTASC using Firebug. </p>
+<p>I've already joined the Flash-Thunderbolt project for coding an AS3 version. It won't be a copy of the current AS2 package but rather another approach for using <a href="http://www.getfirebug.com/console.html">Firebugs Console API</a> as simple as possible. Check it out, here are my first steps:</p>
+
+
+
+
+
+<!--more-->
+
+
+<h2>Example</h2>
+<div width="500" height="200">
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/04/ThunderBoltAS3Example.swf" width="100%" height="200"  bgcolor="#000000" fversion="9.0.28" menu="false"]
+<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+[/kml_flashembed]
+<p>&nbsp;</p>
+</div>
+
+<h2>Instructions</h2><p>The ThunderBolt AS3 package contains only one class named <em>Logger.as</em>. It supports logging primitive types such as <em>Number</em>, <em>String</em>, <em>Boolean</em>, etc. as well as <em>Objects</em>, <em>Arrays</em> and <em>public properties</em> of all classes. Use short cuts for determing different log levels as <a href="http://osflash.org/zeroi">Zeroi</a> does: "i" = info, "e" = error, "w" = warn, "d" = debug.</p><p>Here is an example:</p><phpcode><?php 
+
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/04/21/ThunderBoltAS3Example.mxml';
+	$headline = 'ThunderBoltAS3Example.mxml';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+?></phpcode><h2>Source</h2><p>First of all: Feel free to check out the <a href="http://code.google.com/p/flash-thunderbolt/source">latest source</a> via SVN ;-) .</p><phpcode><?php 
+
+
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/04/21/Logger.as';
+	$headline = 'Logger.as';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+
+?></phpcode><h2>Feedback</h2><p>Feedback and suggestions for improvement are welcome ;-) If you'd like to join the <a href="http://code.google.com/p/flash-thunderbolt/">Flash-ThunderBolt project</a> just drop <a href="mailto:sectore@gmail.com">me an email</a> or feel free to post a comment.</p><br /><br /><br />

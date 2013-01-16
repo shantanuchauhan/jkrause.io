@@ -1,0 +1,30 @@
+--- 
+layout: post
+title: "Quick tip: Avoid issues using Adobes AutoComplete Input component using Flex 3"
+tags: 
+- Flex
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+There are several Flex components for handling auto completion out there, for example components called <a href="http://kuwamoto.org/2006/05/11/example-code-updated-for-beta-3/">CompletionInput</a>, <a href="http://labs.flexcoders.nl/2007/01/30/another-autocomplete-textinput-001/">Autocomplete TextInput</a> or <a href="http://www.adobe.com/cfusion/exchange/index.cfm?event=extensionDetail&amp;extid=1047291">Adobes AutoComplete Input</a>. For a current Flex 3 based project I decided to use <a href="http://www.adobe.com/cfusion/exchange/index.cfm?event=extensionDetail&amp;extid=1047291">Adobes component</a> and had the following issue:
+
+
+<!--more-->
+
+
+<p>If you select the <strong>first item</strong> of the results pressing ENTER or just clicking by mouse, you will "lost" the value of the selected item. That means, it won't be shown at the <code>TextInput</code> located on the top.</p> It seems, that this issues appears using Flex 3 only (not Flex 2).<h2>Example</h2><p>For testing both components:<br />1) Type just a "b" in one of the TextFields<br />2a) Press ENTER <br />2b) Or select just the <strong>first item</strong> clicking by mouse.<br />3) Compare the behavior of both components.</p>
+<div width="500" height="120">
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2008/04/30/AutoCompleteSample.swf" height="230" width="500" bgcolor="#000000" ]<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>[/kml_flashembed]
+<p>&nbsp;</p>
+</div>
+<h2>Solution</h2><p>To show the label of the selected item within the <code>TextField</code> just override the method called <code>close</code> of the <code>com.adobe.flex.extras.controls.AutoComplete</code> which extends the <code>mx.controls.ComboBox</code>.</p><phpcode><?php 
+	$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2008/04/30/close.as';
+	$headline = 'close() method';
+	$hasDownloadLink = true;
+
+	$codeExample = new CodeViewer();
+	$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+	?></phpcode><h2>Download full source</h2><p>Full source of the example above: <a href="[download(AutoCompleteSample.zip)]">AutoCompleteSample.zip</a> (Downloads: [downloadcounter(AutoCompleteSample.zip)])</p>

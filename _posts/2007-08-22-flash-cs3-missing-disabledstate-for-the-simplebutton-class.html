@@ -1,0 +1,37 @@
+--- 
+layout: post
+title: "Flash CS3: Missing \"disabledState\" for the SimpleButton class"
+tags: 
+- Flash
+status: publish
+type: post
+published: true
+meta: 
+  _edit_last: "2"
+---
+<p>The <code>flash.display.SimpleButton</code> class provides only four states for specifying display objects these are used as visual objects for the following states: <a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/SimpleButton.html#upState">upState</a>, <a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/SimpleButton.html#overState">overState</a> <a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/SimpleButton.html#downState">downState</a> and <a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/SimpleButton.html#hitTestState">hitTestState</a>. But I've missed a disabled state for an inactive Button.</p>
+
+
+<!--more-->
+
+
+<p>Anyway, overriding the setter method of its <a href="http://livedocs.adobe.com/flash/9.0/ActionScriptLangRefV3/flash/display/SimpleButton.html#enabled">enabled</a> property is a good way to solve this problem (thanks to <a href="http://www.cececepe.de/">Roman Wache</a> aka <a href="http://www.flashforum.de/forum/member.php?u=25166">mascha</a> for <a href="http://www.flashforum.de/forum/showthread.php?t=237643">his hint</a>). Note the comments within the code located below for more information ;-) . </p><h2>Example</h2><div width="500" height="120">
+[kml_flashembed movie="http://www.websector.de/blog/wp-content/uploads/2007/08/22/DisabledSimpleButtonExample.swf" width="500" height="120"  bgcolor="#FFFFFF" fversion="9.0.28" menu="false"]
+<p><a href="http://adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+[/kml_flashembed]
+<p>&nbsp;</p>
+</div><h2>Source code</h2><p><phpcode><?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/22/CustomSimpleButton.as';
+		$headline = 'CustomSimpleButton.as';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);
+	?></phpcode></p><p><phpcode><?php 
+		$sourceUrl = 'http://www.websector.de/blog/wp-content/uploads/2007/08/22/ButtonDisplayState.as';
+		$headline = 'ButtonDisplayState.as';
+		$hasDownloadLink = true;
+
+		$codeExample = new CodeViewer();
+		$codeExample->showCode($sourceUrl, $headline, $hasDownloadLink);	
+	?></phpcode></p><h2>Download full source</h2><p><a href="[download(DisabledSimpleButtonExample.zip)]">DisabledSimpleButtonExample.zip</a><br />(Downloads: [downloadcounter(DisabledSimpleButtonExample.zip)])</p>
