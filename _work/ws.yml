@@ -1,16 +1,26 @@
 timestamp: 2013-02-01
-title:     Relaunch of WEBSECTOR.DE
+title:     Relaunch von WEBSECTOR.DE
 
 description:
-  Sed <a href="#">ut</a> perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+  WEBSECTOR.DE ist mein persönliches Portfolio.
+  <br><br>
+  Durch den Relaunch sind alle Seiten "responsive" und daher auch für mobile Endgeräte optimiert.
+  <br><br>
+  Der bisher losgelöste Blog wurde in das Layout fest integriert. Zudem wurden alle dynamischen
+  Inhalte zu statischen Seiten mit Hilfe von Jekyll generiert.
+  <br><br>
+  Technisch wurden aktuelle Technologien
+  wie z.B. <a href="http://jekyllrb.com/">Jekyll</a> oder <a href="http://compass-style.org/">Compass</a>
+  eingesetzt.
 
 images:
   - http://lorempixel.com/600/400/
 
 responsibilities:
-  - JavaScript development (Backbone, Lo-Dash, Handlebars, jQuery, jQuery UI, CoffeeScript)
-  - Customizable features and skins (LESS, Raphaël)
-  - Command line build (Grunt)
-  - Behavior-driven development (Jasmine, Sinon)
-  - Flash Video Fallback (AS3, OOP, FlexUnit)
+  - Layout "Responsive Webdesign"
+  - HTML5, CSS3 (<a href="http://compass-style.org/">Compass</a>, <a href="http://susy.oddbird.net/">Susy</a>)
+  - Statische Webseiten Generierung mit <a href="http://jekyllrb.com/">Jekyll</a>
+  - Jekyll Plugin-Entwicklung (<a href="https://github.com/sectore/jekyll-swfobject">jekyll-swfobject</a>)
+
+
 

@@ -1,12 +1,31 @@
 timestamp: 2011-01-01
-title: What have I done before 2013?
-
-timeframe: 1999-2012
+title: Was waren die Arbeiten vor 2013?
 
 description:
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+  In den Jahren vor 2013 habe ich lange Zeit Anwendungen mit
+  <a href="http://www.adobe.com/de/products/flash.html">Adobe Flash</a> (13 Jahre)
+  sowie mit <a href="http://www.adobe.com/de/products/flex.html">Adobe Flex</a> (6 Jahre)
+  und <a href="http://www.adobe.com/de/products/air.html">AIR</a> umgesetzt.
 
-client:
+responsibilities:
+  - MVC Architektur (Cairngorm, Mate, Parsley, PureMVC, Robotlegs, Swiz)
+  - Testgetriebene Entwicklung (FlexUnit, AsUnit)
+  - Entwicklung individueller Flex Komponenten
+  - Skinning und Styling von Flex Komponenten (Flash-Catalyst, Degrafa)
+  - Flash Remoting / BlazeDS
+  - Schnittstellen Client - Server (Erlang, Java, PHP, ColdFusion)
+  - Datenvisualsierungen (Flex Charts, yFiles FLEX, Flare)
+  - Instant Messaging Service
+  - Textbearbeitung (Text Layout Framework)
+  - Live Video Streaming (FMS)
+  - Flash P2P (HydraP2P)
+  - i18n
+  - Offline Datenhandling (SQLite)
+  - PDF-Generierung (AlivePDF)
+  - Image Processing mit Pixel Bender
+  - Technische Projektleitung
+  - Teamleitung
+  - Schulung
 
 
 images:

@@ -34,16 +34,16 @@ header
   background-image: $img-dots
 
   h1
-    @include prefix(.3)
-    @include suffix(.3)
-    @include padding-leader(.7)
-    @include padding-trailer(.6)
-    @include adjust-font-size-to(55px)
+    @include prefix(.5)
+    @include suffix(.5)
+    @include padding-leader(.8)
+    @include padding-trailer(.7)
+    @include adjust-font-size-to(88px)
     span
       color: $font-color-highlighted
 
     #hi
-      @include adjust-font-size-to(88px, 1, 55px)
+      //@include adjust-font-size-to(88px, 1, 55px)
     
   @include respond-to('default-screen')
     h1
