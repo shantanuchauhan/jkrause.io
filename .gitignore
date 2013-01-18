@@ -2,6 +2,7 @@
 
 _site
 assets/images/*
+blog/uploads
 
 .idea/*
 *.iml
