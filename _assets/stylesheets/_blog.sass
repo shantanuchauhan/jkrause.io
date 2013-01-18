@@ -1,4 +1,3 @@
-
 //
 // make sure that the content is located on top to have clickable content
 .post-content>div
@@ -6,7 +5,6 @@
 
 .post-content>section
   position: absolute
-
 
 #post-headline-container
   position: relative
@@ -17,21 +15,23 @@
     @include respond-to('big-screen')
       padding: 0 pixel-to-em(20, 30)
 
+.post-content
+  h2
+    @include adjust-font-size-to(30px)
+    @include margin-leader(1)
+    @include margin-trailer(.5)
 
-.blog-content h3,
-.post-content h2
-  @include adjust-font-size-to(30px)
-  @include margin-leader(1)
-  @include margin-trailer(.5)
-  background-image: none
+    @include respond-to('small-and-default-screen')
+      @include adjust-font-size-to(30px, 1.5)
 
-  @include respond-to('small-and-default-screen')
-    @include adjust-font-size-to(30px, 1.5)
+  h3,
+  h4
+    @include adjust-font-size-to(21px)
+    @include margin-leader(1)
+    @include margin-trailer(.5)
 
-.post-content h4
-  @include adjust-font-size-to(21px)
-  @include prefix($content-padding-left-right)
-  @include suffix($content-padding-left-right)
+  img
+    @include margin-trailer(1)
 
 .post-content,
 .blog-content
@@ -43,19 +43,44 @@
     li
       @include prefix($content-padding-left-right)
       @include suffix($content-padding-left-right)
-      @include adjust-font-size-to(19px)
       @include padding-trailer(.75)
+      @include adjust-font-size-to(19px)
+
+  code
+    font-family: Courier, monospace
+    border: 1px solid #eaeaea
+    padding: 0 pixel-to-em(5)
+    @include border-radius(3px, 4px)
+    background-color: #f8f8f8
+    @include adjust-font-size-to(17px, 1, 19px)
 
   ol
     list-style-type: decimal
     list-style-position: inside
-
+    li
+      @include padding-trailer(.5)
+      @include adjust-font-size-to(19px)
 
   .posted-on
     font-style: italic
+    @include padding-trailer(1)
+
 
 .blog-latest-post
 
   .posted-on
     font-style: italic
+
+// override code to avoid issues with syntax styles
+div.highlight
+  border: 1px solid #eaeaea
+  @include border-radius(3px, 4px)
+  padding: pixel-to-em(20)
+  @include margin-trailer(1)
+
+  pre>code
+    border: none
+    padding: 0
+    background-color: transparent
+
 

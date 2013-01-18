@@ -21,7 +21,7 @@
 #    safe true
 #
 #    def generate(site)
-#      Dir.chdir File.expand_path('../src/jekyll/_assets/stylesheets', File.dirname(__FILE__)) do
+#      Dir.chdir File.expand_path('../_assets/stylesheets', File.dirname(__FILE__)) do
 #        Compass::Exec::SubCommandUI.new(%w(compile)).run!
 #      end
 #    end

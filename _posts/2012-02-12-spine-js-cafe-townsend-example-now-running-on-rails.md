@@ -1,5 +1,6 @@
 --- 
 layout: post
+group: blog
 title: "Spine.js - Cafe Townsend example: Now running on Rails"
 tags: 
 - CoffeeScript
@@ -14,6 +15,7 @@ meta:
 ---
 
 After porting the ActionScript based application Cafe Townsend to JavaScript by using [Spine](http://www.websector.de/blog/2011/12/31/spine-js-cafe-townsend-example/) and [Angular](http://www.websector.de/blog/2012/01/17/fun-with-angularjs-rails-coffeescript-sass-another-cafe-townsend-example/) here is another Spine example, now running on [Rails](http://rubyonrails.org/). Like all the previous examples the JavaScript code is written in [CoffeeScript](http://coffeescript.org/).
+
 <!--more-->
 
 ## Screen shot
