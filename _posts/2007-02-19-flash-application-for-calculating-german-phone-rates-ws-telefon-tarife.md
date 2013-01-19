@@ -1,6 +1,6 @@
 --- 
 layout: post
-group: 'blog'
+group: blog
 title: "Flash application for calculating German phone rates: \"WS-Telefon-Tarife\""
 tags: 
 - Flash
@@ -19,25 +19,25 @@ Long time ago (in September 2003 ;-) ) I designed and developed a Flash based ap
 
 Menu:
 
-[![WS-Telefon-Tarife Screen](http://www.websector.de/blog/wp-content/uploads/2007/02/ws_telefon_screen3.png)](http://www.websector.de/telefon/tarife.php)
+[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen3.png)](/telefon/tarife.php)
 
 Results:
 
-[![WS-Telefon-Tarife Screen](http://www.websector.de/blog/wp-content/uploads/2007/02/ws_telefon_screen2.png)](http://www.websector.de/telefon/tarife.php)
+[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen2.png)](/telefon/tarife.php)
 
 Print preview:
 
-[![WS-Telefon-Tarife Screen](http://www.websector.de/blog/wp-content/uploads/2007/02/ws_telefon_screen4.png)](http://www.websector.de/telefon/tarife.php)
+[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen4.png)](/telefon/tarife.php)
 
 ## Details
 
 *   ActionScript 1 (procedural programming)
 *   CMS based on PHP / MySQL
-*   You will find the original application "WS-Telefon-Tarife" and its source [here](http://www.websector.de/telefon/tarife.php).
+*   You will find the original application "WS-Telefon-Tarife" [here](/telefon/tarife.php).
 
 ## Free download
 
-Source: [telefon_tarife.zip]([download(ws_telefon_fla)])
+Source: [telefon_tarife.zip](/blog/uploads/2007/02/19/telefon_tarife.zip)
 
 Note: "WS-Telefon-Tarife" is licensed under a [Creative Commons Attribution - Noncommercial 3.0 License](http://creativecommons.org/licenses/by-nc/3.0/). You accept the license if you download the source of this application.
 

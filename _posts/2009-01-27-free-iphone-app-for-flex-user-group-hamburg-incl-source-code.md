@@ -1,6 +1,6 @@
 --- 
 layout: post
-group: 'blog'
+group: blog
 title: Free iPhone app for Flex User Group Hamburg (incl. source code)
 tags: 
 - iPhone
@@ -20,7 +20,9 @@ Today I will present the new flexughh app [at our flexughh-Meeting](http://www.f
 
 ## Screen shots
 
-{% swfobject /assets/swf/ws-slideshow.swf bgcolor:#000000 flashvars:XMLPath=http://www.interactivehh.de/wp-content/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}{% endswfobject %}
+{% swfobject /assets/swf/ws-slideshow.swf bgcolor:#000000 flashvars:XMLPath=http://www.interactivehh.de/wp-content/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}
+<p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
+{% endswfobject %}
 
 ## Get flexughh app for free!
 
