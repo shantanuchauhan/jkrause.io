@@ -2,6 +2,7 @@
 
 _site
 assets/images/*
+assets/swf/*
 blog/uploads
 
 .idea/*

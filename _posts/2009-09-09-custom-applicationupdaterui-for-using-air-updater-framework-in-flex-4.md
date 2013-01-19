@@ -65,9 +65,9 @@ updater.checkNow();
 It's pretty easy to create your own skin and add it to the component!
 Check out the 3 different skins and feel free to use these as an example for your custom skins.
 
-1.  _AppUpdaterUIStandardSkin:_ Cloned interface of the Flex 3 based ApplicationUpdaterUI
-2.  _AppUpdaterUISilverSkin:_ Inspired from Adobes shiny XD components
-3.  _AppUpdaterUIFirefoxSkin:_ That's my favorite ;). Do you know the status bar on the top of a HTML page in Firefox 3.0 if a popup is trying to open? This skin a clone of such a bar to inform the user, if an update available. No need for an extra popup window.
+1.  `AppUpdaterUIStandardSkin:` Cloned interface of the Flex 3 based ApplicationUpdaterUI
+2.  `AppUpdaterUISilverSkin:` Inspired from Adobes shiny XD components
+3.  `AppUpdaterUIFirefoxSkin:` That's my favorite ;). Do you know the status bar on the top of a HTML page in Firefox 3.0 if a popup is trying to open? This skin a clone of such a bar to inform the user, if an update available. No need for an extra popup window.
 
 {% swfobject /blog/uploads/2009/09/09/FlexUpdaterUIExample.swf width:100% height:500px bgcolor:#FFFFFF menu:false %}
 <p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
