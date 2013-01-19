@@ -30,13 +30,9 @@ _(Right mouse click to view source of example)_
 
 ## Usage
 
-Two steps only:
-
-1.  Just create an instance of WSSkinStatesTester2.  And add all skins which have to be checked
+### Step one: Create an instance of WSSkinStatesTester
 
 {% highlight mxml linenos %}
-//
-// Step 1
 // Create an instance of WSSkinStatesTester using MXML
 <ws:WSSkinStatesTester
     xmlns:ws="http://websector.de"
@@ -45,10 +41,10 @@ Two steps only:
     />
 {% endhighlight %}
 
+### Step two: Add all skins which have to be checked
+
 {% highlight actionscript linenos %}
-//
-// Step 2
-// Create and add an instance of a skin to WSSkinStatesTester.
+// Add an instance of a skin to WSSkinStatesTester.
 var skin: PanelSkin = new PanelSkin();
 skin.width = 250;
 skin.height =250;
@@ -91,14 +87,14 @@ skinTester.skins = [ skin1, skin2, skin3  ];
 
 **Note:** To run all code [Flex SDK 4.0.0.9948 or higher](http://opensource.adobe.com/wiki/display/flexsdk/Download+Flex+4) is required.
 
-*   SWC of WSSkinStatesTester and example posted above: [GumboTestSkinExample.zip]([download(GumboTestSkinExample)]) (Downloads: [downloadcounter(GumboTestSkinExample)])
-*   Full source code of WSSkinStatesTester is hosted at Github: [http://github.com/sectore/WSSkinStatesTester/](http://github.com/sectore/WSSkinStatesTester/)
+*   SWC of WSSkinStatesTester and example posted above: [GumboTestSkinExample.zip](/blog/uploads/2009/09/06/srcview/GumboTestSkinExample.zip)
+*   Full source code of WSSkinStatesTester is hosted at Github: [http://github.com/sectore/WSSkinStatesTester/](http://github.com/sectore/WSSkinStatesTester)
 
-<p>WSSkinStatesTester is open source licensed under [Mozilla Public License 1.1.](http://www.mozilla.org/MPL/MPL-1.1.html)
+WSSkinStatesTester is open source licensed under [Mozilla Public License 1.1.](http://www.mozilla.org/MPL/MPL-1.1.html)
 
-  Happy skin states testing ;)
+Happy skin states testing ;)
 
-  -Jens
+-Jens
 
 
 

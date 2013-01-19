@@ -20,13 +20,13 @@ Today I will present the new flexughh app [at our flexughh-Meeting](http://www.f
 
 ## Screen shots
 
-{% swfobject http://www.websector.de/blog/wp-includes/swf/ws-slideshow.swf bgcolor:#000000 flashvars:XMLPath=http://www.flexughh.de/wp-content/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}{% endswfobject %}
+{% swfobject /assets/swf/ws-slideshow.swf bgcolor:#000000 flashvars:XMLPath=http://www.interactivehh.de/wp-content/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}{% endswfobject %}
 
 ## Get flexughh app for free!
 
 The flexughh app is be available in German and in English!
 
-[![flexughh on iTunes Store](http://www.websector.de/blog/wp-content/uploads/2009/01/27/flexughh_iTunesStore_en.png)](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=303635605&mt=8)
+[![flexughh on iTunes Store](/blog/uploads/2009/01/27/flexughh_iTunesStore_en.png)](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=303635605&mt=8)
 
 ## Source code
 
