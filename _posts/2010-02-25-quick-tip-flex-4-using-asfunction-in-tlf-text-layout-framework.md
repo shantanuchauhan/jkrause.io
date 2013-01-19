@@ -15,7 +15,7 @@ Do you remember the very old school global function called  `asfunction`? It was
 <!--more-->
 
 Since ActionScript 3 `asfunction` has [been deprecated](http://www.adobe.com/devnet/actionscript/as3_migration_table.html) and
-it was replaced with a new event handling using [`TextEvent.LINK](http://help.adobe.com/en_US/FlashPlatform/beta/reference/actionscript/3/flash/events/TextEvent.html#LINK) and
+it was replaced with a new event handling using [`TextEvent.LINK`](http://help.adobe.com/en_US/FlashPlatform/beta/reference/actionscript/3/flash/events/TextEvent.html#LINK) and
 `event:myEventType` defined at the HTML link. For example `<a href='event:myEventType'>my link</a>`.
 In this case you have to add just one event listener to handle all (!!) events.
 
@@ -23,9 +23,11 @@ In this case you have to add just one event listener to handle all (!!) events.
 
 But what happens if you want to call an ActionScript method clicking an HTML link and using the Text Layout Framework (TLF) in Flex 4?
 
-`RichEditableText` is the TLF component to embed a clickable HTML text, but it does not support an event handler for a `TextEvent.LINK` event. Today I ran into this issue and I couldn't find any solution (either at official Flex doc or not at Google).
+`RichEditableText` is the TLF component to embed a clickable HTML text, but it does not support an event handler for a `TextEvent.LINK` event.
+Today I ran into this issue and I couldn't find any solution (either at official Flex doc or not at Google).
 
-Anyway, the solution it is pretty easy. Just define your HTML links as before in Flex 3 and add an event listener for every (!!) event to a `TextFlow` of a `RichEditableText`
+Anyway, the solution it is pretty easy. Just define your HTML links as before in Flex 3 and add an event
+listener for every (!!) event to a `TextFlow` of a `RichEditableText`
 
 {% highlight mxml linenos %}
 <?xml version="1.0" encoding="utf-8"?>
