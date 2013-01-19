@@ -27,3 +27,4 @@ site_base: /
 exclude:
   - README.md
   - config.rb
+  - websector.de.iml
