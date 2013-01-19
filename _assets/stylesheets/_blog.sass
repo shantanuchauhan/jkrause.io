@@ -75,12 +75,14 @@
 div.highlight
   border: 1px solid #eaeaea
   @include border-radius(3px, 4px)
-  padding: pixel-to-em(20)
   @include margin-trailer(1)
 
-  pre>code
-    border: none
-    padding: 0
-    background-color: transparent
+  pre
+    padding: pixel-to-em(20)
+
+    &>code
+      border: none
+      padding: 0
+      background-color: transparent
 
 
