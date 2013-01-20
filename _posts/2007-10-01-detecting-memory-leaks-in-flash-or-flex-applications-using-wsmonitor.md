@@ -22,7 +22,7 @@ WSMonitor is a handy tool based on AS3 to detect memory issues in Flash or Flex 
 
 Press start button to run WSMonitor. All Flash movies running within this Browser are monitored, such as the maps.amung.us plugin located on right hand.
 
-{% swfobject /blog/uploads/2007/10/01/WSMonitor.swf content_id=exampleA width:100% height:220px bgcolor:#FFFFFF menu:false %}
+{% swfobject /blog/uploads/2007/10/01/WSMonitor.swf width:100% height:220px bgcolor:#FFFFFF menu:false %}
 <p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
 {% endswfobject %}
 

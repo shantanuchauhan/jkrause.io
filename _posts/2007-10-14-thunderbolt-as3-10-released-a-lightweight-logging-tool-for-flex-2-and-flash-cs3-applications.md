@@ -36,13 +36,13 @@ Any questions...? What the fuck is [Firebug](http://www.getfirebug.com/)...? ;-)
 
 ### Pure Flex 2 example
 
-{% swfobject /blog/uploads/2007/10/14/ThunderBoltFlexExample.swf content_id=exampleA width:100% height:150px bgcolor:#FFFFFF menu:false %}
+{% swfobject /blog/uploads/2007/10/14/ThunderBoltFlexExample.swf content_id:exampleOne width:100% height:150px bgcolor:#FFFFFF menu:false %}
 <p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
 {% endswfobject %}
 
 ### Flex 2 example using the Flex 2 Logging Framework
 
-{% swfobject /blog/uploads/2007/10/14/ThunderBoltTargetExample.swf content_id=exampleB width:100% height:150px bgcolor:#FFFFFF menu:false %}
+{% swfobject /blog/uploads/2007/10/14/ThunderBoltTargetExample.swf content_id:exampleTwo width:100% height:150px bgcolor:#FFFFFF menu:false %}
 <p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
 {% endswfobject %}
 
