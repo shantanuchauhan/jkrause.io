@@ -36,4 +36,4 @@ Have fun!
 
 ##Last update (03/23/08)
 
-The full source has been updated using PureMVC v. 2.0.3. Check out the source at the [PureMVC manifold project](http://www.websector.de/blog/download-manager.php?id=9).
+The full source has been updated using PureMVC v. 2.0.3. Check out the source at the [PureMVC manifold project](http://trac.puremvc.org/PureMVC_AS3).

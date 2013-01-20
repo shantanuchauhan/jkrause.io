@@ -39,7 +39,7 @@ alias cleartrace='cat /dev/null > /Users/[username]/Library/Preferences/Macromed
 *  Open a new shell and type `trace`. The `flashlog.txt` will be opened in Console and will be
 logged in run time. For searching log messages type a word or phrase in the Filter field.
 
-![Screen Console](http://www.websector.de/blog/wp-content/uploads/2007/02/screen-console.png)`
+![Screen Console](/blog/uploads/2007/02/screen-console.png)`
 
 * For clearing `flashlog.txt` type `cleartrace`.
 

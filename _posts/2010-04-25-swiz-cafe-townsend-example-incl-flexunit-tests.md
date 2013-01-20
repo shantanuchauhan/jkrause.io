@@ -12,7 +12,7 @@ meta:
   _edit_last: "2"
 ---
 
-Cafe Townsend is a well known application to demonstrate any MVC framework for using Flex or ActionScript. There are already ports of [Cairngorm](http://cairngormdocs.org/blog/?p=19), [Mate](http://www.websector.de/blog/2010/03/12/mate-cafe-townsend-example-updated-for-using-flex-4/), [PureMVC](http://trac.puremvc.org/Demo_AS3_Flex_CafeTownsend), [Spring ActionScript](http://www.herrodius.com/blog/307), [RobotLegs](http://github.com/darscan/robotlegs-demos-Bundle/tree/master/CafeTownsend/) and now [Swiz](http://github.com/swiz/swiz-examples/tree/master/CafeTownsend-Flex4/).
+Cafe Townsend is a well known application to demonstrate any MVC framework for using Flex or ActionScript. There are already ports of [Cairngorm](http://cairngormdocs.org/blog/?p=19), [Mate](/blog/2010/03/12/mate-cafe-townsend-example-updated-for-using-flex-4/), [PureMVC](http://trac.puremvc.org/Demo_AS3_Flex_CafeTownsend), [Spring ActionScript](http://www.herrodius.com/blog/307), [RobotLegs](http://github.com/darscan/robotlegs-demos-Bundle/tree/master/CafeTownsend/) and now [Swiz](http://github.com/swiz/swiz-examples/tree/master/CafeTownsend-Flex4/).
 
 In cooperation with "my partner in crime" [Sönke Rohde](http://soenkerohde.com/) we have built a Swiz port including unit tests. Check out the following example and its source.
 

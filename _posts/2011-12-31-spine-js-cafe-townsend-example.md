@@ -12,7 +12,7 @@ published: true
 meta: 
   _edit_last: "2"
 ---
-For a better understanding of [Spine.js](http://spinejs.com/) I have build a port of the Cafe Townsend app, which is a standard for demonstrating ActionScript based MVC frameworks (e.g. [Swiz](http://www.websector.de/blog/2010/04/25/swiz-cafe-townsend-example-incl-flexunit-tests/) or [Mate](http://www.websector.de/blog/2010/03/12/mate-cafe-townsend-example-updated-for-using-flex-4/)).
+For a better understanding of [Spine.js](http://spinejs.com/) I have build a port of the Cafe Townsend app, which is a standard for demonstrating ActionScript based MVC frameworks (e.g. [Swiz](/blog/2010/04/25/swiz-cafe-townsend-example-incl-flexunit-tests/) or [Mate](/blog/2010/03/12/mate-cafe-townsend-example-updated-for-using-flex-4/)).
 
 The JavaScript port is written in [CoffeeScript](http://coffeescript.org/) using [Spine.js](http://spinejs.com) and [Hem](https://github.com/maccman/hem). It uses [Eco](https://github.com/sstephenson/eco) for templating HTML and [Stylus](http://learnboost.github.com/stylus/) for less CSS.
 

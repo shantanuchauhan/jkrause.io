@@ -170,7 +170,7 @@ Note: Windows users have to change the target called "run" located in the `build
 drag the `build.xml` located in the Flash Explorer to its Ant view and
 press the green button to run the script.
 
-![Eclipse Ant View](http://www.websector.de/blog/wp-content/uploads/2007/03/eclipse-ant-view.png)
+![Eclipse Ant View](/blog/uploads/2007/03/eclipse-ant-view.png)
 
 *  If you use other debugger tools, you'll only have to change one line located in `build.xml`
 {% highlight xml linenos %}

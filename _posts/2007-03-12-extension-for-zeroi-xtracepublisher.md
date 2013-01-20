@@ -21,13 +21,13 @@ meta:
 
 Here is a screen of a XTrace window receiving Zerois debug messages:
 
-![XTrace Window](http://www.websector.de/blog/wp-content/uploads/2007/03/xtrace-window.png)
+![XTrace Window](/blog/uploads/2007/03/xtrace-window.png)
 
 ## Instructions
 
 *  Grab the latest source of Zeroi from its [Subversion Repository](http://code.google.com/p/zeroi/source). You will find there the new extension for XTrace, too.
 *  Download and install [XTrace](http://developer.mabwebdesign.com/xtrace.html). For enjoying the latest features (e.g. text highlighting) it's recommended to use the [XTrace SVN Repository](http://svn.mabwebdesign.com/xtrace).
-*  Download the [Zeroi example](http://www.websector.de/blog/download-manager.php?id=1) and follow the steps 4 up to 7 described in my previous post called ["Debugging with MTASC, Ant and Zeroi"](http://www.websector.de/blog/2007/03/04/debugging-with-mtasc-ant-and-zeroi/).
+*  Download the [Zeroi example](/blog/uploads/2007/03/04/zeroiExample.zip) and follow the steps 4 up to 7 described in my previous post called ["Debugging with MTASC, Ant and Zeroi"](/blog/2007/03/04/debugging-with-mtasc-ant-and-zeroi/).
 *  Add `XTracePublisher` as Zerois publisher to MTASC `-trace` flag. For this purpose you have to change only one line in the Ant script located in my example:
 {% highlight xml %}
 <arg value="-trace"/>

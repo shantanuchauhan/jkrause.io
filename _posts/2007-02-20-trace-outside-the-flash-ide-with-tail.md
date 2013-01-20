@@ -22,7 +22,7 @@ As [Josh Buhler](http://www.joshbuhler.com/2004/11/20/using-the-trace-method-fro
 
 Check that you installed the Flash Debug Player on your machine successfully.
 
-![](http://www.websector.de/blog/wp-content/uploads/2007/02/contextmenuflashdebugplayer.png)
+![](/blog/uploads/2007/02/contextmenuflashdebugplayer.png)
 
 Press CTRL and click on a Flashmovie located in Browser and you'll have a context menu with the "Debugger" option like the image above. If not, [uninstall](http://www.adobe.com/support/flashplayer/downloads.html#uninstaller) the current Player and install the latest version of the [Flash Debug Player](http://www.adobe.com/support/flashplayer/downloads.html).
 
@@ -47,7 +47,7 @@ Open the Terminal and type
 {% highlight bash %}
 tail -f /Users/{username}/Library/Preferences/Macromedia/Flash Player/Logs/flashlog.txt
 {% endhighlight %}
-![screen_terminal.png](http://www.websector.de/blog/wp-content/uploads/2007/02/screen_terminal.png)
+![screen_terminal.png](/blog/uploads/2007/02/screen_terminal.png)
 
 That's it ;-)
 

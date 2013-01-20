@@ -219,7 +219,7 @@ package asunit.framework
 }
 {% endhighlight %}
 
-The following test example based on my Flash Remoting example using [OpenAMF](http://www.openamf.com/) described at the previous article called ["Best practices: Custom class mapping using OpenAMF and AS3 (Flash CS3 - not Flex)"](http://www.websector.de/blog/2007/09/23/best-practices-custom-class-mapping-using-openamf-and-as3-flash-cs3-not-flex/)
+The following test example based on my Flash Remoting example using [OpenAMF](http://www.openamf.com/) described at the previous article called ["Best practices: Custom class mapping using OpenAMF and AS3 (Flash CS3 - not Flex)"](/blog/2007/09/23/best-practices-custom-class-mapping-using-openamf-and-as3-flash-cs3-not-flex/)
 
 {% highlight as3 linenos %}
 package tests

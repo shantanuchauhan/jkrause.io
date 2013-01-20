@@ -10,7 +10,7 @@ published: true
 meta: 
   _edit_last: "2"
 ---
-In my previous entry I described ["5 reasons for building Apollo applications as a Flash Developer"](http://www.websector.de/blog/2007/03/23/5-reasons-for-building-apollo-applications-as-a-flash-developer/). Today I'll give you an introduction for building an Apollo application without Flex Builder 2 using [Apollo SDK](http://www.adobe.com/go/getapollo) (Alpha) and [TextMate](http://macromates.com/).
+In my previous entry I described ["5 reasons for building Apollo applications as a Flash Developer"](/2007/03/23/5-reasons-for-building-apollo-applications-as-a-flash-developer/). Today I'll give you an introduction for building an Apollo application without Flex Builder 2 using [Apollo SDK](http://www.adobe.com/go/getapollo) (Alpha) and [TextMate](http://macromates.com/).
 
 <!--more-->
 

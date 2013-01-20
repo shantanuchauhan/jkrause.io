@@ -48,11 +48,11 @@ Logger.error ("An error log ", myString);
 
 ### Screen shot using Firebug
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/loglevels.png)
+![](/blog/uploads/2008/06/15/loglevels.png)
 
 ### Screen shot using ThunderBolt AS3 Console
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/loglevels2.png)
+![](/blog/uploads/2008/06/15/loglevels2.png)
 
 ## 2) Logging one or more objects at once
 
@@ -82,11 +82,11 @@ Logger.info ("Logging more objects at once ", myString, myNumber, myObject);
 
 ### Screen shot using Firebug
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/objects.png)
+![](/blog/uploads/2008/06/15/objects.png)
 
 ### Screen shot using ThunderBolt AS3 Console
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/objects2.png)
+![](/blog/uploads/2008/06/15/objects2.png)
 
 ## 3) Using the Flex Logging API
 
@@ -115,11 +115,11 @@ Log.getLogger("de.websector.playground.ThunderBoltTargetExample").info("Just an 
 
 ### Screen shot using Firebug
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/flexapi.png)
+![](/blog/uploads/2008/06/15/flexapi.png)
 
 ### Screen shot using ThunderBolt AS3 Console
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/flexapi2.png)
+![](/blog/uploads/2008/06/15/flexapi2.png)
 
 ## 4) Stop and hide logging
 
@@ -179,7 +179,7 @@ trace ("warn Here is a warn message");
 
 ### Screen shot using ThunderBolt AS3 Console
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/06/15/trace.png)
+![](/blog/uploads/2008/06/15/trace.png)
 
 ## 9) Any issues with the Flash Player security sandbox using Firebug?
 

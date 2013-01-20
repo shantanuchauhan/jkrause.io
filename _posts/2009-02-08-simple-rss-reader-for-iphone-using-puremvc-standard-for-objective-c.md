@@ -21,7 +21,7 @@ To dive into the Objective-C port of PureMVC as quick as possible I have built a
 
 ## Screen shots
 
-[![Screen shots of an iPhone RSS reader using PureMVC](http://www.websector.de/blog/wp-content/uploads/2009/02/08/sreenshot_puremvc_iphone.jpg)](http://github.com/sectore/puremvc-objectivec-simplerssreader/)
+[![Screen shots of an iPhone RSS reader using PureMVC](/blog/uploads/2009/02/08/sreenshot_puremvc_iphone.jpg)](http://github.com/sectore/puremvc-objectivec-simplerssreader/)
 
 ## View and download full source
 

@@ -22,7 +22,7 @@ BTW: [Theo Hultberg](http://blog.iconara.net) has already opened a [very cool pr
 
 ## Screen shot of the AIR example
 
-![](http://www.websector.de/blog/wp-content/uploads/2008/10/04/mateAIRSQLiteExample.png)
+![](/blog/uploads/2008/10/04/mateAIRSQLiteExample.png)
 
 ## Code example for using the extensions
 

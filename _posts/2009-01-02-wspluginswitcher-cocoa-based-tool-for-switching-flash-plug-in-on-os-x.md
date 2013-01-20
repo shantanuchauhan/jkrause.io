@@ -15,7 +15,7 @@ published: true
 meta: 
   _edit_last: "2"
 ---
-[![](http://www.websector.de/blog/wp-content/uploads/2009/01/02/logo450x76.png)](http://code.google.com/p/wspluginswitcher/)
+[![](/blog/uploads/2009/01/02/logo450x76.png)](http://code.google.com/p/wspluginswitcher/)
 
 It's never to late to learn a new (programming) language ;) So I've been starting to learn [Cocoa](http://developer.apple.com/cocoa/ ), Apple's Objective-C based programming environment for Mac OS X.
 
@@ -27,11 +27,11 @@ Check it out - it's open source, including its source code: [WSPluginSwitcher on
 
 ## Screen shots
 
-[![](http://www.websector.de/blog/wp-content/uploads/2009/01/02/WSPluginSwitcher_mainWindow.png)](http://code.google.com/p/wspluginswitcher/)
+[![](/blog/uploads/2009/01/02/WSPluginSwitcher_mainWindow.png)](http://code.google.com/p/wspluginswitcher/)
 
-[![](http://www.websector.de/blog/wp-content/uploads/2009/01/02/WSPluginSwitcher_prefsWindow.png)](http://code.google.com/p/wspluginswitcher/)
+[![](/blog/uploads/2009/01/02/WSPluginSwitcher_prefsWindow.png)](http://code.google.com/p/wspluginswitcher/)
 
-[![](http://www.websector.de/blog/wp-content/uploads/2009/01/02/WSPluginSwitcher_desktopIcon.png)](http://code.google.com/p/wspluginswitcher/)
+[![](/blog/uploads/2009/01/02/WSPluginSwitcher_desktopIcon.png)](http://code.google.com/p/wspluginswitcher/)
 
 ## Download WSPluginSwitcher including full source
 

@@ -67,7 +67,7 @@ UPDATE (10/06/07): Flex Builder 3 Beta 2 needs a valid port as well. For more in
 {% endhighlight %}
 
 * Open your project properties window with a right mouse click on your project folder within Flex Builder to add the `services-config.xml` as a `-services` argument to the Flex compiler
-![](http://www.websector.de/blog/wp-content/uploads/2007/08/07/compilerProps.png)
+![](/blog/uploads/2007/08/07/compilerProps.png)
 * Copy all files of [Alex Uhlmann's CairngormLogin Sample](http://www.alex-uhlmann.de/flash/adobe/blog/cairngormlogin/srcview/index.html) into your project folder.
 *Update the `LoginDelegate.as`, `LoginCommand.as` and `LoginPanel.mxml` to the latest Cairngorm package (v. 2.2.1 beta) as [Neil Webb described](http://www.nwebb.co.uk/blog/?p=63).
 At the end you can check your work with [my files](#download) as well.

@@ -18,7 +18,7 @@ meta:
 
 [ThunderBolt AS3](http://code.google.com/p/flash-thunderbolt/), which is a lightweight logger extension for Flex 3-4, AIR and Flash 9-10 applications, has been updated to version 2.2.
 
-Check out the [new features](http://www.websector.de/blog/2009/03/08/thunderbolt-as3-version-22-out-now):
+Check out the [new features](/blog/2009/03/08/thunderbolt-as3-version-22-out-now):
 
 <!--more-->
 
