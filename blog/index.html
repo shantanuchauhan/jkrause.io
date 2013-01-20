@@ -7,15 +7,30 @@ layout: default
   {% include latest_post_excerpt.html %}
 </section>
 
-<section id="blog-archiv">
+<section id="blog-archive">
   <h2 class="contentHeadline">Archiv</h2>
   <article>
-    <ul>
       {% for post in site.posts %}
-        {% if post != site.posts.first %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
+        {% unless post.next %}
+        <h3 class="contentSubHeadline">{{ post.date | date: '%Y' }}</h3>
+        <ul>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+          </ul>
+          <h3 class="contentSubHeadline">{{ post.date | date: '%Y' }}</h3>
+          <ul>
+          {% endif %}
+        {% endunless %}
+
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+        {% unless post.previous %}
+          </ul>
+        {% endunless %}
+
       {% endfor %}
-    </ul>
+
   </article>
 </section>

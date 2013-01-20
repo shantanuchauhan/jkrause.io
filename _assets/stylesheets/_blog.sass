@@ -46,6 +46,11 @@
       @include padding-trailer(.75)
       @include adjust-font-size-to(19px)
 
+    li.blog-archive-year
+      @include suffix(-$content-padding-left-right)
+      list-style-type: none
+      @include adjust-font-size-to(55px, 1, 19px)
+
   code
     font-family: Courier, monospace
     border: 1px solid #eaeaea
@@ -84,5 +89,7 @@ div.highlight
       border: none
       padding: 0
       background-color: transparent
+
+
 
 
