@@ -4,10 +4,11 @@
   {% if page.group == 'home' %}
     {% include teaser.html %}
   {% endif %}
-  {% include nav.html %}
+  {% include nav_top.html %}
   <div class="content {{ page.group }}-content">
     {{ content }}
   </div>
+  {% include nav_bottom.html %}
   {% include footer.html %}
 </div>
 {% include forkme.html %}

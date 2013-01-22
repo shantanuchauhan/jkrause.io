@@ -23,3 +23,17 @@ footer
   a
     color: $font-color-light
 
+  @include respond-to('small-and-default-screen')
+    background-color: #989898
+    border-top: 1px solid white
+
+    div
+      @include hidden()
+    a
+      color: white
+    p
+      color: white
+      @include padding-leader(3)
+      @include padding-trailer(.5)
+
+

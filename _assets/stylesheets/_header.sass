@@ -1,4 +1,7 @@
 header
+
+  position: relative
+
   h2
     @include padding-leader(1.2)
     @include padding-trailer(.1)
@@ -7,28 +10,72 @@ header
       text-decoration: none
       color: $font-color-light
       text-transform: uppercase
+
+      &:hover,
+      &:active
+        color: $font-color-highlighted
+
       &:hover
         @include animation(link-hover $link-hover-duration)
-        color: $font-color-highlighted
 
     span
       @include adjust-font-size-to($to-size: 21px, $from-size:55px)
-    
-  @include respond-to('small-and-default-screen')
-    h2
-      @include adjust-font-size-to(50px, 2)
 
-      span
-        @include adjust-font-size-to($to-size: 19px, $from-size:50px)
-      
+  h3
+    color: white
+    text-transform: uppercase
+    @include prefix($content-padding-left-right)
+    @include suffix($content-padding-left-right)
+    @include padding-leader(.2)
+    @include padding-trailer(.2)
+    @include adjust-font-size-to(21px)
+    @include hidden()
+
+  @include respond-to('small-and-default-screen')
+    background-color: $nav-bg-color
+    h2
+      @include hidden()
+
+    h3
+      @include shown()
 
   @include respond-to('small-screen')
-    h2
-      @include padding-leader(0.3)
-      @include padding-trailer(.2)
-      text-align: center
-      span
-        display: block
+    h3
+      @include adjust-font-size-to(17px, 2)
+
+
+
+
+#b-main-nav
+  position: absolute
+  display: block
+  right: 0
+  top:  0
+  height: 100%
+  padding: 0 pixel-to-em(15)
+  @include padding-leader(.2)
+  @include padding-trailer(.2)
+  @include adjust-font-size-to(21px)
+  color:  white
+  background-color: #989898
+  span
+    @include squish-text()
+
+  &:hover,
+  &:active
+    background-color: $font-color-highlighted
+    @include single-text-shadow
+
+  &:hover
+    @include animation(nav-hover $link-hover-duration)
+
+  @include hidden()
+
+  @include respond-to('small-and-default-screen')
+    @include shown()
+
+
+
       
 #welcome
   background-image: $img-dots
@@ -45,19 +92,11 @@ header
     #hi
       @include adjust-font-size-to(88px, 1, 55px)
     
-  @include respond-to('default-screen')
-    h1
-      @include adjust-font-size-to(50px)
-
-    #hi
-      @include adjust-font-size-to(80px, 1, 50px)
-    
-  
-
-  @include respond-to('small-screen')
+  @include respond-to('small-and-default-screen')
     h1
       @include prefix(.5)
       @include suffix(.5)
+      @include margin-leader(.5)
       @include padding-leader(.5)
       @include padding-trailer(.4)
       @include adjust-font-size-to(33px)

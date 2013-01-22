@@ -1,3 +1,13 @@
 <header>
   <h2><a href="/">Jens Krause <span>websector.de</span></a></h2>
+  {% if page.group == 'blog' %}
+  <h3>Blog</h3>
+  {% else %}
+    {% if page.title %}
+    <h3>{{ page.title }}</h3>
+    {% else %}
+    <h3>Jens Krause // websector.de</h3>
+    {% endif %}
+  {% endif %}
+  <a id="b-main-nav" href="#bottom-nav-container" title="Zur Hauptnavigation" data-icon="&#xe000;"><span>Hauptnavigation</span></a>
 </header>

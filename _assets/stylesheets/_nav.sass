@@ -1,11 +1,24 @@
-#main-nav-container
+#top-nav-container,
+#bottom-nav-container
   @include clearfix
-  background-color: #666
+  background-color: $nav-bg-color
   ul
     a
       display: block
       color: $font-color-nav
       text-decoration: none
+
+#top-nav-container
+  @include shown()
+  @include respond-to('small-and-default-screen')
+    @include hidden()
+
+
+#bottom-nav-container
+  @include hidden()
+  @include respond-to('small-and-default-screen')
+    @include shown()
+    @include margin-leader(5)
 
 
 #main-nav-list
@@ -15,18 +28,16 @@
       @include adjust-font-size-to(21px)
     
 
+    a:active,
+    a:hover,
     a.active,
     a.active:hover
       background-color: $font-color-highlighted
       @include single-text-shadow
+
+    a:hover,
+    a.active:hover
       @include animation(nav-hover 0s)
-
-    
-
-    a:hover
-      background-color: $font-color-highlighted
-      @include animation(nav-hover $link-hover-duration)
-      @include single-text-shadow
 
 
 
@@ -38,12 +49,20 @@
     li 
       @include horizontal-list-item($padding: 0)
 
+      &:first-child
+        @include hidden()
+
       a
         padding: 0 pixel-to-em(20)
 
-  @include respond-to('small-and-default-screen') 
-    li 
+  @include respond-to('small-and-default-screen')
+
+    li
       border-bottom: 1px solid white
+
+      &:first-child
+        @include shown()
+
       a
         text-align: center
 
@@ -60,11 +79,13 @@
     span
       @include squish-text()
 
-  a:hover
-    //color: $font-color-highlighted
+  a:hover,
+  a:active
     background-color: $font-color-highlighted
-    @include animation(nav-hover $link-hover-duration)
     @include single-text-shadow
+
+  a:hover
+    @include animation(nav-hover $link-hover-duration)
 
   @include respond-to('small-and-default-screen') 
     li 
@@ -106,9 +127,12 @@
     text-decoration: none
     color: #ccc
 
+    &:hover,
+    &:active
+      color: $font-color-highlighted
+
     &:hover
       @include animation(link-hover $link-hover-duration)
-      color: $font-color-highlighted
 
     span
       @include squish-text()

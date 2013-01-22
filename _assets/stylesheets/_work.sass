@@ -7,17 +7,20 @@
 .work-detail-content>section
   position: absolute
 
-.work-content
+// list
+.work-content,
+.work-detail-content
+  article
+    .right-content ul,
+    &>ul
+      list-style-type: disc
+      list-style-position: inside
 
-  article>ul
-    list-style-type: disc
-    list-style-position: inside
-
-    li
-      @include prefix($content-padding-left-right)
-      @include suffix($content-padding-left-right)
-      @include adjust-font-size-to(19px)
-      @include padding-trailer(.75)
+      li
+        @include prefix($content-padding-left-right)
+        @include suffix($content-padding-left-right)
+        @include adjust-font-size-to(19px)
+        @include padding-trailer(.75)
 
 
 .work-content,
@@ -31,6 +34,15 @@
     @include adjust-font-size-to(21px)
     @include prefix($content-padding-left-right)
     @include suffix($content-padding-left-right)
+
+  .left-content
+    li
+      @include padding-trailer(1)
+
+  .left-content
+    li
+      @include padding-trailer(1)
+
 
 #work-headline-container
   position: relative

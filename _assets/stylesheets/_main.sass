@@ -20,13 +20,13 @@ p
 section
   @include margin-leader(3)
 
+  @include respond-to('small-and-default-screen')
+    @include margin-leader(2)
+    @include margin-trailer(2)
+
 #wrapper
   @include container
   //@include susy-grid-background
-
-  @include respond-to('small-and-default-screen')
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
   
 .content
   @include clearfix
@@ -75,23 +75,19 @@ article
       color: $font-color-highlighted
 
 
-.contentSubHeadline2
-
-
 .left-content
   @include respond-to('default-and-big-screen')
     @include span-columns(6)
     @include post(0)
 
-
 .right-content
-
+  @include margin-leader(3)
   @include respond-to('default-and-big-screen')
+    @include margin-leader(0)
     @include span-columns(6 omega)
 
 .read-more
   font-weight: 600
-  text-decoration: none
 
 #github-ribbon
   position: absolute
