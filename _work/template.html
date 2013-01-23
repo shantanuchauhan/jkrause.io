@@ -24,6 +24,10 @@ title: Arbeiten
           <li>{{responsibility}}</li>
           {% endfor %}
         </ul>
+      {% if page.model.timeframe %}
+      <h3 class="contentSubHeadline">Zeitraum</h3>
+      <p>{{page.model.timeframe}}</p>
+      {% endif %}
       {% if page.model.client %}
       <h3 class="contentSubHeadline">Auftraggeber</h3>
       <p>{{page.model.client}}</p>
