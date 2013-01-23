@@ -5,7 +5,7 @@ description:
   Von 1999 bis 2012 habe ich vor allem Anwendungen mit
   <a href="http://www.adobe.com/de/products/flash.html">Adobe Flash</a> (13 Jahre),
   <a href="http://www.adobe.com/de/products/flex.html">Adobe Flex</a> (6 Jahre)
-  und <a href="http://www.adobe.com/de/products/air.html">Adobe AIR</a> programmiert.
+  und <a href="http://www.adobe.com/de/products/air.html">Adobe AIR</a> (6 Jahre) programmiert.
   <br><br>
   Inhaltlich waren es anfangs Werbeanwendungen und Spiele, später sogenannte
   <a href="http://en.wikipedia.org/wiki/Rich_Internet_application">Rich Internet Applications</a>
@@ -33,10 +33,10 @@ responsibilities:
   - Objektorientierte Programmierung (ActionScript 1-3)
   - MVC Architektur (Cairngorm, Mate, Parsley, PureMVC, Robotlegs, Swiz)
   - Testgetriebene Entwicklung (FlexUnit, AsUnit)
-  - Entwicklung individueller Flex Komponenten
   - Flash Remoting / BlazeDS
   - Schnittstellen Client <-> Server (Erlang, Java, PHP, ColdFusion)
-  - Datenvisualsierungen (Flex Charts, yFiles FLEX, Flare)
+  - Entwicklung individueller Flex Komponenten
+  - Datenvisualisierungen (Flex Charts, yFiles FLEX, Flare)
   - Instant Messaging Service
   - Live Video Streaming (FMS)
   - Flash P2P (HydraP2P)
