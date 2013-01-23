@@ -1,5 +1,5 @@
-timestamp: 2013-02-01
-title:     Relaunch von WEBSECTOR.DE
+timestamp: 2013-01-15
+title: Relaunch von WEBSECTOR.DE
 
 description:
   WEBSECTOR.DE ist mein persönliches Portfolio.
@@ -23,5 +23,7 @@ responsibilities:
   - Statische Webseiten Generierung mit <a href="http://jekyllrb.com/">Jekyll</a>
   - Jekyll Plugin-Entwicklung (<a href="https://github.com/sectore/jekyll-swfobject">jekyll-swfobject</a>)
 
+timeframe:
+  Dezember 2012 - Januar 2013
 
 

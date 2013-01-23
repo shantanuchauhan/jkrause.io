@@ -1,5 +1,5 @@
-timestamp: 2012-10-01
-title: Webanwendung für Live Video Streams und Live Wetterdaten
+timestamp: 2013-01-20
+title: Webanwendung für Live-Video und Live-Wetterdaten
 
 description:
   Für <a href="http://livespotting.tv">livespotting.tv</a> entwickelte ich eine Webanwendung
@@ -7,28 +7,30 @@ description:
   <br><br>
   Für das Streamen der Videodaten wurde HTML5 Video als auch Flash als Fallback eingesetzt.
   <br><br>
-  Der Großteil der Inhalte ist konfigurierbar und das Aussehen per eigene Skins veränderbar.
+  Der Großteil der Inhalte ist frei konfigurierbar und das Aussehen über Skins veränderbar.
   <br><br>
   Bei der Umsetzung wurden aktuelle Webtechnologien, wie z.B.
   CoffeeScript,
   Backbone,
   LESS,
   Grunt
-  eingesetzt
+  eingesetzt.
 
 images:
-  - http://lorempixel.com/600/400/
-  - http://lorempixel.com/600/400/
-  - http://lorempixel.com/600/400/
-  - http://lorempixel.com/600/400/
+  - /assets/images/work/ls-player/0.jpg
+  - /assets/images/work/ls-player/1.jpg
+  - /assets/images/work/ls-player/2.jpg
 
 responsibilities:
   - JavaScript Entwicklung (Backbone, Lo-Dash, Handlebars, jQuery, jQuery UI, CoffeeScript)
   - Umfangreich konfigurierbare Inhalte und Eigenschaften
   - Anpassbare Skins (LESS, Raphaël)
   - Command line build (Grunt)
-  - Behavior-driven development (Jasmine, Sinon)
+  - Testbasierte Entwicklung (Jasmine, Sinon)
   - Flash Video Fallback (AS3, OOP, FlexUnit)
+
+timeframe:
+  August 2012 - heute
 
 client:
   <a href="http://windit.de/">Windit GmbH</a>, Kiel

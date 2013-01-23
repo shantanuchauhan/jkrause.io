@@ -13,7 +13,6 @@ title: Arbeiten
   <h2 class="contentHeadline">Archiv</h2>
   <article>
     <ul>
-      {% sort var: site.work by: timestamp direction: up %}
       {% for model in site.work %}
         {% if model != site.work.first %}
         <li><a href="{{model.mdl_name}}">{{ model.title }}</a></li>

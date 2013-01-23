@@ -22,6 +22,10 @@ permalink: /blog/:year/:month/:day/:title/
 
 jekyll_models: [work]
 jekyll_models_urls: rest-like
+
+jekyll_models_sort_by: timestamp
+jekyll_models_sort_descending: false
+
 site_base: /
 
 exclude:

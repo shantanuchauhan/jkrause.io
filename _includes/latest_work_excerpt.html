@@ -1,5 +1,4 @@
-{% sort var: site.work by: timestamp direction: up %}
-{% assign latest_work = site.work.first %}
+{% assign latest_work = site.work.last %}
 <article>
   <h3 class="contentSubHeadline">
     <a href="{{ latest_work.mdl_url }}">{{ latest_work.title }}</a>

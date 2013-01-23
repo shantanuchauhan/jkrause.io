@@ -1,4 +1,4 @@
-timestamp: 2011-01-01
+timestamp: 2012-07-31
 title: Was waren die Arbeiten vor 2013?
 
 description:
@@ -31,4 +31,7 @@ responsibilities:
 
 images:
   - http://lorempixel.com/600/400/
+
+timeframe:
+  1999 - 2012
 

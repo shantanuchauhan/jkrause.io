@@ -57,6 +57,13 @@
 #                          absolute url in "mdl_url" in its own object. This is for 
 #                          convenience when hyperlinking to models.
 #
+# - jekyll_models_sort_by: Optional value to sort models by a key, e.g. "timestamp"?
+#                          If not a key is set, by default models are sorted by its YAML file names.
+#
+# - jekyll_models_sort_descending:
+#                          Optional direction to sort models in descending order. Only used if
+#                          "jekyll_models_sort_by" is set before. Default sort direction is ascending.
+#
 # Model Structure and Meaning:
 # In each model YAML file, some properties can be set to customize behaviour.
 # Other properties are automatically set. Here is a list of what's available:
@@ -90,6 +97,7 @@
 #                          "audi.next" is linked to model "chevrolet", "chevrolet.next" is nil
 #
 # Update History: (most recent first)
+# 23-Jan-2013 jens krause -- sorting models by a key
 # 13-Jan-2013 jens krause -- adding linked models
 # 20-Jun-2012 kyle paulsen -- First public release.
 #------------------------------------------------------------------------
@@ -167,6 +175,11 @@ module JekyllModels
         end
       end
 
+      # sorting models
+      if self.config["jekyll_models_sort_by"]
+        self.sort(models, self.config["jekyll_models_sort_by"], self.config["jekyll_models_sort_descending"])
+      end
+
       # link next / previous model
       self.link_next_previous(models)
 
@@ -194,6 +207,11 @@ module JekyllModels
           model['next'] = models[index+1]
         end
       end
+    end
+
+    def sort(models, sort_by, descending)
+      models.sort! { |a, b| a[sort_by] <=> b[sort_by] }
+      models.reverse! if descending
     end
 
   end
