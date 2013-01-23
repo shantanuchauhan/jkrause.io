@@ -45,8 +45,8 @@ section
     color: $font-color-light
 
 article
-  @include prefix($content-padding-left-right)
-  @include suffix($content-padding-left-right)
+  padding-left: pixel-to-em($content-padding-left-right)
+  padding-right: pixel-to-em($content-padding-left-right)
 
 .contentHeadline,
 .contentSubHeadline
@@ -60,8 +60,8 @@ article
 
 
 .contentHeadline
-  @include prefix($content-padding-left-right)
-  @include suffix($content-padding-left-right)
+  padding-left: pixel-to-em($content-padding-left-right, 30)
+  padding-right: pixel-to-em($content-padding-left-right, 30)
   background-image: $img-dots
 
 .contentSubHeadline

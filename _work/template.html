@@ -10,20 +10,13 @@ title: Arbeiten
   </div>
   <article>
     <div class="left-content">
-      <ul>
-        {% for image in page.model.images %}
-        <li><img src="{{image}}"></li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="right-content">
       <p>{{page.model.description}}</p>
       <h3 class="contentSubHeadline">Aufgaben</h3>
-        <ul>
-          {% for responsibility in page.model.responsibilities %}
-          <li>{{responsibility}}</li>
-          {% endfor %}
-        </ul>
+      <ul>
+        {% for responsibility in page.model.responsibilities %}
+        <li>{{responsibility}}</li>
+        {% endfor %}
+      </ul>
       {% if page.model.timeframe %}
       <h3 class="contentSubHeadline">Zeitraum</h3>
       <p>{{page.model.timeframe}}</p>
@@ -32,6 +25,13 @@ title: Arbeiten
       <h3 class="contentSubHeadline">Auftraggeber</h3>
       <p>{{page.model.client}}</p>
       {% endif %}
+    </div>
+    <div class="right-content">
+      <ul>
+        {% for image in page.model.images %}
+        <li><img src="{{image}}"></li>
+        {% endfor %}
+      </ul>
     </div>
   </article>
 </section>

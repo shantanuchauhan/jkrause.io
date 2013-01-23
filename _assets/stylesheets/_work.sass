@@ -1,4 +1,3 @@
-
 //
 // make sure that the content is located on top to have clickable content
 .work-detail-content>div
@@ -11,35 +10,24 @@
 .work-content,
 .work-detail-content
   article
-    .right-content ul,
+    .left-content ul,
     &>ul
-      list-style-type: disc
-      list-style-position: inside
+      list-style-type: square
+      padding-left: pixel-to-em($content-padding-left-right)
 
       li
-        @include prefix($content-padding-left-right)
-        @include suffix($content-padding-left-right)
         @include adjust-font-size-to(19px)
         @include padding-trailer(.75)
-
-
-.work-content,
-.work-detail-content
   img
     @include responsive-image()
-
 
 .work-detail-content
   h4
     @include adjust-font-size-to(21px)
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
+    padding-left: pixel-to-em($content-padding-left-right, 21)
+    padding-right: pixel-to-em($content-padding-left-right, 21)
 
-  .left-content
-    li
-      @include padding-trailer(1)
-
-  .left-content
+  .right-content
     li
       @include padding-trailer(1)
 

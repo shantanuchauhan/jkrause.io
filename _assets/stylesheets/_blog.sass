@@ -37,12 +37,10 @@
 .blog-content
 
   article>ul
-    list-style-type: disc
-    list-style-position: inside
+    list-style-type: square
+    padding-left: pixel-to-em($content-padding-left-right)
 
     li
-      @include prefix($content-padding-left-right)
-      @include suffix($content-padding-left-right)
       @include padding-trailer(.75)
       @include adjust-font-size-to(19px)
 

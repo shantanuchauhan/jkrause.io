@@ -26,7 +26,6 @@
   li 
     a
       @include adjust-font-size-to(21px)
-    
 
     a:active,
     a:hover,
@@ -35,11 +34,11 @@
       background-color: $font-color-highlighted
       @include single-text-shadow
 
-    a:hover,
+    a:hover
+      @include animation(nav-hover $link-hover-duration)
+
     a.active:hover
       @include animation(nav-hover 0s)
-
-
 
   @include respond-to('default-and-big-screen')
 
@@ -53,7 +52,7 @@
         @include hidden()
 
       a
-        padding: 0 pixel-to-em(20)
+        padding: 0 pixel-to-em(20, 21)
 
   @include respond-to('small-and-default-screen')
 

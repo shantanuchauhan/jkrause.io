@@ -2,7 +2,7 @@
 
   .left-content
     @include respond-to('default-and-big-screen')
-      @include prefix(0)
+      padding-left: 0
 
     @include respond-to('small-and-default-screen')
       p
@@ -10,7 +10,7 @@
 
   .right-content
     @include respond-to('default-and-big-screen')
-      @include suffix(0)
+      padding-right: 0
 
   iframe
     width: 100%
@@ -19,6 +19,5 @@
 
   adress
     display: block
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
+    padding: 0 pixel-to-em($content-padding-left-right)
   

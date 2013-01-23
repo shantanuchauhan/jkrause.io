@@ -24,8 +24,8 @@ header
   h3
     color: white
     text-transform: uppercase
-    @include prefix($content-padding-left-right)
-    @include suffix($content-padding-left-right)
+    padding-left: pixel-to-em($content-padding-left-right, 21)
+    padding-right: pixel-to-em($content-padding-left-right, 21)
     @include padding-leader(.2)
     @include padding-trailer(.2)
     @include adjust-font-size-to(21px)
@@ -77,8 +77,8 @@ header
   background-image: $img-dots
 
   h1
-    @include prefix(.5)
-    @include suffix(.5)
+    padding-left: pixel-to-em($content-padding-left-right, 55)
+    padding-right: pixel-to-em($content-padding-left-right, 55)
     @include padding-leader(.8)
     @include padding-trailer(.7)
     @include adjust-font-size-to(55px)
@@ -90,8 +90,6 @@ header
     
   @include respond-to('small-and-default-screen')
     h1
-      @include prefix(.5)
-      @include suffix(.5)
       @include margin-leader(.5)
       @include padding-leader(.5)
       @include padding-trailer(.4)
