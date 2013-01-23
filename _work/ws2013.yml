@@ -4,23 +4,23 @@ title: Relaunch von WEBSECTOR.DE
 description:
   WEBSECTOR.DE ist mein persönliches Portfolio.
   <br><br>
-  Durch den Relaunch wurde der bisher losgelöste Blog fest in das Layout integriert. Dynamische
-  Inhalte werden mit Jekyll zu statischen Webseiten generiert. Alle Seiten sind für mobile Endgeräte optimiert.
+  Mit dem Relaunch wurde der bisher losgelöste Blog fest in das Layout integriert. Dynamische
+  Inhalte werden mit <a href="http://jekyllrb.com/">Jekyll</a> zu statischen Webseiten generiert. Alle Seiten sind für mobile Endgeräte optimiert.
   <br><br>
   Technisch wurden aktuelle Technologien
-  wie z.B. <a href="http://jekyllrb.com/">Jekyll</a> oder <a href="http://compass-style.org/">Compass</a>
+  wie z.B. <a href="http://jekyllrb.com/">Jekyll</a> (Ruby) oder <a href="http://compass-style.org/">Compass</a>
   eingesetzt.
 
 images:
-  - /assets/images/work/ws2013/1.jpg
-  - /assets/images/work/ws2013/2.jpg
   - /assets/images/work/ws2013/0.png
+  - /assets/images/work/ws2013/2.jpg
+  - /assets/images/work/ws2013/1.jpg
 
 responsibilities:
-  - Layout
+  - '"Responsive" Layout'
   - HTML5
   - CSS3 (<a href="http://compass-style.org/">Compass</a>, <a href="http://susy.oddbird.net/">Susy</a>)
-  - Statische Webseiten Generierung mit <a href="http://jekyllrb.com/">Jekyll</a>
+  - Statische Webseiten Generierung mit <a href="http://jekyllrb.com/">Jekyll</a> (Ruby)
   - Jekyll Plugin-Entwicklung (<a href="https://github.com/sectore/jekyll-swfobject">jekyll-swfobject</a>)
 
 timeframe:

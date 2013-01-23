@@ -5,15 +5,15 @@ description:
   Für <a href="http://livespotting.tv">livespotting.tv</a> entwickelte ich eine Webanwendung
   zum Streamen von Live-Video in HD Qualität und zur Anzeige von Live-Wetterdaten.
   <br><br>
-  Für das Streamen der Videodaten wurde HTML5 Video als auch Flash als Fallback eingesetzt.
+  Für das Streamen der Videodaten werden HTML5 Video als auch Flash Video als Fallback eingesetzt.
   <br><br>
   Der Großteil der Inhalte ist frei konfigurierbar und das Aussehen über Skins veränderbar.
   <br><br>
   Bei der Umsetzung wurden aktuelle Webtechnologien, wie z.B.
-  CoffeeScript,
-  Backbone,
-  LESS,
-  Grunt
+  <a href="http://coffeescript.org/">CoffeeScript</a>,
+  <a href="http://backbonejs.org/">Backbone</a>,
+  <a href="http://lesscss.org/">LESS</a>,
+  <a href="http://gruntjs.com/">Grunt</a>
   eingesetzt.
 
 images:
@@ -22,12 +22,15 @@ images:
   - /assets/images/work/ls-player/2.jpg
 
 responsibilities:
-  - JavaScript Entwicklung (Backbone, Lo-Dash, Handlebars, jQuery, jQuery UI, CoffeeScript)
-  - Umfangreich konfigurierbare Inhalte und Eigenschaften
-  - Anpassbare Skins (LESS, Raphaël)
-  - Command line build (Grunt)
-  - Testbasierte Entwicklung (Jasmine, Sinon)
-  - Flash Video Fallback (AS3, OOP, FlexUnit)
+  - JavaScript Programmierung (<a href="http://coffeescript.org/">CoffeeScript</a>)
+  - MV* Architektur (<a href="http://backbonejs.org/">Backbone</a>)
+  - Templating <a href="http://handlebarsjs.com/">Handlebars</a>,
+  - UI-Komponenten <a href="http://jquery.com/">jQuery</a>, <a href="http://jqueryui.com/">jQuery UI</a>
+  - Skinbares UI (<a href="http://lesscss.org/">LESS</a>, <a href="http://raphaeljs.com/">Raphaël</a>)
+  - Konfigurierbare Inhalte per JSON oder XML
+  - Command line build (<a href="http://gruntjs.com/">Grunt</a>)
+  - Testbasierte Entwicklung (<a href="http://pivotal.github.com/jasmine/">Jasmine</a>, <a href="http://sinonjs.org/">Sinon</a>)
+  - Flash Video Fallback (AS3, OOP, <a href="http://flexunit.org/">FlexUnit</a>)
 
 timeframe:
   August 2012 - heute

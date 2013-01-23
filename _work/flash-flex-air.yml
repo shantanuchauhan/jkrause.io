@@ -1,23 +1,25 @@
 timestamp: 2012-07-31
-title: Was waren die Arbeiten vor 2013?
+title: Kurzfassung 1999-2012
 
 description:
-  In den Jahren vor 2013 habe ich Anwendungen mit
-  <a href="http://www.adobe.com/de/products/flash.html">Adobe Flash</a> (13 Jahre)
-  sowie mit <a href="http://www.adobe.com/de/products/flex.html">Adobe Flex</a> (6 Jahre)
-  und <a href="http://www.adobe.com/de/products/air.html">AIR</a> umgesetzt.
+  Von 1999 bis 2012 habe ich vor allem Anwendungen mit
+  <a href="http://www.adobe.com/de/products/flash.html">Adobe Flash</a> (13 Jahre),
+  <a href="http://www.adobe.com/de/products/flex.html">Adobe Flex</a> (6 Jahre)
+  und <a href="http://www.adobe.com/de/products/air.html">AIR</a> programmiert.
+  <br><br>
+  Inhaltlich waren es
+  anfangs Werbeanwendungen und Spiele, später vor allem sogenannte
+  <a href="http://en.wikipedia.org/wiki/Rich_Internet_application">Rich Internet Applications</a>.
 
 responsibilities:
   - Objektorientierte Programmierung (ActionScript 1-3)
   - MVC Architektur (Cairngorm, Mate, Parsley, PureMVC, Robotlegs, Swiz)
   - Testgetriebene Entwicklung (FlexUnit, AsUnit)
   - Entwicklung individueller Flex Komponenten
-  - Skinning und Styling von Flex Komponenten (Flash-Catalyst, Degrafa)
   - Flash Remoting / BlazeDS
-  - Schnittstellen Client - Server (Erlang, Java, PHP, ColdFusion)
+  - Schnittstellen Client <-> Server (Erlang, Java, PHP, ColdFusion)
   - Datenvisualsierungen (Flex Charts, yFiles FLEX, Flare)
   - Instant Messaging Service
-  - Textbearbeitung (Text Layout Framework)
   - Live Video Streaming (FMS)
   - Flash P2P (HydraP2P)
   - i18n
@@ -30,7 +32,7 @@ responsibilities:
 
 
 images:
-  - http://lorempixel.com/600/400/
+  - /assets/images/work/flash-flex-air/0.jpg
 
 timeframe:
   1999 - 2012

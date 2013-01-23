@@ -13,8 +13,8 @@ title: Arbeiten
   <h2 class="contentHeadline">Archiv</h2>
   <article>
     <ul>
-      {% for model in site.work %}
-        {% if model != site.work.first %}
+      {% for model in site.work reversed %}
+        {% if model != site.work.last %}
         <li><a href="{{model.mdl_name}}">{{ model.title }}</a></li>
         {% endif %}
       {% endfor %}
