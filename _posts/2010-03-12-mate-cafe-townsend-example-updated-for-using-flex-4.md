@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Mate: Cafe Townsend example updated for using Flex 4"
 tags: 

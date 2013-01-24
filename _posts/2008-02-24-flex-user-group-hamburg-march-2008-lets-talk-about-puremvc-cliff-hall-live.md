@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 title: "Flex User Group Hamburg March 2008: Let's talk about PureMVC - Cliff Hall live!"
 tags: 
 - Flex

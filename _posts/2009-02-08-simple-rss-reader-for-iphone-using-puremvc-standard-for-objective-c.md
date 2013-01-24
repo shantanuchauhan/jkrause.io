@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Simple RSS reader for iPhone using PureMVC Standard for Objective-C
 tags: 

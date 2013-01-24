@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "AsUnit (AS3): RemoteTestCase for testing asynchronous data using Flash Remoting"
 tags: 

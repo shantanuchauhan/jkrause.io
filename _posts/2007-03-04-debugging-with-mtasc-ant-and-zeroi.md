@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Debugging with MTASC, Ant and Zeroi
 tags: 

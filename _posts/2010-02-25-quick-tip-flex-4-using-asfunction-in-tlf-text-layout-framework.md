@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick Tip (Flex 4): Using asfunction in TLF (Text Layout Framework)"
 tags: 

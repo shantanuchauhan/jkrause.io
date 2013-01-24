@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Testing states of skin classes in Flex 4 using WSSkinStatesTester
 tags: 

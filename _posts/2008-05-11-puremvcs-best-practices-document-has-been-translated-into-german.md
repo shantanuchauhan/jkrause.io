@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "PureMVC\'s \"Best Practices Document\" has been translated into German"
 tags: 

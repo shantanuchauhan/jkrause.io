@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "The classic puzzle game Tetris based on Flash: \"WS-Tetris\""
 tags: 

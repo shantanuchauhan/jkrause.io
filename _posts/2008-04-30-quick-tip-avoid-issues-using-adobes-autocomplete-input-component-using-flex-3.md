@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip: Avoid issues using Adobes AutoComplete Input component using Flex 3"
 tags: 

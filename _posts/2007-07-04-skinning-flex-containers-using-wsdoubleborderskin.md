@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Skinning Flex containers using WSDoubleBorderSkin
 tags: 

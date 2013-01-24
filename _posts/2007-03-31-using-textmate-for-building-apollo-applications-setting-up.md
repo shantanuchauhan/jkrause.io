@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "Using TextMate for building Apollo applications: Setting up"
 tags: 

@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Pushing (binary) image data using Node.js and Socket.IO
 tags: 

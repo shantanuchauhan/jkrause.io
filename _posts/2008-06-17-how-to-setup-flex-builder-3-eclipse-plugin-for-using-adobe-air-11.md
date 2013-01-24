@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: How to setup Flex Builder 3 Eclipse plugin for using Adobe AIR 1.1
 tags: 

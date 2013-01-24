@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Free iPhone app for Flex User Group Hamburg (incl. source code)
 tags: 

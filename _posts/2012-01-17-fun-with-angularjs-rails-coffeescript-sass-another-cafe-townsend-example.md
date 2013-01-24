@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Fun with AngularJS + Rails + CoffeeScript + Sass: Another Cafe Townsend example"
 tags: 

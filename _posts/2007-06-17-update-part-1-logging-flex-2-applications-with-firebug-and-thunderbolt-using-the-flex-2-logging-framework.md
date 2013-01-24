@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "[Update - Part 1] Logging Flex 2 applications with Firebug and ThunderBolt using the Flex 2 Logging Framework"
 tags: 

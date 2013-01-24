@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 group: blog
 title: Spine.js - Cafe Townsend example
 tags: 

@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick Tip (Node): How to downgrade Node.js on OS X"
 tags: 

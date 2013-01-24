@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "WS-ThumbsGenerator: Using the drag-and-drop and file system APIs with Adobes JPEGEncoder to create image thumbnails"
 tags: 

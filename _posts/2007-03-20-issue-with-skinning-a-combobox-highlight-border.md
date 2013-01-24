@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "Issue with skinning ComboBox: Highlight border"
 tags: 

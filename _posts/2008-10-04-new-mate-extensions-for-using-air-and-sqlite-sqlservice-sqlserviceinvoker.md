@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "New Mate extensions for using AIR and SQLite: \"SQLService + SQLServiceInvoker\""
 tags: 

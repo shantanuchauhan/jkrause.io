@@ -1,5 +1,7 @@
 --- 
 layout: post
+comments: true
+
 group: blog
 title: "Extension for Zeroi: XTracePublisher"
 tags: 

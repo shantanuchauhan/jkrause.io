@@ -1,5 +1,7 @@
 --- 
+
 layout: post
+comments: true
 group: blog
 title: "Flash Lite 1.1 application for free: \"WS-World-Clock\""
 tags: 

@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Tweener AS3 extension for color properties "_brightness", "_contrast" and "_saturation"
 tags: 

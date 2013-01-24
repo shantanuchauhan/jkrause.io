@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Simple Login Example built with Node.js (Express), Eco and CoffeeScript
 tags: 

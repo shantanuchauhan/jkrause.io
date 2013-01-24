@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: 5 reasons for building Apollo applications as a Flash Developer
 tags: 

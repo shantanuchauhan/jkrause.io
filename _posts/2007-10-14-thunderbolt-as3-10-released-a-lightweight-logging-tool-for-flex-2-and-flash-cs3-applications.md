@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: ThunderBolt AS3 1.0 released - A lightweight logging tool for Flex 2 and Flash CS3 applications
 tags: 

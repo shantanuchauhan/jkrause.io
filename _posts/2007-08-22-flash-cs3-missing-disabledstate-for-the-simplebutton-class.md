@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Flash CS3: Missing \"disabledState\" for the SimpleButton class"
 tags: 

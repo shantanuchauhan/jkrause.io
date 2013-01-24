@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Detecting memory leaks in Flash or Flex applications using WSMonitor
 tags: 

@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: 10 tips and tricks using ThunderBolt AS3
 tags: 

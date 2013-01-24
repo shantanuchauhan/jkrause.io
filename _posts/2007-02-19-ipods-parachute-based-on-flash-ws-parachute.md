@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "iPods Parachute based on Flash: \"WS-Parachute\""
 tags: 

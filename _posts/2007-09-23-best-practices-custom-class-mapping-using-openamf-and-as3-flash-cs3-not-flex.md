@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Best practices: Custom class mapping using OpenAMF and AS3 (Flash CS3 - not Flex)"
 tags: 

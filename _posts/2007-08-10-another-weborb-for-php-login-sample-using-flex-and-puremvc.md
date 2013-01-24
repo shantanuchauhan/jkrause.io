@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Another WebORB for PHP Login Sample using Flex and PureMVC
 tags: 

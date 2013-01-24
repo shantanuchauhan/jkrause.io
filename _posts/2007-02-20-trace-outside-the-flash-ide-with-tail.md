@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: trace() outside the Flash IDE with tail
 tags: 

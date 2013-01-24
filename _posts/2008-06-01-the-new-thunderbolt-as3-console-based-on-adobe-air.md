@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: The new ThunderBolt AS3 Console based on Adobe AIR
 tags: 

@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Why do Adobe product license agreements suck?
 tags: 

@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "WSPluginSwitcher: Cocoa based tool for switching Flash plug-in on OS X"
 tags: 

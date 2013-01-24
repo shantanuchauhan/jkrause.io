@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip (AIR): Signing an ANE (ActionScript Native Extension)"
 tags: 

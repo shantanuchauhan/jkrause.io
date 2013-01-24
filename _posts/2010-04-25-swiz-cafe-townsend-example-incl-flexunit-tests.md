@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Swiz: Cafe Townsend example (incl. FlexUnit tests)"
 tags: 

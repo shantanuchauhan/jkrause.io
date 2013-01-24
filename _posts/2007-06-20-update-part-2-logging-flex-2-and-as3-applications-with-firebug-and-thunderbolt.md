@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: "[Update - Part 2] Logging Flex 2 and AS3 applications with Firebug and ThunderBolt"
 tags: 

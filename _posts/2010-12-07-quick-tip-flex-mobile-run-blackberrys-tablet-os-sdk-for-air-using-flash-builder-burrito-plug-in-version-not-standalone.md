@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip (Flex Mobile): Run BlackBerry's Tablet OS SDK for AIR using Flash Builder Burrito plug-in version (not standalone)"
 tags: 

@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: WebORB for PHP Login Example using Flex 3 and Cairngorm 2.2.1
 tags: 

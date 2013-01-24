@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Speed up JPEG encoding using Alchemy
 tags: 

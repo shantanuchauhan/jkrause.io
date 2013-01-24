@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: WSPatternStyleGenerator for using WSBackgroundPixelSkin
 tags: 

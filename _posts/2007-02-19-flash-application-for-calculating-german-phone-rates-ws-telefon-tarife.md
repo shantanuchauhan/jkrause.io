@@ -1,5 +1,6 @@
---- 
+---
 layout: post
+comments: true
 group: blog
 title: "Flash application for calculating German phone rates: \"WS-Telefon-Tarife\""
 tags: 

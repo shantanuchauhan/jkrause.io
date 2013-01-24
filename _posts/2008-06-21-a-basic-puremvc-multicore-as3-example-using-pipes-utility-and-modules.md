@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: A basic PureMVC MultiCore AS3 example using Pipes Utility and Modules
 tags: 

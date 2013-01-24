@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: ThunderBolt AS3 supports Flex 4 (Gumbo)
 tags: 

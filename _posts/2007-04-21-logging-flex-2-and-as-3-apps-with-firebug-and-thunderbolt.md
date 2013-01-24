@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Logging Flex 2 and AS 3 apps with Firebug and ThunderBolt
 tags: 

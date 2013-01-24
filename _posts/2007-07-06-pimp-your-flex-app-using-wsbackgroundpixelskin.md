@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Pimp your Flex app using WSBackgroundPixelSkin
 tags: 

@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip (Objective-C): Formatting an RFC2822 date of an RSS feed using NSDateFormatter"
 tags: 

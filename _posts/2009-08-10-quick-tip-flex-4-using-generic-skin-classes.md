@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip (Flex 4): Using generic skin classes"
 tags: 

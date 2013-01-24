@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: ThunderBolt AS3 version 2.2 out now!
 tags: 

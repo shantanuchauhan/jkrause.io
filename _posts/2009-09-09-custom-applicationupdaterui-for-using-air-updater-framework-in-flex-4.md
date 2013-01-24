@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Custom ApplicationUpdaterUI for using AIR Update Framework in Flex 4
 tags: 

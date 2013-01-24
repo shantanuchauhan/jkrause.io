@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Slides und Source vom flexughh-Meeting: \"Wait A Frame! Das Flex 4 Komponenten Model und seinen Life Cycle verstehen\""
 tags: 

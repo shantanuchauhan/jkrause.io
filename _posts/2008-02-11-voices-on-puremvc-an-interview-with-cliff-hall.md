@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Voices on PureMVC: An interview with Cliff Hall"
 tags: 

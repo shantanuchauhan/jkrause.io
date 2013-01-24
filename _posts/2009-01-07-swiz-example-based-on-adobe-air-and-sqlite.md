@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: Swiz example based on Adobe AIR and SQLite
 tags: 

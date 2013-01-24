@@ -1,5 +1,6 @@
 --- 
 layout: post
+comments: true
 group: blog
 title: Are you looking for AFTERTHOUGHT on OS X?
 tags: 

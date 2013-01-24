@@ -1,5 +1,8 @@
 --- 
+
 layout: post
+comments: true
+
 group: blog
 title: "Quick tip (AIR): Updating an existing AIR app for using a new certificate"
 tags: 
