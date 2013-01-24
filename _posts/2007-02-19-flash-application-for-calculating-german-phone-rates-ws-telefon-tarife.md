@@ -12,7 +12,7 @@ published: true
 meta: 
   _edit_last: "2"
 ---
-Long time ago (in September 2003 ;-) ) I designed and developed a Flash based application called ["WS-Telefon-Tarife"](http://www.websector.de/telefon/tarife.php) for calculating German phone rates. The idea behind was to provide an online application for a friend, who calculated the best rates for saving money. For administrating data I developed an content management system as well.
+Long time ago (in September 2003 ;-) ) I designed and developed a Flash based application called "WS-Telefon-Tarife" for calculating German phone rates. The idea behind was to provide an online application for a friend, who calculated the best rates for saving money. For administrating data I developed an content management system as well.
 
 <!--more-->
 
@@ -20,15 +20,15 @@ Long time ago (in September 2003 ;-) ) I designed and developed a Flash based ap
 
 Menu:
 
-[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen3.png)](/telefon/tarife.php)
+![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen3.png)
 
 Results:
 
-[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen2.png)](/telefon/tarife.php)
+![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen2.png)
 
 Print preview:
 
-[![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen4.png)](/telefon/tarife.php)
+![WS-Telefon-Tarife Screen](/blog/uploads/2007/02/ws_telefon_screen4.png)
 
 ## Details
 

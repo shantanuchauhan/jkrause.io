@@ -13,18 +13,18 @@ published: true
 meta: 
   _edit_last: "2"
 ---
-["WS World Clock"](/popup/worldclock.php) is a Flash Lite 1.1 application. I developed this application for Macromedia's Flash Lite Contest in January 2005.
+"WS World Clock" is a Flash Lite 1.1 application. I developed this application for Macromedia's Flash Lite Contest in January 2005.
 
 <!--more-->
 
 ## Screen shot
 
-[![WS-World-Clock Screen](/blog/uploads/2007/02/ws_worldclock_screen.jpg)](/popup/worldclock.php)
+![WS-World-Clock Screen](/blog/uploads/2007/02/ws_worldclock_screen.jpg)
 
 ## Details
 
 *   Flash Lite 1.1 (ActionScript 1)
-*   You will find the original application "WS-World-Clock" and its source [here](/popup/worldclock.php). The source is also available on Adobes [Flash Lite Exchange](http://www.adobe.com/cfusion/exchange/index.cfm?event=extensionDetail&extid=1022846).
+*   <strike>You will find the original application "WS-World-Clock" and its source [here](/popup/worldclock.php). The source is also available on Adobes [Flash Lite Exchange](http://www.adobe.com/cfusion/exchange/index.cfm?event=extensionDetail&extid=1022846).</strike>
 
 ## Free download
 
