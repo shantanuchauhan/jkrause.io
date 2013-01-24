@@ -1,12 +1,31 @@
-<footer>
-  <p>
-    WEBSECTOR.DE wurde mit <a href="http://jekyllrb.com/">Jekyll</a>
-    (<a href="www.ruby-lang.org">Ruby</a>),
-    <a href="compass-style.org">Compass</a> (<a href="sass-lang.com">SASS</a>)
-    und <a href="http://susy.oddbird.net/">Susy</a> erstellt. Die Icon-Fonts
-    stammen von <a href="http://icomoon.io">IcoMoon</a>. Den Source der Webseite
-    gibt es auf <a href="https://github.com/sectore/websector.de">Github</a>. Alle
-    Seiten werden bei <a href="https://uberspace.de/">Uberspace</a> gehostet.
-    ©1999-2013 Jens Krause - <a href="/kontakt/index.html#impressum">Impressum</a>
-  </p>
-</footer>
+  <footer>
+    <p>
+      WEBSECTOR.DE wurde mit <a href="http://jekyllrb.com/">Jekyll</a>
+      (<a href="www.ruby-lang.org">Ruby</a>),
+      <a href="compass-style.org">Compass</a> (<a href="sass-lang.com">SASS</a>)
+      und <a href="http://susy.oddbird.net/">Susy</a> erstellt. Die Icon-Fonts
+      stammen von <a href="http://icomoon.io">IcoMoon</a>. Den Source der Webseite
+      gibt es auf <a href="https://github.com/sectore/websector.de">Github</a>. Alle
+      Seiten werden bei <a href="https://uberspace.de/">Uberspace</a> gehostet.
+      ©1999-2013 Jens Krause - <a href="/kontakt/index.html#impressum">Impressum</a>
+    </p>
+  </footer>
+</div>
+  {% if page.group == 'home' %}
+  <!-- github badge -->
+  <a href="https://github.com/sectore/websector.de"><img id="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+  {% endif %}
+<script type="text/javascript" src="/assets/javascripts/retina.js"></script>
+<!--<script src="/javascripts/ws.js"></script>-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-181921-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
