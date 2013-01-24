@@ -1,7 +1,7 @@
 # Jekyll - Configuration Settings
 # see: https://github.com/mojombo/jekyll/wiki/Configuration
 safe: false
-auto: true
+auto: false
 server: true
 server_port: 9999
 url: http://localhost:9999
@@ -20,7 +20,7 @@ permalink: /blog/:year/:month/:day/:title/
 #  compress:
 #    css:  sass
 
-jekyll_models: [work]
+jekyll_models: [arbeiten]
 jekyll_models_urls: rest-like
 
 jekyll_models_sort_by: timestamp
