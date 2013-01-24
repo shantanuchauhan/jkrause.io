@@ -14,11 +14,11 @@ published: true
 
 ---
 
-To migrate all my posts from [Wordpress](http://wordpress.com/) to [Jekyll](http://jekyllrb.com/)
-I needed an alternative for "[Kimili Flash Embed](http://kimili.com/plugins/kml_flashembed)",
+To migrate all my previous posts from [Wordpress](http://wordpress.com/) to [Jekyll](http://jekyllrb.com/)
+I needed an alternative for [Kimili Flash Embed](http://kimili.com/plugins/kml_flashembed),
 which is a Wordpress plugin to embed Flash files using [SWFObject](http://code.google.com/p/swfobject/).
 
-Because I could not found anything like this I have built a Jekyll plugin called "[SWFObject Tag](https://github.com/sectore/jekyll-swfobject)"
+Because I could not found anything I have built a Jekyll plugin called "[SWFObject Tag](https://github.com/sectore/jekyll-swfobject)"
 
 <!--more-->
 
@@ -26,7 +26,7 @@ Because I could not found anything like this I have built a Jekyll plugin called
 
 The plugin is easy to use:
 
-1) Grab the plugin file `[swfobject_tag.rb]((https://github.com/sectore/jekyll-swfobject/blob/master/_plugins/swfobject_tag.rb))`
+1) Grab the plugin file `[swfobject_tag.rb](https://github.com/sectore/jekyll-swfobject/blob/master/_plugins/swfobject_tag.rb)`
 from [Github](https://github.com/sectore/jekyll-swfobject/)
 
 2) Copy `swfobject_tag.rb` into `<your-jekyll-project>/_plugins` folder.
