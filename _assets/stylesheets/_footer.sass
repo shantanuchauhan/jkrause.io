@@ -1,15 +1,9 @@
 footer
-
   @include padding-leader(2)
-
   @include clearfix
 
-  div
-    height: 1px
-    width: 100%
-    background-image: $img-dots
-
   p
+    border-top: 1px dotted $font-color-light
     padding-left: pixel-to-em($content-padding-left-right, 13)
     padding-right: pixel-to-em($content-padding-left-right, 13)
     @include padding-leader(.5)
@@ -26,13 +20,11 @@ footer
   @include respond-to('small-and-default-screen')
     background-color: #989898
     border-top: 1px solid white
-
-    div
-      @include hidden()
     a
       color: white
 
     p
+      border-top: none
       color: white
       @include padding-leader(3)
       @include padding-trailer(.5)

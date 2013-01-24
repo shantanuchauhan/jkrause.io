@@ -42,7 +42,7 @@
 
   @include respond-to('default-and-big-screen')
 
-    @include span-columns(8)
+    @include span-columns(6)
     @include horizontal-list-container
 
     li 
@@ -74,7 +74,7 @@
 
   a
     @include adjust-font-size-to(21px)
-    padding: 0 pixel-to-em(6)
+    padding: 0 pixel-to-em(10, 21)
     span
       @include squish-text()
 
@@ -93,7 +93,7 @@
       text-align: center
 
   @include respond-to('default-and-big-screen') 
-    @include span-columns(4 omega)
+    @include span-columns(5 omega)
 
 
     text-align: right
