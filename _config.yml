@@ -16,9 +16,9 @@ pygments: true
 markdown: rdiscount
 permalink: /blog/:year/:month/:day/:title/
 
-#assets:
-#  compress:
-#    css:  sass
+assets:
+  compress:
+    css:  sass
 
 jekyll_models: [arbeiten]
 jekyll_models_urls: rest-like
@@ -32,3 +32,4 @@ exclude:
   - README.md
   - config.rb
   - websector.de.iml
+  - wiki
