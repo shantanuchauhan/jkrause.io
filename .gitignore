@@ -5,7 +5,7 @@ assets/images/*/**
 assets/swf/*
 blog/uploads
 
-*.png
+/*.png
 *.ico
 
 .idea/*
