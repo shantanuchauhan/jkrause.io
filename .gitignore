@@ -5,7 +5,11 @@ assets/images/*/**
 assets/swf/*
 blog/uploads
 
+*.png
+*.ico
+
 .idea/*
 *.iml
+
 
 .DS_Store
