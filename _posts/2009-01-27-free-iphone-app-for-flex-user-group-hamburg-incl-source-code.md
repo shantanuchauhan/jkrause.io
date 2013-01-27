@@ -23,7 +23,7 @@ Today I will present the new flexughh app [at our flexughh-Meeting](http://www.f
 
 ## Screen shots
 
-{% swfobject /assets/swf/ws-slideshow.swf height:850px bgcolor:#000000 flashvars:XMLPath=http://www.interactivehh.de/wp-content/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}
+{% swfobject /assets/swf/ws-slideshow.swf height:850px bgcolor:#000000 flashvars:XMLPath=/blog/uploads/2009/01/27/screenshots.xml allowfullscreen:true menu:false allowscriptaccess:sameDomain %}
 <p>To see this content latest <a href='http://www.adobe.com/go/getflashplayer'>Flash Player Plugin</a> is required.</p>
 {% endswfobject %}
 
