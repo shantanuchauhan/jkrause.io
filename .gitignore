@@ -11,5 +11,6 @@ blog/uploads
 .idea/*
 *.iml
 
-
 .DS_Store
+
+.rvmrc
