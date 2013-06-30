@@ -1,21 +1,35 @@
-# Jekyll - Configuration Settings
-# see: https://github.com/mojombo/jekyll/wiki/Configuration
-safe: false
-auto: true
-server: true
-server_port: 9999
-url: http://localhost:9999
+# Default Configuration
+# http://jekyllrb.com/docs/configuration/
 
-source: ./
+source:      .
 destination: ./_site
-plugins: ./_plugins
+plugins:     ./_plugins
 
-future: false
-lsi: false
-pygments: true
-markdown: rdiscount
+layouts:     ./_layouts
+
+exclude:
+  - README.md
+  - config.rb
+  - websector.de.iml
+  - wiki
+
+future:      false
+pygments:    true
+
+relative_permalinks: false
+
 permalink: /blog/:year/:month/:day/:title/
 
+markdown: rdiscount
+
+safe:        false
+host: 0.0.0.0
+port: 9999
+baseurl: /
+url: http://localhost:9999
+lsi: false
+
+# plugin settings
 assets:
   compress:
     css:  sass
@@ -28,8 +42,6 @@ jekyll_models_sort_descending: false
 
 site_base: /
 
-exclude:
-  - README.md
-  - config.rb
-  - websector.de.iml
-  - wiki
+
+
+
