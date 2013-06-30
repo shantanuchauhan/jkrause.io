@@ -1,4 +1,4 @@
-source :rubygems
+source "https://rubygems.org"
 
 gem 'jekyll'
 gem 'sprockets', '~> 2.0'
