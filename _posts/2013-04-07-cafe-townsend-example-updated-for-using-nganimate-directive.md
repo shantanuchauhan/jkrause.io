@@ -4,7 +4,7 @@ layout: post
 comments: true
 
 group: blog
-title: "'Cafe Townsend' updated for using ngAnimate directive"
+title: "Cafe Townsend example updated for using ngAnimate directive"
 tags: 
 - CSS3
 - AngularJS
