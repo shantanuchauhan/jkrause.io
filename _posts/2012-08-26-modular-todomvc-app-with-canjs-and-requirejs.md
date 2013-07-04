@@ -40,3 +40,5 @@ Feel free to check out all [source code](https://github.com/sectore/todomvc-canj
 ## Update
 
 Latest build of CanJS supports AMD - Thanks to @CanJS for [the hint](https://twitter.com/canjsus/status/240141706740236288). The source has been updated.
+
+-Jens

@@ -27,3 +27,5 @@ To get a feeling about the animations just check out the following short video o
 {% oembed https://www.youtube.com/watch?v=PCFUKOiThJA %}
 
 P.S. You will find the update of 'Cafe Townsend' on its [Github repository](https://github.com/sectore/CafeTownsend-Angular-Rails).
+
+-Jens
