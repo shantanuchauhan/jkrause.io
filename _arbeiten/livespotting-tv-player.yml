@@ -1,39 +1,63 @@
 timestamp: 2013-01-20
-title: Webanwendung für Live-Video und Live-Wetterdaten
+title: Webanwendung zum Streamen von Live- und On-Demand-Videos
 
 description:
-  Für <a href="http://livespotting.tv">livespotting.tv</a> entwickelte ich eine Webanwendung
-  zum Streamen von Live-Video in HD Qualität und zur Anzeige von Live-Wetterdaten.
+  Für die <a href="http://livespottingmedia.com">LIVESPOTTING MEDIA GmbH</a> entwickelte ich eine komplexe Webanwendung
+  zum Streamen von Live- und On-Demand-Videos in HD Qualität.
   <br><br>
-  Für das Streamen der Videodaten werden HTML5 Video als auch Flash Video als Fallback eingesetzt.
+  Für das Streamen der Videos wird ein Hybrid-Lösung umgesetzt, wodurch je nach Plattform und Endgerät HTML5 Video oder Flash Video als Fallback eingesetzt werden.
+  Die Kommunikation zwischen dem User-Interface in HTML und dem Flash-Fallback findet per JavaScript statt.
   <br><br>
-  Der Großteil der Inhalte ist frei konfigurierbar und das Aussehen über Skins veränderbar.
+  Der Großteil aller Inhalte und Funktionen sind frei konfigurierbar und das Aussehen über Skins veränderbar.
+  <br><br>
+  Mit der Anwendung können je nach Bedarf nur ein Stream oder auch mehrere Streams über eine individuelle Playliste angesteuert werden.
+  Jeder Stream kann dabei mit einem externen Sound unterlegt werden.
+  Zusätzlich bieten eigene Schnittstellen die Möglichkeit, Werbe- und Trailervideos von externen Anbietern einzublenden.
+  <br><br>
+  Alle Videos können in Fullscreen und in unterschiedlichen Bitraten abgespielt werden.
+  <br><br>
+  Jedes Video kann über die Socialnetzwerke Facebook, Google und Twitter weiterempfohlen werden.
+  <br><br>
+  Die Anwendung ist auch in der Lage, Daten von Livewetter, Wettervorhersage oder weitere Video-Informationen zu laden und anzuzeigen.
   <br><br>
   Bei der Umsetzung wurden aktuelle Webtechnologien, wie z.B.
   <a href="http://coffeescript.org/">CoffeeScript</a>,
+  <a href="www.ruby-lang.org">Ruby</a>,
+  <a href="http://www.rubymotion.com/">RubyMotion</a>,
   <a href="http://backbonejs.org/">Backbone</a>,
-  <a href="http://lesscss.org/">LESS</a>,
+  <a href="knockoutjs.com">KnockoutJS</a>,
+  <a href="http://http://sass-lang.com/">Sass</a> und
   <a href="http://gruntjs.com/">Grunt</a>
   eingesetzt.
 
 images:
-  - /assets/images/work/ls-player/0.jpg
-  - /assets/images/work/ls-player/1.jpg
-  - /assets/images/work/ls-player/2.jpg
+  - /assets/images/work/ls-player2/0.jpg
+  - /assets/images/work/ls-player2/1.jpg
+  - /assets/images/work/ls-player2/2.jpg
 
 responsibilities:
-  - JavaScript Programmierung (<a href="http://coffeescript.org/">CoffeeScript</a>)
-  - MV* Architektur (<a href="http://backbonejs.org/">Backbone</a>)
-  - Templating <a href="http://handlebarsjs.com/">Handlebars</a>,
-  - UI-Komponenten <a href="http://jquery.com/">jQuery</a>, <a href="http://jqueryui.com/">jQuery UI</a>
-  - Skinbares UI (<a href="http://lesscss.org/">LESS</a>, <a href="http://raphaeljs.com/">Raphaël</a>)
-  - Konfigurierbare Inhalte per JSON oder XML
-  - Command line build (<a href="http://gruntjs.com/">Grunt</a>)
-  - Testbasierte Entwicklung (<a href="http://pivotal.github.com/jasmine/">Jasmine</a>, <a href="http://sinonjs.org/">Sinon</a>)
+  - JavaScript / <a href="http://coffeescript.org/">CoffeeScript</a> Programmierung
+  - MV* Architektur mit <a href="http://backbonejs.org/">Backbone</a>
+  - Templating mit <a href="http://handlebarsjs.com/">Handlebars</a>
+  - UI-Komponenten mit <a href="http://jquery.com/">jQuery</a> und <a href="http://jqueryui.com/">jQuery UI</a>
+  - Automatisiertes Style-System mit <a href="http://gruntjs.com/">Grunt</a> und <a href="http://http://sass-lang.com/">Sass</a> für alle skinbaren Elemente
+  - Konfigurierbare Inhalte über JSON- und XML-Schnittstellen
+  - Video-Bitratenwechsel
+  - Client-side Load Balancing für die Videostreams
+  - Einbindung externer Sounds pro Stream
+  - Implementierung von Schnittstellen zum Abspielen von Werbe- und Trailervideos
+  - Playlist Funktionalität
+  - Fullscreen-Handling
+  - Mehrsprachigkeit
+  - Einbindung von Socialfunktionen für Facebook, Google+ und Twitter
+  - Testbasierte Entwicklung mit <a href="http://pivotal.github.com/jasmine/">Jasmine</a> und <a href="http://sinonjs.org/">Sinon</a> (inkl. <a href="http://sinonjs.org/docs/#spies">Spying</a>, <a href="http://sinonjs.org/docs/#stubs">Stubbing</a> und <a href="http://sinonjs.org/docs/#mocks">Mocking</a>)
   - Flash Video Fallback (AS3, OOP, <a href="http://flexunit.org/">FlexUnit</a>)
+  - Mitentwicklung eines Admin-Bereich mit <a href="www.ruby-lang.org">Ruby</a>, <a href="knockoutjs.com">KnockoutJS</a>, <a href="http://http://sass-lang.com/">Sass</a> und <a href="http://gruntjs.com/">Grunt</a>
+  - Entwicklung einer nativen iOS Testanwendung mit <a href="http://www.rubymotion.com/">RubyMotion</a>
+  - Automatisierter Build-Prozess mit <a href="http://gruntjs.com/">Grunt</a>
 
 timeframe:
-  August 2012 - heute
+  August 2012 - Juli 2013
 
 client:
-  <a href="http://windit.de/">Windit GmbH</a>, Kiel
+  <a href="http://livespottingmedia.com">LIVESPOTTING MEDIA GmbH</a> - Kiel
