@@ -5,22 +5,21 @@ description:
   Für die <a href="http://livespottingmedia.com">LIVESPOTTING MEDIA GmbH</a> entwickelte ich eine komplexe Webanwendung
   zum Streamen von Live- und On-Demand-Videos in HD Qualität.
   <br><br>
-  Für das Streamen der Videos wird ein Hybrid-Lösung umgesetzt, wodurch je nach Plattform und Endgerät HTML5 Video oder Flash Video als Fallback eingesetzt werden.
-  Die Kommunikation zwischen dem User-Interface in HTML und dem Flash-Fallback findet per JavaScript statt.
+  Für das Streamen der Videos wurde eine Hybrid-Lösung umgesetzt, wodurch je nach Plattform und Endgerät HTML5 Video oder Flash Video als Fallback eingesetzt werden.
   <br><br>
   Der Großteil aller Inhalte und Funktionen sind frei konfigurierbar und das Aussehen über Skins veränderbar.
   <br><br>
-  Mit der Anwendung können je nach Bedarf nur ein Stream oder auch mehrere Streams über eine individuelle Playliste angesteuert werden.
-  Jeder Stream kann dabei mit einem externen Sound unterlegt werden.
-  Zusätzlich bieten eigene Schnittstellen die Möglichkeit, Werbe- und Trailervideos von externen Anbietern einzublenden.
+  Mit der Anwendung können ein oder auch mehrere Streams über eine individuelle Playliste angesteuert werden.
+  Jedes Video kann dabei mit einem externen Sound unterlegt werden.
+  Zusätzlich bieten Schnittstellen die Möglichkeit, Werbe- und Trailervideos von externen Anbietern einzuspielen.
   <br><br>
-  Alle Videos können in Fullscreen und in unterschiedlichen Bitraten abgespielt werden.
+  Alle Videos können in Fullscreen sowie mit unterschiedlichen Bitraten abgespielt werden.
   <br><br>
-  Jedes Video kann über die Socialnetzwerke Facebook, Google und Twitter weiterempfohlen werden.
+  Jedes Video kann über die sozialen Netzwerke Facebook, Google und Twitter weiterempfohlen werden.
   <br><br>
-  Die Anwendung ist auch in der Lage, Daten von Livewetter, Wettervorhersage oder weitere Video-Informationen zu laden und anzuzeigen.
+  Die Anwendung ist außerdem in der Lage, Daten von Livewetter, Wettervorhersage oder weitere Video-Informationen zu laden und anzuzeigen.
   <br><br>
-  Bei der Umsetzung wurden aktuelle Webtechnologien, wie z.B.
+  Bei der Umsetzung habe ich aktuelle Webtechnologien, wie z.B.
   <a href="http://coffeescript.org/">CoffeeScript</a>,
   <a href="www.ruby-lang.org">Ruby</a>,
   <a href="http://www.rubymotion.com/">RubyMotion</a>,
@@ -40,17 +39,17 @@ responsibilities:
   - MV* Architektur mit <a href="http://backbonejs.org/">Backbone</a>
   - Templating mit <a href="http://handlebarsjs.com/">Handlebars</a>
   - UI-Komponenten mit <a href="http://jquery.com/">jQuery</a> und <a href="http://jqueryui.com/">jQuery UI</a>
-  - Automatisiertes Style-System mit <a href="http://gruntjs.com/">Grunt</a> und <a href="http://http://sass-lang.com/">Sass</a> für alle skinbaren Elemente
-  - Konfigurierbare Inhalte über JSON- und XML-Schnittstellen
+  - Automatisiertes Skin-System mit <a href="http://gruntjs.com/">Grunt</a> und <a href="http://http://sass-lang.com/">Sass</a>
+  - Handling konfigurierbarer Inhalte über JSON- und XML-Schnittstellen
   - Video-Bitratenwechsel
   - Client-side Load Balancing für die Videostreams
-  - Einbindung externer Sounds pro Stream
+  - Einbindung externer Sounds pro Video
   - Implementierung von Schnittstellen zum Abspielen von Werbe- und Trailervideos
   - Playlist Funktionalität
   - Fullscreen-Handling
   - Mehrsprachigkeit
   - Einbindung von Socialfunktionen für Facebook, Google+ und Twitter
-  - Testbasierte Entwicklung mit <a href="http://pivotal.github.com/jasmine/">Jasmine</a> und <a href="http://sinonjs.org/">Sinon</a> (inkl. <a href="http://sinonjs.org/docs/#spies">Spying</a>, <a href="http://sinonjs.org/docs/#stubs">Stubbing</a> und <a href="http://sinonjs.org/docs/#mocks">Mocking</a>)
+  - Testbasierte Entwicklung (>750 Tests) mit <a href="http://pivotal.github.com/jasmine/">Jasmine</a> und <a href="http://sinonjs.org/">Sinon</a> (inkl. <a href="http://sinonjs.org/docs/#spies">Spying</a>, <a href="http://sinonjs.org/docs/#stubs">Stubbing</a> und <a href="http://sinonjs.org/docs/#mocks">Mocking</a>)
   - Flash Video Fallback (AS3, OOP, <a href="http://flexunit.org/">FlexUnit</a>)
   - Mitentwicklung eines Admin-Bereich mit <a href="www.ruby-lang.org">Ruby</a>, <a href="knockoutjs.com">KnockoutJS</a>, <a href="http://http://sass-lang.com/">Sass</a> und <a href="http://gruntjs.com/">Grunt</a>
   - Entwicklung einer nativen iOS Testanwendung mit <a href="http://www.rubymotion.com/">RubyMotion</a>
