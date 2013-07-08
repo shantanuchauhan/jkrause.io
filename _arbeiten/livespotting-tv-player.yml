@@ -21,11 +21,11 @@ description:
   <br><br>
   Bei der Umsetzung habe ich aktuelle Webtechnologien, wie z.B.
   <a href="http://coffeescript.org/">CoffeeScript</a>,
-  <a href="www.ruby-lang.org">Ruby</a>,
+  <a href="http://www.ruby-lang.org">Ruby</a>,
   <a href="http://www.rubymotion.com/">RubyMotion</a>,
   <a href="http://backbonejs.org/">Backbone</a>,
-  <a href="knockoutjs.com">KnockoutJS</a>,
-  <a href="http://http://sass-lang.com/">Sass</a> und
+  <a href="http://www.knockoutjs.com">KnockoutJS</a>,
+  <a href="http://sass-lang.com/">Sass</a> und
   <a href="http://gruntjs.com/">Grunt</a>
   eingesetzt.
 
@@ -39,7 +39,7 @@ responsibilities:
   - MV* Architektur mit <a href="http://backbonejs.org/">Backbone</a>
   - Templating mit <a href="http://handlebarsjs.com/">Handlebars</a>
   - UI-Komponenten mit <a href="http://jquery.com/">jQuery</a> und <a href="http://jqueryui.com/">jQuery UI</a>
-  - Automatisiertes Skin-System mit <a href="http://gruntjs.com/">Grunt</a> und <a href="http://http://sass-lang.com/">Sass</a>
+  - Automatisiertes Skin-System mit <a href="http://gruntjs.com/">Grunt</a> und <a href="http://sass-lang.com/">Sass</a>
   - Handling konfigurierbarer Inhalte über JSON- und XML-Schnittstellen
   - Video-Bitratenwechsel
   - Client-side Load Balancing für die Videostreams
@@ -51,7 +51,7 @@ responsibilities:
   - Einbindung von Socialfunktionen für Facebook, Google+ und Twitter
   - Testbasierte Entwicklung (>750 Tests) mit <a href="http://pivotal.github.com/jasmine/">Jasmine</a> und <a href="http://sinonjs.org/">Sinon</a> (inkl. <a href="http://sinonjs.org/docs/#spies">Spying</a>, <a href="http://sinonjs.org/docs/#stubs">Stubbing</a> und <a href="http://sinonjs.org/docs/#mocks">Mocking</a>)
   - Flash Video Fallback (AS3, OOP, <a href="http://flexunit.org/">FlexUnit</a>)
-  - Mitentwicklung eines Admin-Bereich mit <a href="www.ruby-lang.org">Ruby</a>, <a href="knockoutjs.com">KnockoutJS</a>, <a href="http://http://sass-lang.com/">Sass</a> und <a href="http://gruntjs.com/">Grunt</a>
+  - Mitentwicklung eines Admin-Bereich mit <a href="http://www.ruby-lang.org">Ruby</a>, <a href="http://www.knockoutjs.com">KnockoutJS</a>, <a href="http://sass-lang.com/">Sass</a> und <a href="http://gruntjs.com/">Grunt</a>
   - Entwicklung einer nativen iOS Testanwendung mit <a href="http://www.rubymotion.com/">RubyMotion</a>
   - Automatisierter Build-Prozess mit <a href="http://gruntjs.com/">Grunt</a>
 
