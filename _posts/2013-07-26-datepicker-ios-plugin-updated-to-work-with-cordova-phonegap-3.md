@@ -15,7 +15,7 @@ published: true
 
 For the PhoneGap app ["HOAY"](https://github.com/sectore/hoay) I'm working on I do need a DatePicker iOS plugin, which is running with latest version of PhoneGap 3.0.
   Fortunately there is already a [DatePicker plugin](https://github.com/phonegap/phonegap-plugins/tree/master/iOS/DatePicker) at [PhoneGap's plugin repository](https://github.com/phonegap/phonegap-plugins/),
-  but it does not work with the new plugin architecture of PhoneGap 3.0. So I decided to port it to PhoneGap 3.0 today.
+  but it does not work with the new plugin architecture of PhoneGap 3.0. So I decided <strike>to port</strike> to re-write it to support PhoneGap 3.0.
 
 <!--more-->
 
@@ -25,9 +25,15 @@ For the PhoneGap app ["HOAY"](https://github.com/sectore/hoay) I'm working on I 
 including a [pull request](https://github.com/phonegap/phonegap-plugins/pull/1227) to [PhoneGap's plugin repository](https://github.com/phonegap/phonegap-plugins/).
 
 
-##Screen shot
+##Screen shots (updated)
 
-[![screen shot](https://raw.github.com/sectore/phonegap3-ios-datepicker-plugin/master/assets/screenshot.png)](https://github.com/sectore/phonegap3-ios-datepicker-plugin)
+### iPhone
+
+[![screen shot iphone](https://raw.github.com/sectore/phonegap3-ios-datepicker-plugin/master/assets/screenshot.jpg)](https://github.com/sectore/phonegap3-ios-datepicker-plugin)
+
+### iPad
+
+[![screen shot ipad](https://raw.github.com/sectore/phonegap3-ios-datepicker-plugin/master/assets/screenshot_ipad.jpg)](https://github.com/sectore/phonegap3-ios-datepicker-plugin)
 
 
 ## Changes
@@ -54,6 +60,12 @@ exec(<successFunction>, <failFunction>, <service>, <action>, [<args>]);
 
 6) Removing all counting / releasing of objects (needed for using Xcode 4.2 with its feature called "[Automatic Reference Counting](http://developer.apple.com/library/ios/#documentation/DeveloperTools/Conceptual/WhatsNewXcode/Articles/xcode_4_2.html)")
 
-7) To get a detailed overview of all changes just check out [this diff stats at Github](https://github.com/sectore/phonegap3-ios-datepicker-plugin/commit/5b16b8199525291aa03a44efbc7cc9404fe6e767)
+7) <strike>To get a detailed overview of all changes just check out [this diff stats at Github](https://github.com/sectore/phonegap3-ios-datepicker-plugin/commit/5b16b8199525291aa03a44efbc7cc9404fe6e767)</strike>
+
+8) New features: Maximum and minimum date
+
+9) New features: Adding `done` and `cancel` buttons incl. customized labels
+
+10) New feature: iPad support
 
 -Jens
