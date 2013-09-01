@@ -1,0 +1,35 @@
+timestamp: 2013-09-01
+title: HOAY - iOS Anwendung zur Altersberechnung
+
+description:
+  Zur Evaluierung der derzeit aktuellen Versionen von <a href="http://angularjs.org/">AngularJS</a> (v.1.2.0-rc1) und <a href="http://phonegap.com/">PhoneGap</a> (v.3.0) entwickelte ich die mobile Anwendung HOAY ("How old are you").
+  <br><br>
+  Mit HOAY ist es möglich, das Alter in Jahren, Monaten und Tagen zu berechnen.
+  <br><br>
+  Als Ergebnis ist eine für den User sehr einfach zu bedienene iOS Anwendung entstanden, die u.a. für Tests in einer Praxis für Kinder- und Jugendpsychiatrie eingesetzt wird.
+  <br><br>
+  Die Anwendung ist <a href="https://itunes.apple.com/de/app/hoay/id693621393">kostenlos im iTunes Store</a> erhältlich.
+  <br><br>
+  Der <a href="https://github.com/sectore/hoay">gesamte Code</a> bei <a href="https://github.com/sectore/hoay">GitHub</a> frei zugänglich.
+
+images:
+  - /assets/images/work/hoay/0.jpg
+  - /assets/images/work/hoay/1.jpg
+  - /assets/images/work/hoay/2.jpg
+  - /assets/images/work/hoay/3.jpg
+
+responsibilities:
+  - Konzept
+  - Layout
+  - JavaScript / <a href="http://coffeescript.org/">CoffeeScript</a> Programmierung
+  - MV* Architektur mit <a href="http://angularjs.org/">AngularJS</a>
+  - Entwicklung einer nativen <a href="https://github.com/sectore/phonegap3-ios-datepicker-plugin">iOS Date-Picker Komponente</a> für PhoneGap
+  - Testbasierte Entwicklung mit <a href="http://karma-runner.github.io//">Karma</a> (inkl. <a href="http://phantomjs.org/">PhantomJS</a>, <a href="http://pivotal.github.com/jasmine/">Jasmine</a>)
+  - Automatisierter Build-Prozess mit <a href="http://gruntjs.com/">Grunt</a>
+  - Mehrsprachigkeit
+
+timeframe:
+  Juli-August 2013
+
+client:
+  Eigenes Projekt
