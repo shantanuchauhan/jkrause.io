@@ -20,3 +20,6 @@ Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de)
 
 ##Author
 Jens Krause // [WEBSECTOR.DE](http://www.websector.de)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sectore/websector.de/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
