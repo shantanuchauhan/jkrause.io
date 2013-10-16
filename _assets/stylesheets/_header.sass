@@ -76,26 +76,22 @@ header
 #welcome
   background-image: $img-dots
 
-  h1
+  a
     padding-left: pixel-to-em($content-padding-left-right, 55)
     padding-right: pixel-to-em($content-padding-left-right, 55)
-    @include padding-leader(.8)
-    @include padding-trailer(.7)
-    @include adjust-font-size-to(55px)
+    @include padding-leader(.5)
+    @include padding-trailer(.4)
+    @include adjust-font-size-to(70px)
+    text-decoration: none
+    color: $font-color
+    display: inline-block
     span
       color: $font-color-highlighted
-
-    #hi
-      @include adjust-font-size-to(88px, 1, 55px)
     
   @include respond-to('small-and-default-screen')
-    h1
-      @include margin-leader(.5)
+    a
       @include padding-leader(.5)
       @include padding-trailer(.4)
-      @include adjust-font-size-to(33px)
+      @include adjust-font-size-to(41px)
       padding-left: pixel-to-em($content-padding-left-right, 33)
       padding-right: pixel-to-em($content-padding-left-right, 33)
-
-    #hi
-      @include adjust-font-size-to(55px, 1, 33px)
