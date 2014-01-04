@@ -83,9 +83,6 @@ $content-padding-left-right: 20
 
 //
 // images / icons
-//$img-dots: inline-image("bg.png")
-//$img-dots: image-url("bg.png", false, false)
-//$img-dots: image-url('bg.svg', false, false)
 $img-dots: url('/assets/images/bg.svg')
 
 
@@ -119,4 +116,8 @@ $default-text-shadow-v-offset: 1px
 
 $breakpoint-to-ems: true
 
-$breakpoints: 'big-screen' (1281px), 'default-screen' (800px 1280px), 'default-and-big-screen' (801px), 'small-screen' (max-width 480px), 'small-and-default-screen' (max-width 800px)
+$breakpoints: add-breakpoint('big-screen', 1281px)
+$breakpoints: add-breakpoint('default-screen', 800px 1280px)
+$breakpoints: add-breakpoint('default-and-big-screen', 801px)
+$breakpoints: add-breakpoint('small-screen', max-width 480px)
+$breakpoints: add-breakpoint('small-and-default-screen', max-width 800px)
