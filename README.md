@@ -14,7 +14,7 @@ Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de)
     git clone https://github.com/sectore/websector.de
     cd websector.de
     bundle install
-    jekyll
+    jekyll serve
 
 2) Open [http://localhost:9999](http://localhost:9999) within a modern Browser
 
