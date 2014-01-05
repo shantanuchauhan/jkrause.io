@@ -1,0 +1,27 @@
+timestamp: 2014-01-03
+title: Unitymedia - Mobile Webseiten
+
+description: |
+  Unitymedia KabelBW ist der größte Kabelnetzbetreiber und einer der führenden Anbieter von Medien- und Kommunikationsdiensten
+  via Breitbandkabel in Nordrhein-Westfalen, Hessen und Baden-Württemberg.
+  <br><br>
+  Gemeinsam mit dem Team von <a href="http://www.cellular.de/">Cellular</a> war ich an der Entwicklung der Mobilen Webseiten
+  von <a href="http://www.unitymedia.de/">Unitymedia</a> beteiligt.
+  <br><br>
+  Meine Hauptaufgaben waren die Modularisierung des JavaScript Codes, die Implementierung neuer Inhalten auf Frontend- und Backendseite
+  sowie die Optimierung und Erweiterung von Build-Prozessen.
+
+images:
+  - /assets/images/work/unitymedia-mobile/0.jpg
+
+responsibilities:
+  - JavaScript Programmierung
+  - Backend-Entwicklung mit <a href="http://framework.zend.com/">Zend Framework 2</a>
+  - Modularisierung mit <a href="http://requirejs.org/">RequireJS</a>
+  - Templating mit <a href="http://www.ractivejs.org/">Ractive</a> und <a href="http://handlebarsjs.com/">Handlebars</a>
+  - Styling mit <a href="http://lesscss.org/">LESS</a>
+  - Optimierung und Erweiterung von Build-Prozessen mit <a href="http://gruntjs.com/">Grunt</a>
+  - 'Entwicklung einer generischen, clientseitigen Deviceerkennung (Code: <a href="http://coffeescript.org">CoffeeScript</a>, Unit Tests: <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>, Build: <a href="http://gruntjs.com/">Grunt</a>)'
+
+timeframe:
+  Oktober-Dezember 2013
