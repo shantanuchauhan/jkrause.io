@@ -1,0 +1,29 @@
+timestamp: 2014-01-02
+title: Cafe Townsend - Webanwendung mit AngularJS und Ruby on Rails
+
+description: |
+  "Cafe Townsend" ist eine kleine Open Source Webanwendung, welche ihren Ursprung im Adobe Flex Bereich hat
+  und ich mit Hilfe von <a href="http://angularjs.org/">AngularJS</a> und
+  <a href="http://rubyonrails.org/">Ruby on Rails</a> zur einer HTML5 Anwendung portierte.
+  <br><br>
+  Der <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">gesamte Code</a> ist bei
+  <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">GitHub</a> frei verfügbar.
+  <br><br>
+  <a href="https://plus.google.com/+AngularJS/posts/6MSVr52hdaq">Die Erwähnung dieses Projekts</a> von
+  <a href="https://plus.google.com/+AngularJS/">Googles AngularJS Team</a> ist eine besondere Motivation für mich,
+  dieses Projekt stetig weiter zu betreiben.
+
+images:
+  - /assets/images/work/cafe-townsend-angular-rails/0.jpg
+  - /assets/images/work/cafe-townsend-angular-rails/1.jpg
+
+responsibilities:
+  - <a href="http://coffeescript.org/">CoffeeScript</a> und <a href="http://rubyonrails.org/">Ruby on Rails</a> Programmierung
+  - MV* Architektur mit <a href="http://angularjs.org/">AngularJS</a>
+  - Styling mit <a href="http://sass-lang.com/">SASS</a> (<a href="http://bourbon.io/">Bourbon</a>)
+  - Testbasierte Entwicklung im Frontend mit <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://sinonjs.org/">SinonJS</a> und <a href="http://phantomjs.org/">PhantomJS</a> sowie im Backend mit <a href="http://rspec.info/">RSpec</a> und <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a>
+  - Optimierter Build-Prozess mit <a href="https://github.com/burke/zeus">Zeus</a>, <a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/sporkrb/spork">Spork</a>, <a href="https://github.com/modeset/teaspoon">Teaspoon</a> usw.
+  - Veröffentlichung auf Heroku
+
+timeframe:
+  Januar 2012 - heute
