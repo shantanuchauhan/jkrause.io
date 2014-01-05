@@ -9,8 +9,8 @@ description: |
   Der <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">gesamte Code</a> ist bei
   <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">GitHub</a> frei verfügbar.
   <br><br>
-  <a href="https://plus.google.com/+AngularJS/posts/6MSVr52hdaq">Die Erwähnung dieses Projekts</a> von
-  <a href="https://plus.google.com/+AngularJS/">Googles AngularJS Team</a> ist eine besondere Motivation für mich,
+  Die <a href="https://plus.google.com/+AngularJS/posts/6MSVr52hdaq">Erwähnung dieses Projekts</a> durch das
+  <a href="https://plus.google.com/+AngularJS/">Googles AngularJS Team</a> war und ist eine besondere Motivation für mich,
   dieses Projekt stetig weiter zu betreiben.
 
 images:
@@ -18,12 +18,12 @@ images:
   - /assets/images/work/cafe-townsend-angular-rails/1.jpg
 
 responsibilities:
-  - <a href="http://coffeescript.org/">CoffeeScript</a> und <a href="http://rubyonrails.org/">Ruby on Rails</a> Programmierung
+  - Programmierung mit <a href="http://coffeescript.org/">CoffeeScript</a> und <a href="http://rubyonrails.org/">Ruby on Rails</a>
   - MV* Architektur mit <a href="http://angularjs.org/">AngularJS</a>
   - Styling mit <a href="http://sass-lang.com/">SASS</a> (<a href="http://bourbon.io/">Bourbon</a>)
-  - Testbasierte Entwicklung im Frontend mit <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://sinonjs.org/">SinonJS</a> und <a href="http://phantomjs.org/">PhantomJS</a> sowie im Backend mit <a href="http://rspec.info/">RSpec</a> und <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a>
-  - Optimierter Build-Prozess mit <a href="https://github.com/burke/zeus">Zeus</a>, <a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/sporkrb/spork">Spork</a>, <a href="https://github.com/modeset/teaspoon">Teaspoon</a> usw.
-  - Veröffentlichung auf Heroku
+  - Testbasierte Entwicklung im Frontend mit <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://sinonjs.org/">SinonJS</a> und <a href="http://phantomjs.org/">PhantomJS</a>, im Backend mit <a href="http://rspec.info/">RSpec</a> und <a href="https://github.com/thoughtbot/factory_girl">FactoryGirl</a>
+  - Optimierter Build-Prozess mit <a href="https://github.com/burke/zeus">Zeus</a>, <a href="https://github.com/guard/guard">Guard</a>, <a href="https://github.com/sporkrb/spork">Spork</a>, <a href="https://github.com/modeset/teaspoon">Teaspoon</a> u.a.
+  - Veröffentlichung auf <a href="http://cafetownsend-angular-rails.herokuapp.com/">Heroku</a>
 
 timeframe:
   Januar 2012 - heute
