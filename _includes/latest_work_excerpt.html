@@ -5,7 +5,7 @@
   </h3>
 
   <div class="left-content">
-    <p>{{ latest_work.description | truncate: 500 }}</p>
+    <p>{{ latest_work.description | truncatewords: 70 }}</p>
     <p><a href="{{ latest_work.mdl_url }}" class="read-more">Weiterlesen...</a></p>
   </div>
   <div class="right-content">
