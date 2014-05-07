@@ -17,14 +17,14 @@ images:
 responsibilities:
   - JavaScript Programmierung
   - Backend-Entwicklung mit <a href="http://framework.zend.com/">Zend Framework 2</a>
-  - Modularisierung mit <a href="http://requirejs.org/">RequireJS</a>
-  - Templating mit <a href="http://www.ractivejs.org/">Ractive</a> und <a href="http://handlebarsjs.com/">Handlebars</a>
+  - Modularisierung mit <a href="http://requirejs.org/">RequireJS</a> und <a href="http://knockoutjs.com/">KnockoutJS</a>
+  - Templating mit <a href="http://handlebarsjs.com/">Handlebars</a>
   - Styling mit <a href="http://lesscss.org/">LESS</a>
   - Optimierung und Erweiterung von Build-Prozessen mit <a href="http://gruntjs.com/">Grunt</a>
   - 'Entwicklung einer generischen, clientseitigen Deviceerkennung (Code: <a href="http://coffeescript.org">CoffeeScript</a>, Unit Tests: <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>, Build: <a href="http://gruntjs.com/">Grunt</a>)'
 
 timeframe:
-  Oktober 2013 - Februar 2014
+  Oktober 2013 - Mai 2014
 
 client:
   <a href="http://www.cellular.de/">Cellular GmbH</a> - Hamburg
