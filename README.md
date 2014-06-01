@@ -1,5 +1,5 @@
 ##About
-Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de) built with [Jekyll](http://jekyllrb.com/), [Compass](compass-style.org) and [Susy](susy.oddbird.net).
+Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de) built with [Jekyll](http://jekyllrb.com/).
 
 ##Screen shots
 [![Running on Desktop](https://raw.github.com/sectore/websector.de/master/wiki/screenshot_0.png)](http://websector.de)
@@ -20,6 +20,3 @@ Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de)
 
 ##Author
 Jens Krause // [WEBSECTOR.DE](http://www.websector.de)
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sectore/websector.de/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
