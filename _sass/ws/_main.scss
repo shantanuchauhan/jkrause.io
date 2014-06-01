@@ -72,8 +72,9 @@ article {
 .contentSubHeadline {
   margin-bottom: rem(30);
   font-size: rem(30);
-  line-height: 120%;
+  line-height: 160%;
   @include respond-to($small-screen) {
+    line-height: 120%;
     padding-top: rem(5);
     padding-bottom: rem(5);
   }
