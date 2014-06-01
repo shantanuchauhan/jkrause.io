@@ -1,0 +1,22 @@
+---
+---
+
+@import
+  'bourbon',
+  // grid config
+  'ws/grid-config',
+  // vendor
+  'neat',
+  'vendor/reset',
+  // ws
+  'ws/mixins',
+  'ws/global',
+  'ws/main',
+  'ws/header',
+  'ws/work',
+  'ws/footer',
+  'ws/blog',
+  'ws/syntax',
+  'ws/about',
+  'ws/contact',
+  'ws/nav';

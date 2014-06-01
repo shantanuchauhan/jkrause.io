@@ -97,10 +97,13 @@
 #                          "audi.next" is linked to model "chevrolet", "chevrolet.next" is nil
 #
 # Update History: (most recent first)
+# 01-June-2014 jens krause -- Jekyll 2 support
 # 23-Jan-2013 jens krause -- sorting models by a key
 # 13-Jan-2013 jens krause -- adding linked models
 # 20-Jun-2012 kyle paulsen -- First public release.
 #------------------------------------------------------------------------
+
+require 'jekyll/utils'
 
 module JekyllModels
 
@@ -262,9 +265,10 @@ module JekyllModels
 
     # Override to set url properly
     def to_liquid
-      self.data.deep_merge({
-                               "url"        => @dest_url,
-                               "content"    => self.content })
+      self.data = Jekyll::Utils.deep_merge_hashes({
+                                                      "url"        => @dest_url,
+                                                      "content"    => self.content
+                                                  }, self.data)
     end
 
     # Override so that we can control where the destination file goes

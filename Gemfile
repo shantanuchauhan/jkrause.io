@@ -5,15 +5,11 @@ if RUBY_VERSION =~ /1.9/
   Encoding.default_internal = Encoding::UTF_8
 end
 
-gem 'jekyll','~>1.4.2'
-gem 'sprockets', '~> 2.0'
-gem 'sprockets-sass', '1.0.2'
-gem 'jekyll-assets'
-gem 'ruby-oembed', '0.8.8'
-gem 'rdiscount'
-gem 'susy', '1.0'
-gem 'sass', '~>3.2.12'
-gem 'compass', '~>0.12.2'
-gem 'breakpoint', '~>2.0.7'
-gem 'animation'
+gem 'jekyll', '2.0.3'
 gem 'jekyll-swfobject','~>1.0.1'
+gem 'ruby-oembed'
+gem 'rdiscount'
+gem 'sass', '>= 3.3.0'
+gem 'meyer-reset', '~> 2.0.1'
+gem 'bourbon'
+gem 'neat'

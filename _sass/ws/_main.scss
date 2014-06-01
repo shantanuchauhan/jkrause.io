@@ -1,0 +1,125 @@
+
+
+// @include margin-leader(2);
+// margin-top: rem(100);
+
+// @include margin-trailer(1);
+//  margin-bottom: rem(50);
+
+
+* {
+  $border-box-sizing: true !global;
+  font-size: rem($font-size-default);
+}
+
+
+body{
+  background-color: #FFF;
+  color: $font-color;
+  font-size: rem($font-size-default);
+  font-family: 'Source Sans Pro', Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+
+strong{
+  font-weight: 600;
+}
+
+p{
+  font-size: rem(19);
+  line-height: 125%;
+}
+
+section {
+  margin-top: rem(70);
+  @include respond-to($small-and-default-screen) {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+  }
+}
+
+#wrapper {
+  @include outer-container;
+}
+
+.content {
+
+  p {
+//    @include margin-trailer(0.5);
+    margin-bottom: rem(25);
+    color: $font-color-light;
+  }
+  a {
+    color: $font-color-light;
+    &:hover {
+      color: $font-color-highlighted;
+//      @include animation(link-hover $link-hover-duration);
+    }
+  }
+  li {
+    color: $font-color-light;
+  }
+}
+
+article {
+  padding-left: rem($content-padding-left-right);
+  padding-right: rem($content-padding-left-right);
+  @include clearfix;
+}
+
+.contentHeadline,
+.contentSubHeadline {
+  margin-bottom: rem(30);
+  font-size: rem(30);
+  line-height: 120%;
+  @include respond-to($small-screen) {
+    padding-top: rem(5);
+    padding-bottom: rem(5);
+  }
+}
+
+.contentHeadline {
+  padding-left: rem($content-padding-left-right);
+  padding-right: rem($content-padding-left-right);
+  background-image: $img-dots;
+}
+
+.contentSubHeadline {
+  margin-top: rem(45);
+  a {
+    color: $font-color;
+    text-decoration: none;
+    &:hover {
+      color: $font-color-highlighted;
+    }
+  }
+}
+
+.left-content {
+  @include respond-to($default-and-big-screen) {
+    @include span-columns(6);
+//    @include post(0);
+  }
+}
+
+.right-content {
+  margin-top: rem(75);
+  @include respond-to($default-and-big-screen) {
+    margin-top: 0;
+    @include span-columns(6);
+    @include omega;
+  }
+}
+
+.read-more {
+  font-weight: 600;
+}
+
+#github-ribbon {
+  @include position(absolute, 0 0 null null );
+  @include hidden;
+  @include respond-to($default-and-big-screen) {
+    @include shown;
+  }
+}

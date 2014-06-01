@@ -1,0 +1,206 @@
+#top-nav-container,
+#bottom-nav-container {
+  @include clearfix;
+  background-color: $nav-bg-color;
+  ul {
+    a {
+      display: block;
+      color: $font-color-nav;
+      text-decoration: none;
+    }
+  }
+}
+
+#top-nav-container {
+  @include shown;
+  @include respond-to($small-and-default-screen) {
+    @include hidden;
+  }
+}
+
+#bottom-nav-container {
+  @include hidden;
+  @include respond-to($small-and-default-screen) {
+    @include shown;
+    margin-top: rem(120);
+  }
+}
+
+$main-nav-height: rem(50);
+
+#main-nav-list {
+
+  li {
+    height: 100%;
+
+    a {
+      padding: 0 rem(20);
+      font-size: rem(21);
+      line-height: $main-nav-height;
+    }
+    a:active,
+    a:hover,
+    a.active,
+    a.active:hover {
+      background-color: $font-color-highlighted;
+      @include single-text-shadow($default-text-shadow-color);
+    }
+    a:hover {
+      @include animation(nav-hover $link-hover-duration);
+    }
+    a.active:hover {
+      @include animation(nav-hover 0s);
+    }
+  }
+
+  @include respond-to($default-and-big-screen) {
+    height: $main-nav-height;
+    @include span-columns(7);
+    li {
+      float: left;
+
+      &:first-child {
+        @include hidden;
+      }
+      a {
+        padding: 0 rem(20);
+      }
+    }
+  }
+
+  @include respond-to($small-and-default-screen) {
+    li {
+      border-bottom: 1px solid white;
+      &:first-child {
+        @include shown;
+      }
+      a {
+        text-align: center;
+      }
+    }
+  }
+}
+
+#social-nav-list {
+
+  li{
+    height: 100%;
+  }
+
+  a {
+    font-size: rem(21);
+    line-height: $main-nav-height;
+    padding: 0 rem(10);
+    span {
+      @include squish-text;
+    }
+  }
+  a:hover,
+  a:active {
+    background-color: $font-color-highlighted;
+    @include single-text-shadow($font-color-shadow);
+  }
+  a:hover {
+    @include animation(nav-hover $link-hover-duration);
+  }
+  @include respond-to($small-and-default-screen) {
+    li {
+      float: left;
+      width: 20%;
+      text-align: center;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  @include respond-to($default-and-big-screen) {
+    @include omega;
+    @include span-columns(5);
+    text-align: right;
+    li {
+      float: right;
+      &:first-child {
+        padding-right: rem(20);
+      }
+    }
+  }
+}
+
+.page-sub-nav {
+  top: 50%;
+  width: 100%;
+  ul {
+    @include clearfix;
+    height: 100%;
+  }
+  li {
+    float: left;
+    width: 50%;
+    height: 100%;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #cccccc;
+    &:hover,
+    &:active {
+      color: $font-color-highlighted;
+    }
+    &:hover {
+      @include animation(link-hover $link-hover-duration);
+    }
+    span {
+      @include squish-text;
+    }
+  }
+}
+
+body>nav.page-sub-nav {
+  @include hidden;
+  @include respond-to($big-screen) {
+    position: fixed;
+    @include shown;
+    height: rem(144);
+    margin-top: rem(-72);
+    a {
+      font-size: rem(144);
+      line-height: 0;
+      width: rem(144);
+    }
+  }
+}
+
+#post-headline-container>nav.page-sub-nav,
+#work-headline-container>nav.page-sub-nav {
+  @include respond-to($big-screen) {
+    @include hidden;
+  }
+
+  position: absolute;
+  height: rem(30);
+  margin-top: rem(-15);
+  a {
+    font-size: rem(30);
+    padding: 0 rem(10);
+    line-height: 0;
+  }
+  @include respond-to($small-and-default-screen) {
+    a {
+      padding: 0 rem(5);
+    }
+  }
+}

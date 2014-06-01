@@ -1,0 +1,58 @@
+//
+// make sure that the content is located on top to have clickable content
+.work-detail-content>div {
+  position: relative;
+}
+
+.work-detail-content>section {
+  position: absolute;
+}
+
+// list
+.work-content,
+.work-detail-content {
+  article {
+    .left-content ul,
+    &>ul {
+      list-style-type: square;
+      padding-left: rem($content-padding-left-right);
+      li {
+        font-size: rem(19);
+        padding-bottom: rem(21);
+      }
+    }
+  }
+  img {
+    @include responsive-image;
+  }
+}
+
+.work-detail-content {
+  h4 {
+    font-size: rem(21);
+    padding-left: rem($content-padding-left-right);
+    padding-right: rem($content-padding-left-right);
+  }
+  .right-content {
+    li {
+      padding-bottom: rem(25);
+    }
+  }
+}
+
+#work-headline-container {
+  position: relative;
+  h1 {
+    padding: rem(5) rem(45);
+    @include respond-to($big-screen) {
+      padding: 0 rem(20);
+    }
+  }
+}
+
+.work-latest {
+  @include clearfix;
+  img {
+    @include responsive-image;
+  }
+}

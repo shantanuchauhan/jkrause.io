@@ -1,0 +1,33 @@
+#contact{
+
+  .left-content{
+    @include respond-to($default-and-big-screen){
+      padding-left: 0;
+    }
+  }
+
+
+  @include respond-to($small-and-default-screen){
+      p{
+        margin-bottom: rem($font-size-default);
+      }
+  }
+
+  .right-content{
+    @include respond-to($default-and-big-screen){
+      padding-right: 0;
+    }
+  }
+
+  iframe{
+    width: 100%;
+    height: rem(350);
+    margin-bottom: rem(25);
+  }
+
+  address{
+    display: block;
+    padding: 0 rem($content-padding-left-right);
+  }
+
+}

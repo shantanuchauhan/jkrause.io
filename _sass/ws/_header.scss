@@ -1,0 +1,101 @@
+header {
+  position: relative;
+  h2 {
+    padding-top:rem(100);
+    padding-bottom:rem(20);
+    font-size: rem(55);
+    a {
+      text-decoration: none;
+      color: $font-color-light;
+      text-transform: uppercase;
+      &:hover,
+      &:active {
+        color: $font-color-highlighted;
+      }
+      &:hover {
+        @include animation(link-hover $link-hover-duration);
+      }
+    }
+    span {
+      font-size: rem(21);
+    }
+  }
+  h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: rem(10) rem($content-padding-left-right);
+    font-size: rem(21);
+    @include hidden;
+  }
+  @include respond-to($small-and-default-screen) {
+    background-color: $nav-bg-color;
+
+    $height: rem(60);
+    height: $height;
+    h2 {
+      @include hidden;
+    }
+    h3 {
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: $height;
+      @include shown;
+    }
+  }
+}
+
+#b-main-nav {
+  display: block;
+  @include position(absolute, 0 0 null null );
+  height: 100%;
+  padding: rem(6) rem(20);
+  font-size: rem(21);
+  color: white;
+  background-color: #989898;
+  span {
+    @include squish-text;
+  }
+  &:hover,
+  &:active {
+    background-color: $font-color-highlighted;
+    @include single-text-shadow($font-color-shadow);
+  }
+  &:hover {
+    @include animation(nav-hover $link-hover-duration);
+  }
+  @include hidden;
+  @include respond-to($small-and-default-screen) {
+    line-height: rem(60);
+    padding-top: 0;
+    padding-bottom: 0;
+    @include shown;
+  }
+}
+
+#welcome {
+  background-image: $img-dots;
+  a {
+    padding-left: rem($content-padding-left-right);
+    padding-right: rem($content-padding-left-right);
+    padding-top: rem(50);
+    padding-bottom: rem(40);
+    font-size: rem(70);
+    line-height: 135%;
+    text-decoration: none;
+    color: $font-color;
+    display: inline-block;
+    span {
+      color: $font-color-highlighted;
+    }
+  }
+  @include respond-to($small-and-default-screen) {
+    a {
+      padding-top: rem(25);
+      padding-bottom: rem(20);
+      font-size: rem(41);
+      line-height: 110%;
+      padding-left: rem($content-padding-left-right);
+      padding-right: rem($content-padding-left-right);
+    }
+  }
+}

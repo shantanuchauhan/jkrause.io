@@ -1,0 +1,31 @@
+footer {
+  padding-top: rem(50);
+
+  p {
+    border-top: 1px dotted $font-color-light;
+    padding-left: rem($content-padding-left-right);
+    padding-right: rem($content-padding-left-right);
+    padding-top: rem(10);
+    padding-bottom: rem(60);
+    font-size: rem(13);
+    line-height: 180%;
+    color: $font-color-light;
+    text-align: center;
+  }
+  a {
+    color: $font-color-light;
+  }
+  @include respond-to($small-and-default-screen) {
+    background-color: #989898;
+    border-top: 1px solid white;
+    a {
+      color: white;
+    }
+    p {
+      border-top: none;
+      color: white;
+      padding-top: rem(60);
+      padding-bottom: rem(10);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+//
+// make sure that the content is located on top to have clickable content
+.post-content>div{
+  position: relative;
+}
+
+.post-content>section{
+  position: absolute;
+}
+
+#post-headline-container{
+  position: relative;
+
+  h1{
+    padding: rem(5) rem(45);
+  }
+
+  @include respond-to($big-screen){
+    padding: 0 rem(20);
+  }
+}
+
+.post-content{
+
+  h2{
+    font-size: rem(30px);
+    margin-top: rem(50);
+    margin-bottom: rem(25);
+  }
+
+  @include respond-to($small-and-default-screen){
+    font-size: rem(30);
+  }
+
+  h3,
+  h4{
+    font-size: rem(21);
+    margin-top: rem(50);
+    margin-bottom: rem(25);
+  }
+
+  img{
+    margin-bottom: rem(50);
+  }
+}
+
+.post-content,
+.blog-content {
+
+
+  article>ul{
+
+    list-style-type: square;
+    padding-left: rem($content-padding-left-right);
+
+    li{
+      padding-bottom: rem(40);
+      font-size: rem(19);
+    }
+  }
+
+  code{
+    font-family: Courier, monospace;
+    border: 1px solid #eaeaea;
+    padding: 0 rem(5);
+    border-radius: rem(4);
+    background-color: #f8f8f8;
+    font-size: rem(14);
+    line-height: 140%;
+  }
+
+  ol{
+    list-style-type: decimal;
+    list-style-position: inside;
+    li{
+      padding-bottom: (25);
+      font-size: rem(19);
+    }
+  }
+
+  .posted-on{
+    font-style: italic;
+    padding-bottom: rem(50);
+  }
+}
+
+
+.blog-latest-post{
+
+  .posted-on{
+    font-style: italic
+  }
+}
+
+// override code to avoid issues with syntax styles
+div.highlight{
+
+  border: rem(1) solid #eaeaea;
+  border-radius: rem(4);
+  margin-bottom: rem(50);
+
+  pre {
+    padding: rem(20);
+
+    &>code {
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+}
+
+// oEmbed plugin
+div.embed,
+div.embed iframe{
+  width: 100%
+}
+
+
+
+

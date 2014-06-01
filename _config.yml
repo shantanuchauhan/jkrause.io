@@ -1,11 +1,11 @@
 # Default Configuration
 # http://jekyllrb.com/docs/configuration/
 
-source:      .
+source: .
 destination: ./_site
-plugins:     ./_plugins
+plugins: ./_plugins
 
-layouts:     ./_layouts
+layouts: ./_layouts
 
 exclude:
   - README.md
@@ -13,8 +13,8 @@ exclude:
   - websector.de.iml
   - wiki
 
-future:      false
-pygments:    true
+future: false
+highlighter: pygments
 
 relative_permalinks: false
 
@@ -22,17 +22,21 @@ permalink: /blog/:year/:month/:day/:title/
 
 markdown: rdiscount
 
-safe:        false
+safe: false
 host: 0.0.0.0
 port: 9999
 baseurl: /
 url: http://localhost:9999
 lsi: false
 
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+  sourcemap: true
+
+
 # plugin settings
-assets:
-  compress:
-    css:  sass
 
 jekyll_models: [arbeiten]
 jekyll_models_urls: rest-like
