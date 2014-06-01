@@ -13,6 +13,7 @@ description: |
 
 images:
   - /assets/images/work/unitymedia-mobile/0.jpg
+  - /assets/images/work/unitymedia-mobile/1.jpg
 
 responsibilities:
   - JavaScript Programmierung
@@ -22,9 +23,10 @@ responsibilities:
   - Styling mit <a href="http://lesscss.org/">LESS</a>
   - Optimierung und Erweiterung von Build-Prozessen mit <a href="http://gruntjs.com/">Grunt</a>
   - 'Entwicklung einer generischen, clientseitigen Deviceerkennung (Code: <a href="http://coffeescript.org">CoffeeScript</a>, Unit Tests: <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>, Build: <a href="http://gruntjs.com/">Grunt</a>)'
+  - Anbindung an <a href="https://www.contentful.com/">contentful</a> über eine eigene Schnittstelle mit <a href="http://nodejs.org/">NodeJS</a>
 
 timeframe:
-  Oktober 2013 - Mai 2014
+  Oktober 2013 - heute
 
 client:
   <a href="http://www.cellular.de/">Cellular GmbH</a> - Hamburg
