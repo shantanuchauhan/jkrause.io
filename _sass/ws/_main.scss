@@ -39,6 +39,11 @@ section {
   }
 }
 
+sup{
+  vertical-align: super;
+}
+
+
 #wrapper {
   @include outer-container;
 }
@@ -54,7 +59,7 @@ section {
     color: $font-color-light;
     &:hover {
       color: $font-color-highlighted;
-//      @include animation(link-hover $link-hover-duration);
+      @include animation(link-hover $link-hover-duration);
     }
   }
   li {
