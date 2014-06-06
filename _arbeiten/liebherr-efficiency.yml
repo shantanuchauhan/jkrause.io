@@ -1,0 +1,26 @@
+timestamp: 2014-06-04
+title: 'Liebherr Efficiency<sup>+</sup> Spritsparrechner'
+
+description: |
+  Gemeinsam mit dem Team von <a href="http://www.for-sale-mobile.de/">For Sale Mobile</a>
+  war ich an der Weiterentwicklung der Mobilen Webseiten von
+  <a href="http://www.liebherr.com/Data/LHO/Efficiency/de/">Liebherr Efficiency</a><sup>+</sup> beteiligt.
+  <br><br>
+  Meine Hauptaufgabe bestand in der Umsetzung des Spritsparrechners.
+
+images:
+  - /assets/images/work/liebherr-efficiency/0.jpg
+
+responsibilities:
+  - JavaScript Programmierung
+  - SVG Animation
+  - Entwicklung einer generischen Lösung zum Datenhandling auf Basis von CSV-Dateien
+  - Validierung von Formulardaten
+  - Styling mit <a href="http://sass-lang.com">SASS</a>
+  - Build-Prozesse mit <a href="http://gulpjs.com/">Gulp</a>
+
+timeframe:
+  Mai 2014
+
+client:
+  <a href="http://www.for-sale-mobile.de/">For Sale Mobile GmbH</a> - Hamburg
