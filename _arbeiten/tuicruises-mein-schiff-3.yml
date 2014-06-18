@@ -1,0 +1,30 @@
+timestamp: 2014-06-17
+title: 'TUI Cruises - Liftlanding Screens für "Mein Schiff 3"'
+
+description: |
+  "Mein Schiff 3" ist der erste Neubau eines Kreuzfahrtschiffes für <a href="http://tuicruises.com/">TUI Cruises</a>.
+  Mit 295 Meter Länge und Platz für 2500 Passagiere mit insgesamt 1253 Kabinen zählt es zu den
+  ganz Großen unter den modernen Kreuzfahrtschiffen.
+  <br><br>
+  Gemeinsam mit dem Team von <a href="http://www.cellular.de/">Cellular</a> war ich an der Frontend-Entwicklung
+  der Liftlanding Screens beteiligt. Über diese mit Touchfunktionen ausgestatteten Screen
+  können sich die Passagiere an Board jederzeit über die Schiffreise (Landausflüge, Events, Speisekarten, Wetterdaten usw.) und das das Schiff
+  (z.B. Lagepläne) informieren.
+
+images:
+  - /assets/images/work/tuic-mein-schiff3/0.jpg
+  - /assets/images/work/tuic-mein-schiff3/1.jpg
+
+responsibilities:
+  - JavaScript Programmierung
+  - MVVM Architektur mit <a href="http://knockoutjs.com/">KnockoutJS</a>
+  - Unit Tests / Code Coverage mit <a href="http://karma-runner.github.io/">Karma</a>, <a href="http://gotwarlost.github.io/istanbul/">Istanbul</a>, <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a> und <a href="http://sinonjs.org/">Sinon</a>
+  - Styling mit <a href="http://sass-lang.com/">SASS</a>
+  - PHP Entwicklung mit dem <a href="http://framework.zend.com/">Zend Framework 2</a>
+  - Build-Prozesse mit <a href="http://gruntjs.com/">Grunt</a>
+
+timeframe:
+  Februar 2014 - heute
+
+client:
+  <a href="http://www.cellular.de/">Cellular GmbH</a> - Hamburg
