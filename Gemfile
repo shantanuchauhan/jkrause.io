@@ -5,7 +5,7 @@ if RUBY_VERSION =~ /1.9/
   Encoding.default_internal = Encoding::UTF_8
 end
 
-gem 'jekyll', '2.0.3'
+gem 'jekyll', '2.1.1'
 gem 'jekyll-swfobject','~>1.0.1'
 gem 'ruby-oembed'
 gem 'rdiscount'
