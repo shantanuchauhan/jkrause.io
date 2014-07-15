@@ -43,7 +43,6 @@ $main-nav-height: rem(50);
     a.active,
     a.active:hover {
       background-color: $font-color-highlighted;
-      @include single-text-shadow($default-text-shadow-color);
     }
     a:hover {
       @include animation(nav-hover $link-hover-duration);
@@ -98,7 +97,6 @@ $main-nav-height: rem(50);
   a:hover,
   a:active {
     background-color: $font-color-highlighted;
-    @include single-text-shadow($font-color-shadow);
   }
   a:hover {
     @include animation(nav-hover $link-hover-duration);

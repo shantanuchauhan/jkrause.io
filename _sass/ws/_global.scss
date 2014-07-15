@@ -103,11 +103,9 @@ $default-text-shadow-v-offset: 1px;
 @include keyframes(nav-hover){
   from {
     background-color: #666;
-    text-shadow: none;
   }
   to {
     background-color: $font-color-highlighted;
-    @include single-text-shadow($font-color-shadow);
   }
 }
 

@@ -58,7 +58,6 @@ header {
   &:hover,
   &:active {
     background-color: $font-color-highlighted;
-    @include single-text-shadow($font-color-shadow);
   }
   &:hover {
     @include animation(nav-hover $link-hover-duration);
