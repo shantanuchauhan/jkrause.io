@@ -1,0 +1,34 @@
+timestamp: 2015-03-04
+title: 'ZDF - Webanwendung "Second Screen"'
+
+description:
+  Mit Hilfe des "Second Screens" haben die Zuschauer des ZDF die Möglichkeit,
+  parallel zum Liveprogramm zusätzliche Hintergrund-Informationen zu erhalten, an Live-Abstimmungen
+  oder Social-Media-Diskussionen teilzunehmen uvm.
+  <br><br>
+  Gemeinsam mit dem Team von <a href="http://www.cellular.de/">Cellular</a> war ich an
+  der Entwicklung der webbasierten "Second Screen" Anwendung beteiligt.
+  <br><br>
+  Meine Hauptaufgaben bestanden in der MV* Architektur und Modularisierung
+  der gesamten Anwendung sowie in der Anbindung unterschiedlicher Datenquellen und
+  Aufarbeitung komplexer Datenstrukturen.
+
+images:
+  - /assets/images/work/zdf-second-screen/0.jpg
+
+responsibilities:
+  - JavaScript Programmierung
+  - MV* Architektur (<a href="http://marionettejs.com/">MarionetteJS</a>)
+  - Modularisierung (<a href="http://browserify.org/">Browserify</a>)
+  - Unit Testing (<a href="http://karma-runner.github.io/">Karma</a>, <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>)
+  - Socialfunktionen (Facebook, Google+, Instagram, Twitter, Youtube)
+  - Templating (<a href="http://handlebarsjs.com/">Handlebars</a>)
+  - Styling (<a href="http://sass-lang.com/">SASS</a>)
+  - API-Anbindung ZDF Videoplayer
+  - Build- / Deploymentprozesse (<a href="http://gruntjs.com/">Grunt</a>)
+
+timeframe:
+  September 2014 - Februar 2015
+
+client:
+  <a href="http://www.cellular.de/">Cellular GmbH</a> - Hamburg
