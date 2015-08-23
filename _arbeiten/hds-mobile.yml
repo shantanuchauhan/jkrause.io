@@ -1,0 +1,28 @@
+timestamp: 2015-08-23
+title: 'Startup HDS - Mobile Web App (Prototype)'
+
+description:
+  Für das Hamburger Startup HDS entwickelte ich einen Prototypen für eine Mobile Web App.
+  Um bestmögliche Ergebnisse zu erreichen, wurden dabei cutting-edge Webtechnologien und -tools
+  eingesetzt, wie z.B. <a href="http://www.typescriptlang.org/">TypeScript</a> (inkl.
+  <a href="http://www.ecma-international.org/ecma-262/6.0/">ES6</a>),
+  <a href="http://angular.com/">Angular</a>, <a href="http://ionicframework.com/">Ionic</a>,
+  <a href="http://jspm.io/">jspm</a> uvm.
+
+images:
+  - /assets/images/work/hds-prototype/0.jpg
+
+responsibilities:
+  - JavaScript / <a href="http://www.typescriptlang.org/">TypeScript</a> Programmierung in <a href="http://www.ecma-international.org/ecma-262/6.0/">ES6</a>
+  - MV* Architektur mit <a href="http://angular.com/">Angular</a> (inkl. Umsetzung <a href="https://docs.google.com/document/d/1xvBZoFuNq9hsgRhPPZOJC-Z48AHEbIBPlOCBTSD8m0Y/edit">Upgrade Strategien</a> zu <a href="http://angular.io/">Angular 2.0</a>)
+  - Hybrid Web App (<a href="http://ionicframework.com/">Ionic</a>)
+  - Modularisierung / Bundling (<a href="http://jspm.io/">jspm</a>)
+  - Unit Testing (<a href="http://karma-runner.github.io/">Karma</a>, <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>)
+  - Styling (<a href="http://sass-lang.com/">SASS</a>)
+  - Build-Tasks (<a href="http://gulp.com/">Gulp</a>)
+
+timeframe:
+  April - Juli 2015
+
+client:
+  HDS Home Design Solution GmbH - Hamburg
