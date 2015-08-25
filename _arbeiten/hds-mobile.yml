@@ -20,7 +20,7 @@ responsibilities:
   - Reactive Programming mit <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a>
   - Modularisierung / Bundling (<a href="http://jspm.io/">jspm</a>)
   - Unit Testing (<a href="http://karma-runner.github.io/">Karma</a>, <a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>)
-  - Styling (<a href="http://sass-lang.com/">SASS</a>)
+  - Styling (<a href="http://sass-lang.com/">SASS</a>, <a href="https://en.bem.info/">BEM</a>)
   - Build-Tasks (<a href="http://gulp.com/">Gulp</a>)
 
 timeframe:
