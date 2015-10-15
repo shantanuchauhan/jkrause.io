@@ -8,7 +8,7 @@ description:
   Meine Hauptaufgaben waren im Frontend die Migration zu <a href="http://angular.io/">Angular 2</a>
   sowie die Verbesserung der Buildprozesse mit
   <a href="http://jspm.io/">jspm</a> und <a href="http://gulp.com/">Gulp</a>.
-  Im Backend war ich an der Neuentwicklung des auf <a href="https://nodejs.org/">Node.js</a> basierenden Importer für die
+  Im Backend war ich an der Neuentwicklung des auf <a href="https://nodejs.org/">Node.js</a> basierenden Importers für die
    Partner Feeds beteiligt.
 
 images:
@@ -17,7 +17,7 @@ images:
 responsibilities:
   - Migration zu <a href="http://angular.io/">Angular 2.0</a>
   - Buildprozesse mit <a href="http://jspm.io/">jspm</a> und <a href="http://gulp.com/">Gulp</a>
-  - Global Eventsystem mit <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a>
+  - Globales Eventsystem mit <a href="https://github.com/Reactive-Extensions/RxJS">RxJS</a>
   - Weiterentwicklung des Feedimporters mit <a href="https://nodejs.org/">Node.js</a>
   - Message Handling mit <a href="https://www.rabbitmq.com/">RabbitMQ</a>
   - Unit/BDD Testing (<a href="http://visionmedia.github.io/mocha/">Mocha</a>, <a href="http://chaijs.com/">Chai</a>, <a href="http://sinonjs.org/">Sinon</a>)
@@ -26,4 +26,4 @@ timeframe:
   Juli - September 2015
 
 client:
-  <a href="http://www.stylelounge.de/">SNM Style Net Media GmbH</a> - StyleLounge - Hamburg
+  <a href="http://www.stylelounge.de/">SNM Style Net Media GmbH - StyleLounge</a> - Hamburg
