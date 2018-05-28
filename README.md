@@ -20,3 +20,8 @@ Source of my personal portfolio and blog [WEBSECTOR.DE](http://www.websector.de)
 
 ##Author
 Jens Krause // [WEBSECTOR.DE](http://www.websector.de)
+
+##Author 2
+
+Shantanu Chauhan //[WEBInspector]
+
